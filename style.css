@@ -507,7 +507,7 @@ body {
     display: none;
 }
 
-@media (max-width:950px) {
+@media only screen and (max-width:950px) {
     .header-nav {
         height: 48px;
     }
@@ -588,5 +588,277 @@ body {
         height: 1px;
         background-color: #8f8f91;
         margin: 0;
+    }
+}
+
+.wrapper-body-product {
+    display: none;
+}
+
+.wrapper-body-productPC {
+    margin-top: 44px;
+    width: 100%;
+    /* background-color: #1d1d1f; */
+    height: auto;
+}
+
+.notification-headerPC {
+    background-color: #1d1d1f;
+    width: 100%;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-ntf-headerPC {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    letter-spacing: -.01em;
+    color: var(--white);
+    margin: 0 90px;
+}
+
+.link-ntfPC {
+    display: flex;
+    justify-content: center;
+}
+
+.link-ntfPC>a {
+    text-decoration: none;
+    color: #2997ff;
+}
+
+.link-ntfPC>a:hover {
+    text-decoration: underline;
+}
+
+.menu-chose-productPC {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-headerPC>h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.quick-lookPC {
+    margin-top: 26px;
+}
+
+.quick-lookPC>a {
+    font-size: 24px;
+    line-height: 1.33341;
+    font-weight: 400;
+    letter-spacing: .009em;
+    color: royalblue;
+    text-decoration: none;
+}
+
+.quick-lookPC>a:hover {
+    text-decoration: underline;
+}
+
+.product-sell-PC {
+    display: flex;
+    margin-top: 66px;
+}
+
+.detail-product-PC {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-product-newPC {
+    color: #bf4800;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.color-productPC {
+    margin: 10px;
+}
+
+.price-offPC {
+    line-height: 2;
+}
+
+.price-offPC>span {
+    font-size: 14px;
+    color: #6c6c71;
+}
+
+.status-product-namePC>h3 {
+    font-size: 18px;
+    line-height: 14px;
+    /* margin-bottom: 4px; */
+}
+
+.status-product-namePC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy-productPC {
+    margin-top: 8px;
+}
+
+.btn-buyPC {
+    border-radius: 15px;
+    width: 50px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: royalblue;
+    color: #fff;
+    font-size: 13px;
+}
+
+.line-productPC {
+    width: 200px;
+    height: 1px;
+    background-color: var(--black);
+}
+
+.status-product-namePC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-productPC {
+    margin-bottom: 22px;
+}
+
+.name-productPC {
+    line-height: 8px;
+}
+
+.resolution-detailPC {
+    margin-top: 12px;
+}
+
+.resolution-detailPC>h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.function-resolutionPC {
+    font-size: 14px;
+    color: #6c6c71;
+}
+
+.function-PC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.chip-productPC {
+    text-align: center;
+    margin-top: 24px;
+    line-height: 24px;
+}
+
+.chip-productPC>div {
+    font-size: 14px;
+    color: #6c6c71;
+}
+
+.camera-producPC>div {
+    font-size: 14px;
+    color: #6c6c71;
+}
+
+.name-function {
+    margin-top: 12px;
+    color: #1d1d1f;
+}
+
+.camera-producPC {
+    text-align: center;
+    margin-top: 24px;
+    line-height: 24px;
+}
+
+.function-PC>span {
+    font-size: 15px;
+    color: #6c6c71;
+    margin-top: 8px;
+}
+
+.banner-productPC {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.title-bannerPC {
+    font-size: 56px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.children-bannerPC {
+    z-index: 889;
+    position: absolute;
+    top: 225px;
+    left: 46%;
+    right: -50%;
+    bottom: -50%;
+}
+
+.parent-img-bannerPC {
+    padding: 0 70px;
+}
+
+@media only screen and (max-width: 734px) {
+    .wrapper-body-productPC {
+        display: none;
+    }
+    .wrapper-body-product {
+        margin-top: 48px;
+        display: block;
+    }
+    .notification-header {
+        background-color: #1d1d1f;
+        width: 100%;
+        height: 83px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-ntf-header {
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 500;
+        letter-spacing: -.01em;
+        color: var(--white);
+        margin: 0 90px;
+    }
+    .link-ntf {
+        display: flex;
+        justify-content: center;
+    }
+    .link-ntf>a {
+        text-decoration: none;
+        color: #2997ff;
+    }
+    .link-ntf>a:hover {
+        text-decoration: underline;
     }
 }
