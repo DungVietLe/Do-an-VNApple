@@ -18,7 +18,6 @@ var ArraycolorImage = [
 //     }
 
     angleleft.onclick = function(){
-
         for(let i = 0; i < ArraycolorImage[i]; i++)
         console.log(ArraycolorImage[i])
         // Valueimg.src = ArraycolorImage[]
