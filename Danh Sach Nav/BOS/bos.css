@@ -1,0 +1,94 @@
+
+.BosBody{
+    background-color: white
+}
+
+.bos86{
+    background: url(/images/smart-secure-banner.png);
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    text-align: center;
+    height: 429px;
+    margin-bottom: 40px;
+    margin-top: 44px;
+}
+.inforBos{
+    margin-left: 156px;
+    margin-right: 156px;
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 40px;
+}
+.contentinforBos{
+    width: 665px;
+    height: auto;
+    
+}
+.contentinforBos h1{
+    font-size: 40px;
+    color: black;
+}
+.contentinforBos p{
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 35px;
+}
+.tranf-img-bos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+}
+.imga{
+    width: 350px ;
+    height: auto;
+}
+.ios146{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 156px;
+    margin-right: 156px;
+    justify-content: space-around;
+}
+.ios14Imgbanner{
+    width: 408px;
+    height: auto;
+    border-radius: 30px;
+}
+.ios146Content{
+    width: 467px;
+}
+
+.directional{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.contentDirectional{
+    width: 550px;
+    margin-top: 150px;
+}
+.Images-directional{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Images-directional i{
+    color: black;
+    font-size: 80px;
+}
+.fa-angle-left{
+    position: absolute;
+    top: 50%;
+}
+.fa-angle-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.Images-directional i:hover{
+    color: red;
+}
+
