@@ -5,3 +5,88 @@
 .bodyEsim{
     margin-top: 44px;
 }
+.headerEsim{
+    font-size: 40px;
+    color: #00B5E3;
+    font-family: Open Sans;
+    padding-bottom: 62px;
+    padding-top: 62px;
+}
+.ulEsim{
+    list-style:decimal;
+    
+}
+ul{
+    padding: 13px;
+    padding-inline-start: 0px;
+}
+.listconli{
+    padding-inline-start:30px;
+}
+.ulEsim li {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #000000;
+}
+.ullistesim li {
+    font-weight: normal;
+    list-style:disc;
+    font-size: 18px;
+    
+}
+.listconli li {
+    list-style:square;
+}
+.pasxa{
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.ullistesimDatMua{
+    padding: 0px 2px;
+}
+.ullistesimi{
+    font-weight: normal;
+}
+
+.tutorial{
+    width: 1160px;
+}
+.cacbuoc{
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.tutorialInforFisrt{
+    width: 570px;
+}
+.tutorialInfor{
+    display: flex;
+    justify-content: space-around;
+}
+.tutorialInforEnd{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.tutorial h3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.tutorialInforFisrtContent {
+    font-size: 18px;
+}
+.contentb4{
+    font-size: 18px;
+}
+.b4{
+    font-size: 18px;
+    color: #000000;
+    padding-top: 50px;
+}
+.fa-dot-circle{
+    font-weight: normal;
+    font-size: 15px;
+}
