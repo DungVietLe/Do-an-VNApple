@@ -1,15 +1,62 @@
 .macBody-1{
     display: flex;
     justify-content: center;
-    margin-top: 144px;
+    margin-top: 54px;
     margin-bottom: 100px;
 }
 .macBody-1-content{
     width: 980px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
 }
-.macBody-1-img{
+.macBody-1-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.content-new{
+    font-weight: 600;
+    background: rgba(0,0,0,0);
+    border-color: #bf4800;
+    color: #f56300;
+}
+.content-imac{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+.content-sayhelo{
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+}
+.buyphoneplay{
+    margin:auto;
+}
+.content-learnmore{
+    color: #06c;
+letter-spacing: inherit;
+}
+.hero-imac-24-image{
+    width: 1070px;
+    height: 446px;
+    background-size: 1070px 446px;
+    background-repeat: no-repeat;
     background-image: url(/images/khampha/hero_imac_24__eq5phrdpwjyq_large_2x.jpg);
+    position: relative;
+    left: 50%;
+    margin-left: -535px;
+    margin-top: 32px;
+}
+.macBody-2{
+    display: flex;
+    justify-content: center;
+}
+.macBody-2-content{
+    width: 980px;
+    
 }
