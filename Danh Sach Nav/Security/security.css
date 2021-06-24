@@ -41,12 +41,13 @@ body{
 .aboutSecurity-content{
     background-color: rgb(27, 27, 27);
     width: 680px ;
-    text-align: center;
+    text-align: justify;
 } 
 .aboutSecurity-content-header{
     padding-top: 142px;
     color:  #FFEDCF;
      font-size: 36px;
+     width: 531px ;
      margin: auto;
 }
 .aboutSecurity-content-text{
@@ -74,8 +75,11 @@ body{
     color: rgb(245, 0, 253);
 }
 .aboutSecurity-content-text span{
-    background-color: rgb(172, 98, 33);
+    color:rgb(0, 0, 0);
+    font-weight: 540;
+    background-color: rgb(255, 186, 126);
     border-radius: 5px;
+    padding: 5px;
 }
 .fa-camera{
     color: rgba(107, 201, 255, 0.863);
