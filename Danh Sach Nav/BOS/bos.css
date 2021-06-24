@@ -92,10 +92,12 @@ body{
     font-size: 80px;
 }
 .fa-angle-left{
+    cursor: pointer;
     position: absolute;
     top: 50%;
 }
 .fa-angle-right{
+    cursor: pointer;
     position: absolute;
     top: 50%;
     right: 0;
