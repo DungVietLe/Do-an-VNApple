@@ -79,15 +79,26 @@ margin-bottom: 62px;
 }
 .compare-Table{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
 }
-.compare-Table-body {
+.compare-Table-body{
     width: 980px;
     margin: auto;
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+    position: relative;
+    /* visibility: hidden; */
+}
+.iMac{
+    position: absolute;
+    width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    /* visibility: hidden; */
 }
 .resver-compare-Table{
     width: 250px;
@@ -102,7 +113,7 @@ margin-bottom: 62px;
     width: 276px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:center;
 }
 .image-compare-mba{
     background-image: url(/images/khampha/compare_mba__gdncw5gbxoq6_large.png);
@@ -198,4 +209,31 @@ height: 44px;}
     line-height: 1.381;
     font-weight: 400;
     letter-spacing: .011em;
+}
+
+
+.imgimgiconcolor-4{
+    margin:auto;
+    width: 175px;
+    height: 19px;
+}
+.imgimacpro{
+    height: ;
+}
+.h3papdingtop{
+    margin-top:28px;
+}
+.OnMac{
+    color: rgb(204, 255, 19);
+    border-bottom: solid 1px black;
+    cursor: pointer;
+}
+.OffMac{
+    cursor: pointer;
+}
+.OnMac:hover{
+    color: red;
+}
+.OffMac:hover{
+    color: red;
 }
