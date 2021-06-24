@@ -131,8 +131,8 @@
     margin:10px;
 }
 .img-body3 {
-    height: 750px;
-    background-color:black;
+    height: 624px;
+    display:none;
     justify-content: space-between;
     
 }
