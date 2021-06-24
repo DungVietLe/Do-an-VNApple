@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.banerSecurity{
+    height: 328px;
+    background: url(/images/imgSecurity/anti-theft-banner.png);
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    margin-top: 44px;
+}
+.headerbanerSecurity{
+    padding-top: 100px;
+    font-size: 40px;
+    letter-spacing: -0.9px;
+}
+.ContentbanerSecurity{
+    margin: auto;
+    color: #ECD2A5;
+    font-size: 20px;
+    margin-top: 21px;
+    line-height: 35px;
+    width: 742px;
+}
+
+.aboutSecurity{
+    width: 1160px;
+    margin: auto;
+    display: flex;
+    border-bottom: 5px solid rgb(87, 97, 126);
+}
+.aboutSecurity-Icon{
+    background-color:  rgb(27, 27, 27);
+    width: 480px;
+    height: 580px;
+    ;
+}
+.aboutSecurity-content{
+    background-color: rgb(27, 27, 27);
+    width: 680px ;
+    text-align: justify;
+} 
+.aboutSecurity-content-header{
+    padding-top: 142px;
+    color:  #FFEDCF;
+     font-size: 36px;
+     width: 531px ;
+     margin: auto;
+}
+.aboutSecurity-content-text{
+    width: 531px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #ECD2A5;
+    line-height: 35px;
+    margin: auto;
+}
+.aboutSecurity-Icon{
+    position: relative;
+}
+.faricon{
+    position: absolute;
+    right: 180px;
+    top: 220px;
+    color: orangered;
+    font-size: 125px;
+}
+.fa-lock{
+    color: rgb(24, 207, 24);
+}
+.fa-map-marker-alt{
+    color: rgb(245, 0, 253);
+}
+.aboutSecurity-content-text span{
+    color:rgb(0, 0, 0);
+    font-weight: 540;
+    background-color: rgb(255, 186, 126);
+    border-radius: 5px;
+    padding: 5px;
+}
+.fa-camera{
+    color: rgba(107, 201, 255, 0.863);
+}
+.fa-volume-up{
+    color: rgb(255, 41, 41);
+}
+.contentFooter{
+    width: 1160px;
+    margin: auto;
+    color: #ECD2A5;
+}
+.contentFooter p{
+    font-size: 25px;
+    margin: auto;
+    width: 800px;
+    padding-top: 95px;
+    
+}
+.contentFooter ul{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.contentFooter ul li {
+    padding: 10px 0px;
+}

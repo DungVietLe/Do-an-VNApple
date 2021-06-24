@@ -1,6 +1,6 @@
 
-.BosBody{
-    background-color: white
+body{
+    background-color:#212529
 }
 
 .bos86{
@@ -15,10 +15,10 @@
     margin-top: 44px;
 }
 .inforBos{
-    margin-left: 156px;
-    margin-right: 156px;
+    width: 930px;
+    margin: auto;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     margin-bottom: 40px;
 }
 .contentinforBos{
@@ -28,54 +28,66 @@
 }
 .contentinforBos h1{
     font-size: 40px;
-    color: black;
+    
+    color: #ffedcf;
+
 }
 .contentinforBos p{
-    color: black;
+    color: #ecd2a5;
     font-size: 20px;
     margin-top: 25px;
     line-height: 35px;
 }
 .tranf-img-bos{
+    width: 930px;
+    margin: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content:space-between;
 }
 .imga{
-    width: 350px ;
+    width: 340px ;
     height: auto;
+}
+.imga-1{
+    margin-left: 203px;
 }
 .ios146{
+    width: 970px;
     display: flex;
+    margin: auto;
+    justify-content:space-around;
     margin-top: 100px;
-    margin-left: 156px;
-    margin-right: 156px;
-    justify-content: space-around;
 }
 .ios14Imgbanner{
-    width: 408px;
-    height: auto;
-    border-radius: 30px;
+    height: 340px;
+    border-radius: 10px;
+    margin-right: 15px;
 }
 .ios146Content{
-    width: 467px;
+    color: white;
 }
 
 .directional{
-    margin-top: 25px;
+    width: 980px;
+    margin:auto;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 .contentDirectional{
-    width: 550px;
-    margin-top: 150px;
+    color: white;
+    width: 400px;
+    margin-top: 100px;
 }
 .Images-directional{
+    margin-left: 110px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 .Images-directional i{
+    transition:step-end;
     color: black;
     font-size: 80px;
 }
@@ -91,4 +103,62 @@
 .Images-directional i:hover{
     color: red;
 }
+.BosSecrity{
+    margin-top: 100px;
+    width: 930px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    
+}
+.ContentBosSecrity{
+    color: white;
+    border-left: 5px solid black;
+    padding-top: 120px;
+    padding-left: 30px;
+}
+.headerContentBosSecrity{
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: #FFEDCF;
+    line-height: 52px;
+}
+.textContentBosSecrity{
+    font-size: 20px;
+    width: 471px;
+    color: #ECD2A5;
+    line-height: 35px;
+}
+.BosSecrity2{
+    margin-top: 100px;
+    width: 930px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 5px solid black;
+}
+#ContentBosSecritynew{
+    margin-right: -15px;
+    border-left: none;
+    border-right: 5px solid black;
+}
+.inforSec{
+    margin-bottom: 10px;
+    margin-top: 56px;
+    border: 2px solid #707070;
+    width: 486px;
+    border-radius: 25px;
+    height: 52px;
+    text-align: center;
+    padding: 11px;
+}
 
+.inforSecurity{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Open Sans;
+    color: #707070;
+    line-height: 25px;
+}

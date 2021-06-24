@@ -22,13 +22,13 @@
             <!-- nav PC -->
             <nav class="nav">
                 <div class="nav-product"><a href="/index.html" class="icon-home"><i class="fab fa-apple"></i></a></div>
-                <div class="nav-product"><a href="/product.html">Product</a></div>
+                <div class="nav-product"><a href="/Danh Sach Nav/product/product.html">Product</a></div>
                 <div class="nav-product"><a href="/Danh Sach Nav/Store/store.html">Store</a></div>
-                <div class="nav-product"><a href="">Discover</a></div>
-                <div class="nav-product"><a href="https://www.apple.com/watch/">Photo</a></div>
-                <div class="nav-product"><a href="https://www.apple.com/tv/">BOS</a></div>
-                <div class="nav-product"><a href="">Security</a></div>
-                <div class="nav-product"><a href="">eSIM</a></div>
+                <div class="nav-product"><a href="/Danh Sach Nav/">Discover</a></div>
+                <div class="nav-product"><a href="/Danh Sach Nav/Photo/photo.html">Photo</a></div>
+                <div class="nav-product"><a href="/Danh Sach Nav/BOS/bos.html">BOS</a></div>
+                <div class="nav-product"><a href="/Danh Sach Nav/Security/security.html">Security</a></div>
+                <div class="nav-product"><a href="/Danh Sach Nav/Esim/esim.html">eSIM</a></div>
                 <div id="search-nav" class="nav-product"><a href="" class="icon-home"><i class="fas fa-search"></i></a></div>
                 <div id="search-bag" class="nav-product"><a href="" class="icon-home"><i class="fas fa-shopping-bag"></i></a></div>
 
@@ -108,7 +108,7 @@
             </div>
             <div class="tranf-img-bos ">
                 <div class="imgcontentinforBos ">
-                    <img class="imga" src="/images/iphone-xr-bos.png" alt="">
+                    <img class="imga " src="/images/iphone-xr-bos.png" alt="">
                 </div>
                 <div class="imgcontentinforBos2 ">
                     <img class="imga" src="/images/iphone-xr-blue-bos.png" alt="">
@@ -116,9 +116,9 @@
                 <div class="imgcontentinforBos3 ">
                     <img class="imga" src="/images/iphone-xr-red-bos.png" alt="">
                 </div>
-                <div class="imgcontentinforBos4 ">
-                    <img class="imga" src="/images/iphone-xr-yellow-bos.png" alt="">
-                </div>
+                <!-- <div class="imgcontentinforBos4 ">
+                    <img class="imga imga-1"" src="/images/iphone-xr-yellow-bos.png" alt="">
+                </div> -->
             </div>
             <div class="ios146">
                 <div class="ios146Img" >
@@ -145,15 +145,59 @@
                     </p>
                 </div>    
                 <div class="Images-directional">
-                         <button id ="angleleft"> <i  class="fas fa-angle-left"></i></button>
+                        <i onclick="angleleftFun()" class="fas fa-angle-left"></i>
                         <img id="Imagesdirectionalvalueimg" src="/images/iphone-xr-bos.png" alt="">
-                         <button id ='angleright' ><i class="fas fa-angle-right"></i> </button>
-                    </div>
-                        
+                        <i onclick="anglerightFun()" class="fas fa-angle-right"></i>
                 </div>
-                
+                </div>
+            <div class="BosSecrity">
+                <div class="imgBosSecrity" >
+                    <img src="/images/iphone-xr-bos.png" alt="">
+                </div>
+                <div class="ContentBosSecrity">
+                    <p class="headerContentBosSecrity">Điện thoại bảo mật nhất hiện nay</p>
+                    <p class="textContentBosSecrity">Apple có thực sự là một công ty đảm bảo quyền riêng tư của người dùng
+                         hay không, iPhone 11 vẫn nằm trong danh sách những điện thoại bảo mật nhất hiện nay.</p>
+                </div>
+            </div>
+            <div class="BosSecrity2 ">
+                <div class="imgBosSecrity" >
+                    <img src="/images/iphone-xr-bos.png" alt="">
+                </div>
+                <div class="ContentBosSecrity" id = "ContentBosSecritynew">
+                    <p class="headerContentBosSecrity">Chống trộm sâu trong phần cứng</p>
+                    <p class="textContentBosSecrity">Không hãng smartphone nào có thể tích hợp công nghệ Chống trộm sâu 
+                        trong phần cứng như Bphone, do vậy với các smartphone khác
+                         kẻ gian chỉ cần khôi phục cài đặt gốc (Factory Reset) để sử dụng nhưng với Bphone thì bất khả thi.</p>
+                </div>
+            </div>
+            <div class="BosSecrity2 ">
+                <div class="imgBosSecrity" >
+                    <img src="/images/iphone-xr-bos.png" alt="">
+                </div>
+                <div class="ContentBosSecrity" id = "ContentBosSecritynew">
+                    <p class="headerContentBosSecrity">89% khách hàng tìm lại được máy</p>
+                    <p class="textContentBosSecrity">Bạn có thể khóa máy từ xa để bảo mật mọi thông tin, lấy tọa độ, chụp ảnh, 
+                        cho máy kêu to… đồng thời thông báo với nội dung bạn mong muốn đến người đang cầm máy. 
+                        89% khách hàng đã tìm lại được sau khi máy bị mất trộm, thất lạc</p>
+                </div>
+            </div>
+            <div class="BosSecrity">
+                <div class="imgBosSecrity" >
+                    <img src="/images/iphone-xr-bos.png" alt="">
+                </div>
+                <div class="ContentBosSecrity">
+                    <p class="headerContentBosSecrity">Không quảng cáo hay tin nhắn rác</p>
+                    <p class="textContentBosSecrity">Sự khác biệt khi sử dụng IOS 14.6 là bạn hoàn toàn thảnh thơi, không bị làm phiền bởi tin nhắn rác, 
+                        các hình ảnh quảng cáo bật lên liên tục hay phải nhận các cuộc gọi rác đang nở rộ hiện nay. 
+                        Tất cả sẽ được loại bỏ bởi công nghệ Chặn spam đã được mọi khách hàng của Iphone yêu thích</p>
+                    <div class="inforSec">
+                        <a class ="inforSecurity" href="/Danh Sach Nav/Security/security.html"> Xem chi tiết về security</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
         <div class="footer-wrapper">
             <div class="footer-header">
                 <div class="footer-icon">
