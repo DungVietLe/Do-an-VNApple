@@ -31,6 +31,7 @@
     border-top: 1px solid #d6d6d6;
     z-index: 9999;
     background-color: hsla(0, 0%, 100%, .72);
+    top: 44px;
 }
 
 .price-iphonePC {
@@ -56,6 +57,8 @@
 
 .detail-img-iphone12proPC>img {
     width: 400px;
+    /* position: fixed;
+    margin-left: -162px; */
 }
 
 .detail-iphone12proPC {
@@ -76,4 +79,148 @@
     font-weight: 600;
     letter-spacing: 0;
     padding-bottom: 11px;
+}
+
+.content-detail-title-selPC>p {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 3px 0 2px;
+    color: #1d1d1f;
+}
+
+.content-detail-choose-ipPC {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.content-detail-question-ipPC>a {
+    font-size: 12px;
+    color: #06c;
+    text-decoration: none;
+    margin: 0 0 12px 12px;
+}
+
+.content-detail-btn-choose-ip12PC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 412px;
+    height: 90px;
+    border: 1px solid #d2d2d7;
+    cursor: pointer;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+.content-detail-btn-choose-ip12prPC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 412px;
+    height: 90px;
+    border: 1px solid #d2d2d7;
+    cursor: pointer;
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+.name-detail-choose-ipPC {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+.btn-name-ipPC {
+    font-size: 17px;
+    padding-right: 95px;
+    /* width: -webkit-fill-available; */
+}
+
+.content-detail-btn-choose-ipPC:hover {
+    border: 1px solid #0071e3;
+}
+
+.content-detail-ip12pr-namePC {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.content-detail-btn-color-boxPC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 100px;
+    border: 1px solid #d2d2d7;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+}
+
+.content-detail-img-colorPC>img {
+    width: 32px;
+    height: 32px;
+}
+
+.content-detail-img-namePC {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.content-detail-img-colorPC>img {
+    border: none;
+}
+
+.content-detail-btn-color-ipPC {
+    display: flex;
+}
+
+.content-detail-last-stepPC {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.detail-delivery-producPC {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.detail-shipPC {
+    text-align: center;
+}
+
+.chat-content-producPC {
+    display: flex;
+    justify-content: center;
+}
+
+.chat-questionPC {
+    margin-left: 12px;
+    line-height: 18px;
+}
+
+.link-chat-questionPC>a {
+    font-size: 14px;
+    text-decoration: none;
+    color: royalblue;
+    /* line-height: 8px; */
+}
+
+.link-chat-questionPC>a:hover {
+    text-decoration: underline;
+}
+
+#color-product-GraphitePC {
+    border: 1px solid royalblue;
 }

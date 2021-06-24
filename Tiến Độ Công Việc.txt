@@ -1,0 +1,24 @@
+
+
+*****23/06/2021***
+Nhóm có 3: 4 thành viên( Khương Duy, Duy Tuấn, Việt Dũng, Mai Trà, Văn Cẩm)
+
+Thực hiện đẩy sroure lên git hub
+
+Hỗ trợ tất cả thành viên làm quen, và làm việc nhóm với git
+nhóm  
+
+Phân Công Công Việc, với từng thành viên một trang trên thanh Nav
+
+hai thành viên: Mai Sơn Trà, Nguyễn Văn Cẩm xin rời nhóm, vì lí do bận trên trường
+
+***24/06/2021*****
+
+Các thành viên thực hiện trang web được phân công, hỗ trợ lẫn nhau.
+
+Hoàn thành khoảng 90% giao diện tĩnh html, css của PC.'
+
+fix một số lỗi và hoàn thiện giao diện trên PC
+
+
+

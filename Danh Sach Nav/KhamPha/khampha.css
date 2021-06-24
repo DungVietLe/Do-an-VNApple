@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 54px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .macBody-1-content{
     width: 980px;
@@ -58,5 +58,144 @@ letter-spacing: inherit;
 }
 .macBody-2-content{
     width: 980px;
+     display: flex;
+    justify-content: center;
+}
+.macBody-2-content-text{
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+}
+.macBody-2-content-text-h2{
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+}
+.macBody-2-content-text-p{
+    color: #06c;
+letter-spacing: inherit;
+margin-top: 32px;
+margin-bottom: 62px;
+}
+.compare-Table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.compare-Table-body {
+    width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.resver-compare-Table{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.resver-compare-Table p{
+    font-size: 17px;
+}
+.compare-Table-product{
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.image-compare-mba{
+    background-image: url(/images/khampha/compare_mba__gdncw5gbxoq6_large.png);
+    background-size: 276px 167px;
+    background-repeat: no-repeat;
+}
+.compare-Table-product-header{
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.compare-Table-product-coin{
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    margin-bottom: 0px;
+}
+.imgiconcolor{
+    width: 70px;
+height: 19px;
+margin-left: 105px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.btnmac13Pc{
+    margin-top: 10px;
+    margin-left: 114px;
+}
+.btnmac13Pc a{
+    color: white;
+}
+.compare-Table-detail{
+    border-top: 1px solid #d2d2d7;;
+    margin-top: 10px;
+    padding-top: 40px;
+}
+.compare-Table-detail-h4{
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
+}
+.compare-Table-detail-p{
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.compare-Table-detail-iconchip{width: 48px;
+height: 44px;}
+
+.compare-Table-detail-icon3cai{
+    width: 165px;
+    height: 38px;
+}
+.Vitrual-Section{
+    width: 1160px;
+    margin: auto;
+    display: flex;
     
+}
+.Vitrual-Section-Content{
+    width: 575px;
+    display: flex;
+    position: relative;
+}
+.Vitrual-Section-img img{
+    width: 703px;
+    height: 504px;
+}
+.Vitrual-Section-Content-box{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+.Vitrual-Section-Content-box h2{
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+}
+.Vitrual-Section-Content-box h3{
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+}
+.Vitrual-Section-Content-box p{
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
 }
