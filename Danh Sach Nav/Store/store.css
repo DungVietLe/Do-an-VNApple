@@ -1,7 +1,6 @@
 .Store{
-    /* margin-top: 44px; */
-    display: flex;
-    flex-direction: column;
+    width: 1260px;
+    margin: auto;
 }
 .header-nav{
     /* position: fixed; */
