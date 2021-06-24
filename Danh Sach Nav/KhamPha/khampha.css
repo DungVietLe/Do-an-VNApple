@@ -1,0 +1,15 @@
+.macBody-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 144px;
+    margin-bottom: 100px;
+}
+.macBody-1-content{
+    width: 980px;
+    display: flex;
+    justify-content: center;
+
+}
+.macBody-1-img{
+    background-image: url(/images/khampha/hero_imac_24__eq5phrdpwjyq_large_2x.jpg);
+}
