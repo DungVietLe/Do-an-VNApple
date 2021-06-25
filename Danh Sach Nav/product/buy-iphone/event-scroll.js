@@ -29,10 +29,12 @@ chooseIphone12pr.addEventListener("click", function(e) {
     if (chooseIphone12.style.border = "1px solid royalblue") {
         chooseIphone12.style.border = "1px solid #d2d2d7"
     }
+    check = 2;
+    console.log(check);
 })
+var check;
 chooseIphone12.addEventListener("click", function(e) {
     e.preventDefault()
-
     images.src = "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
     if (chooseIphone12.style.border != "1px solid royalblue") {
         chooseIphone12.style.border = "1px solid royalblue"
@@ -40,6 +42,8 @@ chooseIphone12.addEventListener("click", function(e) {
     if (chooseIphone12pr.style.border = "1px solid royalblue") {
         chooseIphone12pr.style.border = "1px solid #d2d2d7"
     }
+    check = 1;
+    console.log(check);
 })
 
 colorGraphite.addEventListener("click", function(e) {
@@ -50,9 +54,15 @@ colorGraphite.addEventListener("click", function(e) {
         colorBlue.style.border = "1px solid #d2d2d7";
         colorGold.style.border = "1px solid #d2d2d7";
     }
-    if (images.src != "") {
+
+    if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png";
     }
+    if (check === 2) {
+        images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png";
+    }
+
+
 
 })
 colorSliver.addEventListener("click", function(e) {
@@ -64,9 +74,14 @@ colorSliver.addEventListener("click", function(e) {
         colorGraphite.style.border = "1px solid #d2d2d7";
         colorGold.style.border = "1px solid #d2d2d7";
     }
-    if (images.src != "") {
+    if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone12pro-sliver.png";
     }
+    if (check === 2) {
+        images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-silver-hero.png";
+    }
+
+
 
 
 })
@@ -78,14 +93,13 @@ colorGold.addEventListener("click", function(e) {
         colorGraphite.style.border = "1px solid #d2d2d7";
         colorBlue.style.border = "1px solid #d2d2d7";
     }
-    if (images.src != "") {
+
+    if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-gold-hero.png";
     }
-    // if (images.src = "http://127.0.0.1:5500/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png") {
-    //     console.log(images.src);
-    //     images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-silver-hero.png";
-
-    // }
+    if (check === 2) {
+        images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-gold-hero.png";
+    }
 })
 colorBlue.addEventListener("click", function(e) {
     e.preventDefault()
@@ -95,7 +109,12 @@ colorBlue.addEventListener("click", function(e) {
         colorSliver.style.border = "1px solid #d2d2d7";
         colorGraphite.style.border = "1px solid #d2d2d7";
     }
-    if (images.src != "") {
+
+    if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-blue-hero.png";
     }
+    if (check === 2) {
+        images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-blue-hero.png";
+    }
+
 })
