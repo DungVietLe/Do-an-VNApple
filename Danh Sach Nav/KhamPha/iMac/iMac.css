@@ -74,13 +74,16 @@
 }
 
 .content-detail-ip12pr-namePC {
-    font-size: 40px;
+    /* font-size: 70px; */
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: 0;
     padding-bottom: 11px;
-    
 }
+.content-detail-ip12pr-namePC h2{
+    font-size: 60px;
+}
+
 .content-detail-title-selPC{
     display: flex;
     justify-content: center;
