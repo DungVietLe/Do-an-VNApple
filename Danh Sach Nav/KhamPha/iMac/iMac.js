@@ -21,7 +21,7 @@ let macpropro = document.querySelector('.macpropro')
 
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
-    images.src = "/images/khampha/macbook13pro.png";
+    images.src = "/images/khampha/imac2.png" ;
     if (chooseIphone12pr.style.border = "1px solid #d2d2d7") {
 
         chooseIphone12pr.style.border = "1px solid royalblue"
@@ -32,26 +32,17 @@ chooseIphone12pr.addEventListener("click", function(e) {
     if (macpropro.style.border ="1px solid royalblue") {
         macpropro.style.border = "1px solid #d2d2d7"
     }
-    changePrice.innerText = '1299$ USD'
-    if(Color){
-        newProduct = {
-       name: "Mac Book Air",
-       coin: '999$ USD',
+    changePricea.innerText = '1799$ USD';
+    newProduct = {
+       name: 'iMac 27"',
+       coin: '1799$ USD',
        color: 'Graphite'
-       }
-   }
-   else{
-       newProduct = {
-       name: "Mac Book Air",
-       coin: '999$ USD',
-       color: 'Sliver'
-       }
-   }
+    }
 })
 chooseIphone12.addEventListener("click", function(e) {
     e.preventDefault()
 
-    images.src = "/images/khampha/macbook13pro.png"
+    images.src = "/images/khampha/imac1.png"
     if (chooseIphone12.style.border = "1px solid #d2d2d7") {
         chooseIphone12.style.border = "1px solid royalblue"
     }
@@ -61,26 +52,16 @@ chooseIphone12.addEventListener("click", function(e) {
     if (macpropro.style.border ="1px solid royalblue") {
         macpropro.style.border = "1px solid #d2d2d7"
     }
-    changePrice.innerText = '999$ USD'
-    if(Color){
-         newProduct = {
-        name: "Mac Pro 13 ",
+    changePricea.innerText = '1299$ USD'
+        newProduct = {
+        name: 'iMac 27"',
         coin: '1299$ USD',
         color: 'Graphite'
         }
-    }
-    else{
-        newProduct = {
-        name: "Mac Pro 13",
-        coin: '1299$ USD',
-        color: 'Sliver'
-        }
-    }
-   
 })
 macpropro.addEventListener("click", function(e) {
     e.preventDefault()
-    images.src = "/images/khampha/macbook13-1.png"
+    images.src = "/images/khampha/imacpro.png"
     if (chooseIphone12.style.border = "1px solid royalblue") {
         chooseIphone12.style.border = "1px solid #d2d2d7"
     }
@@ -90,49 +71,38 @@ macpropro.addEventListener("click", function(e) {
     if (macpropro.style.border = "1px solid #d2d2d7") {
         macpropro.style.border = "1px solid royalblue"
     }
-    changePrice.innerText = '2999$ USD'
-    if(Color){
+    changePricea.innerText = '5999$ USD'
         newProduct = {
-       name: "Mac Book 16 Pro",
-       coin: '2999$ USD',
+       name: "iMac Pro",
+       coin: '5999$ USD',
        color: 'Graphite'
        }
-   }
-   else{
-       newProduct = {
-        name: "Mac Book 16 Pro",
-        coin: '2999$ USD',
-       color: 'Sliver'
-       }
-   }
-    
 })
 
-colorGraphite.addEventListener("click", function(e) {
-    e.preventDefault()
-    if (colorGraphite.style.border != "1px solid royalblue") {
-        colorGraphite.style.border = "1px solid royalblue";
-        colorSliver.style.border = "1px solid #d2d2d7";
-    }
-    if (images.src != "") {
-        images.src = "/Danh Sach Nav/KhamPha/Mac/imgMac/space-select.jfif";
-    }
-    Color = true;
-})
-colorSliver.addEventListener("click", function(e) {
-    e.preventDefault()
-    if (colorSliver.style.border != "1px solid royalblue") {
-        colorSliver.style.border = "1px solid royalblue";
-        colorGraphite.style.border = "1px solid #d2d2d7";
-    }
-    if (images.src != "") {
-        images.src = "/Danh Sach Nav/KhamPha/Mac/imgMac/mac1-sliver.jfif";
-    }
-    Color = false;
-})
+// colorGraphite.addEventListener("click", function(e) {
+//     e.preventDefault()
+//     if (colorGraphite.style.border != "1px solid royalblue") {
+//         colorGraphite.style.border = "1px solid royalblue";
+//         colorSliver.style.border = "1px solid #d2d2d7";
+//     }
+//     if (images.src != "") {
+//         images.src = "/Danh Sach Nav/KhamPha/Mac/imgMac/space-select.jfif";
+//     }
+//     Color = true;
+// })
+// colorSliver.addEventListener("click", function(e) {
+//     e.preventDefault()
+//     if (colorSliver.style.border != "1px solid royalblue") {
+//         colorSliver.style.border = "1px solid royalblue";
+//         colorGraphite.style.border = "1px solid #d2d2d7";
+//     }
+//     if (images.src != "") {
+//         images.src = "/Danh Sach Nav/KhamPha/Mac/imgMac/mac1-sliver.jfif";
+//     }
+//     Color = false;
+// })
 
-var changePrice = document.querySelector('#changePrice-ipPC')
-console.log(changePrice.innerText)
+var changePricea = document.querySelector('#changePrice-ipPC')
 
 
 //theem sanr pham 
@@ -149,24 +119,18 @@ customBTN.onclick = function(){
         chooseIphone12.style.border = "1px solid #d2d2d7"
         chooseIphone12pr.style.border = "1px solid #d2d2d7"
         macpropro.style.border ="1px solid #d2d2d7"
-        colorGraphite.style.border = "1px solid #d2d2d7"
-        colorSliver.style.border = "1px solid #d2d2d7";
         productArray.push(newProduct)
     }
     else if (chooseIphone12pr.style.border = "1px solid royalblue") {
         chooseIphone12.style.border = "1px solid #d2d2d7"
         chooseIphone12pr.style.border = "1px solid #d2d2d7"
         macpropro.style.border = "1px solid #d2d2d7"
-        colorGraphite.style.border = "1px solid #d2d2d7"
-        colorSliver.style.border = "1px solid #d2d2d7";
         productArray.push(newProduct)
     }
     else{
         chooseIphone12.style.border = "1px solid #d2d2d7"
         chooseIphone12pr.style.border = "1px solid #d2d2d7"
         macpropro.style.border ="1px solid #d2d2d7"
-        colorGraphite.style.border = "1px solid #d2d2d7"
-        colorSliver.style.border = "1px solid #d2d2d7";
         productArray.push(newProduct)
     }
     confirm("Thank you buy Apple")

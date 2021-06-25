@@ -1,93 +1,126 @@
-.Esim{
-    width: 1160px;
-    margin: auto;
-}
-.bodyEsim{
-
-    margin-top: 44px;
-}
-.headerEsim{
-    font-size: 40px;
-    color: #00B5E3;
-    font-family:Arial, Helvetica, sans-serif;
-    padding-bottom: 35px;
-    padding-top: 35px;
-}
-.ulEsim{
-    list-style:decimal;
-    
-}
-ul{
-    padding: 13px;
-    padding-inline-start: 0px;
-}
-.listconli{
-    padding-inline-start:30px;
-}
-.ulEsim li {
-    padding: 5px;
-    font-weight: 500;
-    font-size: 19px;
-    color: #000000;
-}
-.ullistesim li {
-    font-weight: normal;
-    list-style:disc;
-    font-size: 18px;
-    
-}
-.listconli li {
-    list-style:square;
-}
-.pasxa{
-    font-weight: normal;
-    font-size: 18px;
-    margin-bottom: 0px;
-}
-.ullistesimDatMua{
-    padding: 0px 2px;
-}
-.ullistesimi{
-    font-weight: normal;
-}
-
-.tutorial{
-    width: 1160px;
-}
-.cacbuoc{
-    
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.tutorialInforFisrt{
-    width: 570px;
-}
-.tutorialInfor{
-    display: flex;
-    justify-content: space-around;
-}
-.tutorialInforEnd{
-    margin: auto;
+.container-signinPC {
+    width: 100%;
+    margin: 44px auto;
+    height: 1000px;
     display: flex;
     justify-content: center;
 }
-.tutorial h3{
-    margin-top: 10px;
-    margin-bottom: 15px;
+
+.container-img-signinPC {
+    position: relative;
 }
-.tutorialInforFisrtContent {
-    font-size: 18px;
+
+.signin-box-PC {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 60px;
 }
-.contentb4{
-    font-size: 18px;
+
+.container-inputPC {
+    display: flex;
+    flex-direction: column;
 }
-.b4{
-    font-size: 18px;
-    color: #000000;
-    padding-top: 50px;
+
+.container-inputPC>input {
+    margin: 0 80px 10px 0;
+    border-radius: 12px;
+    outline: royalblue;
+    border: 1px solid #d2d2d7;
+    padding: 18px 16px 16px 16px;
+    height: 55px;
 }
-.fa-dot-circle{
-    font-weight: normal;
-    font-size: 15px;
+
+.btn-detail-siginPC {
+    width: 85%;
+    height: 55px;
+    background-color: #0071E3;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 80px 13px 0;
+}
+
+.title-siginPC>h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+    /* font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif; */
+    padding-bottom: 36px;
+    padding-top: 34px;
+}
+
+.detail-siginPC {
+    width: 500px;
+}
+
+.title-end-siginPC {
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    /* font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif; */
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-right: 41px;
+}
+
+
+/* .container-img-signinPC {
+    background-image: url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+} */
+
+.message-error {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-error.off {
+    display: none;
+}
+
+.message-errorPass {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-errorPass.off {
+    display: none;
+}
+
+.message-errorPass>i {
+    font-size: 12px;
+    color: #E30000;
+}
+
+.message-error>i {
+    font-size: 12px;
+    color: #E30000;
+}
+
+.error {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #E30000;
+}
+
+.errorPass {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #E30000;
+}
+
+#checkinput:focus {
+    border-color: #0071e3;
+    box-shadow: 0 0 0 4px rgb(0 125 250 / 60%);
+    outline: none;
+}
+
+#checkinputPass:focus {
+    border-color: #0071e3;
+    box-shadow: 0 0 0 4px rgb(0 125 250 / 60%);
+    outline: none;
 }
