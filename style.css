@@ -36,6 +36,47 @@ body {
 .nav-product>a:hover {
     opacity: 1;
 }
+.fa-shopping-bag{
+    position: relative;
+}
+.container-bag{
+    display: none;
+}
+.container-bag{
+    position:absolute;
+    top:44px;
+    left:44px;
+    width:200px;
+    height:200px;
+    border: 1px solid var(--black);
+    background-color: white;
+    z-index: 9999;
+    border-radius: 10px;
+    font-size: 14px;
+    display:none;
+}
+.title-bag{
+    color:#6e6e73;
+    display: flex;
+    justify-content: center;
+    margin:10px 0 20px 0;
+   
+    
+}
+.menu-bag{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+}
+.menu-bag a {
+    color:#06c;
+    margin-bottom: 20px;
+    text-decoration: none;
+}   
+/* .fa-shopping-bag:hover{
+    display: block;
+} */
+    
 
 .icon-home i {
     font-size: 20px;

@@ -165,3 +165,17 @@ styleIcon.addEventListener("click", function(e) {
 //     containerBody.classList.remove("modal")
 
 // })
+
+
+//Ẩn/hiện shopping bag
+let hiddenBag = document.querySelector(".fa-shopping-bag")
+let bag = document.querySelector(".container-bag");
+hiddenBag.addEventListener("click",function(e){
+    e.preventDefault();
+    
+    if(bag.style.display === "block"){
+        bag.style.display = "none"
+    }else{
+        bag.style.display = "block"
+    }
+})
