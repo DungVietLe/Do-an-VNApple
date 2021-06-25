@@ -183,6 +183,7 @@
 
 .content-detail-btn-color-ipPC {
     display: flex;
+    justify-content: space-around;
 }
 
 .content-detail-last-stepPC {
@@ -237,4 +238,29 @@
 }
 #changeIMG{
     margin-top: 100px;
+}
+.Buy-MacBook{
+    display: flex;
+    justify-content: center;
+}
+.DivButton-Buy-MacBook{
+    margin-top: 15px;
+}
+.Button-Buy-MacBook{
+    font-size: 23px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: Helvetica,Arial,sans-serif;
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border: 1px solid #07c;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding: 5px 115px;
+    text-align: center;
+    white-space: nowrap;
 }
