@@ -82,13 +82,13 @@
 }
 
 .content-detail-title-selPC>p {
-    font-size: 17px;
+    font-size: 26px;
     line-height: 1.47059;
-    font-weight: 400;
-    letter-spacing: -.022em;
+    font-weight: 600;
+    letter-spacing: 1px;
     font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    margin: 3px 0 2px;
-    color: #1d1d1f;
+    margin: 20px;
+    color: red;
 }
 
 .content-detail-choose-ipPC {

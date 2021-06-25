@@ -17,8 +17,15 @@ let colorGraphite = document.querySelector("#color-product-GraphitePC");
 let colorSliver = document.querySelector("#color-product-SliverPC");
 let colorGold = document.querySelector("#color-product-GoldPC");
 let colorBlue = document.querySelector("#color-product-BluePC")
+let stylePrice = document.querySelector(".content-detail-title-selPC");
+let animatePrice = document.getElementById("#price-animatePC")
+    // stylePrice.addEventListener("click", function() {
 
-
+//     // stylePrice.classList.add("animate__animated animate__bounce");
+//     console.log(stylePrice)
+//     stylePrice.classList.add("animate__animated");
+//     stylePrice.classList.add("animate__bounce")
+// })
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png";
@@ -31,6 +38,7 @@ chooseIphone12pr.addEventListener("click", function(e) {
     }
     check = 2;
     console.log(check);
+
 })
 var check;
 chooseIphone12.addEventListener("click", function(e) {
@@ -44,6 +52,8 @@ chooseIphone12.addEventListener("click", function(e) {
     }
     check = 1;
     console.log(check);
+
+
 })
 
 colorGraphite.addEventListener("click", function(e) {
