@@ -79,15 +79,27 @@ margin-bottom: 62px;
 }
 .compare-Table{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
 }
-.compare-Table-body {
+.compare-Table-body{
     width: 980px;
     margin: auto;
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+    position: relative;
+    /* visibility:none; */
+}
+.iMac{
+    /* overflow: hidden; */
+    position: absolute;
+    width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    /* visibility: hidden; */
 }
 .resver-compare-Table{
     width: 250px;
@@ -97,12 +109,13 @@ margin-bottom: 62px;
 }
 .resver-compare-Table p{
     font-size: 17px;
+    margin-bottom: 100px;
 }
 .compare-Table-product{
     width: 276px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:center;
 }
 .image-compare-mba{
     background-image: url(/images/khampha/compare_mba__gdncw5gbxoq6_large.png);
@@ -136,7 +149,15 @@ margin-bottom: 10px;
     margin-left: 114px;
 }
 .btnmac13Pc a{
+    text-decoration: none;
+    list-style:none;
     color: white;
+}
+.iconvienpin{
+    margin-top: 18px;
+}
+.text8tb{
+    padding-top: 20px;
 }
 .compare-Table-detail{
     border-top: 1px solid #d2d2d7;;
@@ -161,6 +182,7 @@ height: 44px;}
 .compare-Table-detail-icon3cai{
     width: 165px;
     height: 38px;
+    margin-top: 45px;
 }
 .Vitrual-Section{
     width: 1160px;
@@ -198,4 +220,33 @@ height: 44px;}
     line-height: 1.381;
     font-weight: 400;
     letter-spacing: .011em;
+}
+
+
+.imgimgiconcolor-4{
+    margin:auto;
+    width: 175px;
+    height: 19px;
+}
+.imgimacpro{
+    height: ;
+}
+.h3papdingtop{
+    margin-top:28px;
+}
+.OnMac{
+    border-bottom: solid 1px rgba(148, 148, 148, 0.651);
+    cursor: pointer;
+}
+.OffMac{
+    border-bottom: solid 1px rgba(148, 148, 148, 0.651);
+    cursor: pointer;
+}
+.OnMac:hover{
+    color: red;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+.OffMac:hover{
+    color: red;
+    border-bottom: solid 1px rgb(0, 0, 0);
 }
