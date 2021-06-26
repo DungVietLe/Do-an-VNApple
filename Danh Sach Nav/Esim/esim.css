@@ -6,14 +6,12 @@
     justify-content: center;
 }
 
-.container-img-signinPC {
-    position: relative;
-}
-
 .signin-box-PC {
-    position: absolute;
-    margin-left: 90px;
-    margin-top: 60px;
+    position: relative;
+    /* margin-left: 90px;
+    margin-top: 60px; */
+    display: flex;
+    justify-content: center;
 }
 
 .container-inputPC {
@@ -22,7 +20,7 @@
 }
 
 .container-inputPC>input {
-    margin: 0 80px 10px 0;
+    margin: 0 50px 10px 0;
     border-radius: 12px;
     outline: royalblue;
     border: 1px solid #d2d2d7;
@@ -41,6 +39,32 @@
     margin: 0 80px 13px 0;
 }
 
+.title-siginPC {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-creatPC {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title-creatPC>h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+    /* font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif; */
+    padding-bottom: 36px;
+    padding-top: 34px;
+    color: #fff;
+    position: absolute;
+    /* left: 0; */
+    top: 70px;
+}
+
 .title-siginPC>h2 {
     font-size: 40px;
     line-height: 1.1;
@@ -49,10 +73,20 @@
     /* font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif; */
     padding-bottom: 36px;
     padding-top: 34px;
+    color: #fff;
+    /* box-shadow: 10px #333; */
 }
 
 .detail-siginPC {
     width: 500px;
+    position: absolute;
+    /* margin: auto; */
+    margin-left: 88px;
+    margin-top: 40px;
+    border: 1px solid transparent;
+    box-shadow: 5px 4px 0 4px rgb(0 0 0 / 30%);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.07);
 }
 
 .title-end-siginPC {
@@ -64,6 +98,13 @@
     margin-top: 14px;
     margin-bottom: 35px;
     margin-right: 41px;
+    color: #fff;
+}
+
+.creat-idPC {
+    color: royalblue;
+    margin-bottom: 12px;
+    cursor: pointer;
 }
 
 

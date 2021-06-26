@@ -11,12 +11,27 @@ let linkDangKi = document.querySelector(".creat-idPC");
 let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
+let url = "https://sheetdb.io/api/v1/nzd7ctie6ie8u";
 
-
-let userDangki = [];
 btnDangki.addEventListener("click", function() {
-    console.log(checkDangKi.value);
-    console.log(checkPassDangki.value);
+    let userDangki = [];
+    let myObj = {
+        name: checkDangKi.value,
+        password: checkPassDangki.value
+
+    }
+    userDangki.push(myObj);
+    for (let i = 0; i < userDangki.length; i++) {
+        console.log(userDangki[i]);
+    }
+    axios.post(url, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
+    alert("Registered Successfully");
+    if (containerDangNhap.classList.contains("off") === true) {
+        containerDangNhap.classList.remove("off")
+    }
+    if (containerDangKi.classList.contains("off") === false) {
+        containerDangKi.classList.add("off")
+    }
 })
 
 
