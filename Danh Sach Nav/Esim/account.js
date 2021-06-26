@@ -28,12 +28,10 @@ axios.get(url).then( function(response){
         productArray.push(Datauser[i])
     }
 });
-console.log(productArray)
-
-
+var newuser = {}
 btnDangnhap.addEventListener("click", function(e) {
     e.preventDefault();
-    
+
 })
 
 
