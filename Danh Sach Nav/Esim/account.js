@@ -11,14 +11,30 @@ let linkDangKi = document.querySelector(".creat-idPC");
 let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
-
-
+let btnDangnhap = document.querySelector("#btn-Dangnhap");
+var url = 'https://sheetdb.io/api/v1/nzd7ctie6ie8u';
 let userDangki = [];
 btnDangki.addEventListener("click", function() {
     console.log(checkDangKi.value);
     console.log(checkPassDangki.value);
 })
 
+
+
+var productArray = []
+axios.get(url).then( function(response){
+    var Datauser = response.data
+    for(let i = 0; i < Datauser.length;i++){
+        productArray.push(Datauser[i])
+    }
+});
+console.log(productArray)
+
+
+btnDangnhap.addEventListener("click", function(e) {
+    e.preventDefault();
+    
+})
 
 
 
