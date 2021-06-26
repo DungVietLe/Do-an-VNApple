@@ -22,3 +22,25 @@ fix một số lỗi và hoàn thiện giao diện trên PC
 
 
 
+**25/06/2021**
+
+Fix lại một số giao diện pc, thêm animation, hover.
+
+Thêm js để đổi màu background, Chọn sản phẩm, đổi link trang.
+
+Đổi giá Sản phẩm, màu sản phẩm.
+
+
+**26/06/2021**
+
+Thêm trang đang nhập, đang xuất. 
+
+Đẩy user, password lên database
+
+kéo database check thông tin người dùng 
+
+
+
+
+
+

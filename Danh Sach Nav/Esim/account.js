@@ -36,6 +36,20 @@ btnDangki.addEventListener("click", function() {
 
 
 
+var productArray = []
+axios.get(url).then(function(response) {
+    var Datauser = response.data
+    for (let i = 0; i < Datauser.length; i++) {
+        productArray.push(Datauser[i])
+    }
+});
+var newuser = {}
+btnDangnhap.addEventListener("click", function(e) {
+    e.preventDefault();
+
+})
+
+
 
 
 linkDangKi.addEventListener("click", function() {
