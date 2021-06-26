@@ -61,7 +61,7 @@
     font-weight: 400;
     letter-spacing: -.016em;
     /* font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif; */
-    margin-top: 0;
+    margin-top: 14px;
     margin-bottom: 35px;
     margin-right: 41px;
 }
@@ -77,6 +77,21 @@
     margin-bottom: 10px;
 }
 
+.message-errorDangki {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-errorDangki.off {
+    display: none;
+}
+
+.message-errorDangki>i {
+    font-size: 12px;
+    color: #E30000;
+}
+
 .message-error.off {
     display: none;
 }
@@ -89,6 +104,21 @@
 
 .message-errorPass.off {
     display: none;
+}
+
+.message-errorPassDangki {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-errorPassDangki.off {
+    display: none;
+}
+
+.message-errorPassDangki>i {
+    font-size: 12px;
+    color: #E30000;
 }
 
 .message-errorPass>i {
@@ -123,4 +153,24 @@
     border-color: #0071e3;
     box-shadow: 0 0 0 4px rgb(0 125 250 / 60%);
     outline: none;
+}
+
+.forgot-idPC>a {
+    text-decoration: none;
+}
+
+.creat-idPC {
+    margin-top: 12px;
+}
+
+.creat-idPC>a {
+    text-decoration: none;
+}
+
+.signin-box-PC.off {
+    display: none;
+}
+
+.regis-box-PC.off {
+    display: none;
 }
