@@ -22,3 +22,19 @@ OffMac.addEventListener("click", function(e) {
         imac.classList.remove('animate__fadeOut')
         imac.classList.add('animate__fadeIn')
 })
+
+var btnmac13Pc = document.querySelector('.btnmac13Pc')
+var oldURL = document.referrer;
+var chuyenmuamac = document.querySelector('.chuyenmuamac')
+console.log(oldURL)
+btnmac13Pc.addEventListener('click', function(e){
+    e.preventDefault()
+    // var oldURL = document.referrer;
+    // console.log(oldURL)
+    if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html"){
+        location.href = '/Danh Sach Nav/KhamPha/Mac/Mac.html'
+    }
+    else{
+        location.href = "/Danh Sach Nav/Esim/esim.html"
+    }
+})

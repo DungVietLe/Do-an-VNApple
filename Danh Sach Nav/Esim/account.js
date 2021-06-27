@@ -12,7 +12,7 @@ let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
 let url = "https://sheetdb.io/api/v1/nzd7ctie6ie8u";
-
+let btnDangnhap =  document.querySelector('.btn-detail-siginPC')
 btnDangki.addEventListener("click", function() {
     let userDangki = [];
     let myObj = {
@@ -44,10 +44,33 @@ axios.get(url).then(function(response) {
         productArray.push(Datauser[i])
     }
 });
-var newuser = {}
+console.log(productArray)
+var oldURL = document.referrer;
+console.log(oldURL)
 btnDangnhap.addEventListener("click", function(e) {
     e.preventDefault();
-
+    var check = 1;
+    for(let i = 0; i < productArray.length; i++){
+        if(checkValueInput.value == productArray[i].username && checkInputPass.value == productArray[i].password){
+            check = check*2 ;
+        }
+        else{
+            check = check*1;
+        }
+    }
+    if(check%2==0){
+        console.log('thanh cong');
+        if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"){
+            location.href = "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"
+        }
+        else{
+            location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
+            
+        }
+        
+    }else{
+        console.log('that bai') 
+    }
 })
 
 
