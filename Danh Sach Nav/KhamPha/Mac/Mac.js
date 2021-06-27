@@ -174,5 +174,13 @@ customBTN.onclick = function(){
          axios.post(url, { tensanpham: productArray[i].name , dongia:productArray[i].coin , mau:productArray[i].color }).then((response) => console.log(response));
     }
     confirm("Registered Successfully");
+    setTimeout(function(){
+        location.href = '/giohang/giohang.html'
+    }, 300)
+    
 }
 
+// customBTN.addEventListener('click',function(e){
+//     e.preventDefault();
+//     location.href = '/giohang/giohang.html'
+// })

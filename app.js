@@ -34,7 +34,7 @@
 //     location.replace("/signin.html");
 
 // })
-
+var accountCheck =  document.querySelector('#account-check')
 let search = document.getElementById("search-nav");
 let nav = document.querySelector(".nav");
 let elNav = document.querySelectorAll(".nav-product")
@@ -198,3 +198,22 @@ btnBuyPc.addEventListener('click', function(e){
         location.href = "/Danh Sach Nav/Esim/esim.html"
     }
 })
+
+// var url = 'https://sheetdb.io/api/v1/ab8r7n5q7kzsx'
+// accountCheck.addEventListener('click', function(e){
+//     e.preventDefault()
+//     var  productArray = [];
+//     axios.get(url).then(function(response) {
+//         var Dataproduct = response.data
+//         for (let i = 0; i < Dataproduct.length; i++) {
+//             productArray.push(Dataproduct[i]) 
+//         }
+//         console.log(productArray)
+//         if(productArray.length === 0){
+//             location.href = "/Danh Sach Nav/Esim/esim.html"
+//         }
+//         else{
+//             location.href = '/giohang/giohang.html'
+//         }
+//     });
+// })

@@ -12,7 +12,7 @@ let linkDangKi = document.querySelector(".creat-idPC");
 let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
-let url = "https://sheetdb.io/api/v1/nzd7ctie6ie8u";
+let url = "https://sheetdb.io/api/v1/ab8r7n5q7kzsx";
 let valuePass2 = document.querySelector("#checkPassDangki2");
 let msError2 = document.querySelector(".message-errorPassDangki2");
 let btnDangnhap = document.querySelector('.btn-detail-siginPC')
@@ -67,24 +67,25 @@ btnDangnhap.addEventListener("click", function(e) {
             check = check * 1;
         }
     }
-    if(check%2==0){
+    if(check%2===0){
+        
         var BoxCommit = document.querySelector('.BoxCommit')
         var detailsiginPC = document.querySelector('.detail-siginPC')
-        if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"){
-            detailsiginPC.style.display = 'none'
-            BoxCommit.style.display = 'block'
+        // if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"){
+        detailsiginPC.style.display = 'none'
+        BoxCommit.style.display = 'block'
             setTimeout( function(){
                 location.href = "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"
             },  600)
-        }
-        else{
-            detailsiginPC.style.display = 'none'
-            BoxCommit.style.display = 'block'
-            setTimeout( function(){
-                location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
-            },  600)
-            // location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
-        }
+        // }
+        // else{
+        //     detailsiginPC.style.display = 'none'
+        //     BoxCommit.style.display = 'block'
+        //     setTimeout( function(){
+        //         location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
+        //     },  600)
+        //     // location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
+        // }
         
     }else{
         detailsiginPC.style.display = 'block'
@@ -200,3 +201,4 @@ function checkValuePassDangKi2() {
         valuePass2.style.backgroundColor = "#fff";
     }
 }
+
