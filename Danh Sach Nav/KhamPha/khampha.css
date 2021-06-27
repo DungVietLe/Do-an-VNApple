@@ -48,8 +48,8 @@ letter-spacing: inherit;
     background-repeat: no-repeat;
     background-image: url(/images/khampha/hero_imac_24__eq5phrdpwjyq_large_2x.jpg);
     position: relative;
-    left: 50%;
-    margin-left: -535px;
+    /* left: 50%;
+    margin-left: -535px; */
     margin-top: 32px;
 }
 .macBody-2{

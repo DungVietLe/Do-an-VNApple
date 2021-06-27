@@ -43,6 +43,7 @@ color: #000
 }
 
 .headerinforStore{
+
 font-size: 18px;
 color: #000;
 font-weight: 550;
@@ -58,6 +59,7 @@ font-weight: 550;
     margin-top: 86px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     z-index: 9999;
 }
 .contentinforStore a{
