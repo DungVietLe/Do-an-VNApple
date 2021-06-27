@@ -3,6 +3,7 @@ let messageError = document.querySelector(".message-error");
 let checkInputPass = document.querySelector("#checkinputPass");
 let messageErrorPasss = document.querySelector(".message-errorPass")
 let changeMessage = document.querySelector(".errorPass");
+let changeMessage2 = document.querySelector(".errorPass2")
 let checkDangki = document.querySelector("#checkDangKi");
 let checkPassDangki = document.querySelector("#checkPassDangki");
 let msDangKi = document.querySelector(".message-errorDangki");
@@ -12,48 +13,45 @@ let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
 let url = "https://sheetdb.io/api/v1/nzd7ctie6ie8u";
-
+let valuePass2 = document.querySelector("#checkPassDangki2");
+let msError2 = document.querySelector(".message-errorPassDangki2");
 btnDangki.addEventListener("click", function() {
-    let userDangki = [];
-    let myObj = {
-        name: checkDangKi.value,
-        password: checkPassDangki.value
 
-    }
-    userDangki.push(myObj);
-    for (let i = 0; i < userDangki.length; i++) {
-        console.log(userDangki[i]);
-    }
-    axios.post(url, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
-    alert("Registered Successfully");
-    if (containerDangNhap.classList.contains("off") === true) {
-        containerDangNhap.classList.remove("off")
-    }
-    if (containerDangKi.classList.contains("off") === false) {
-        containerDangKi.classList.add("off")
+    if (checkDangki.value === "" || checkPassDangki.value === "" || valuePass2.value != checkPassDangki.value) {
+        alert("Error , Please REGIS retry");
+    } else {
+        let userDangki = [];
+        let myObj = {
+            name: checkDangKi.value,
+            password: checkPassDangki.value
+
+        }
+        userDangki.push(myObj);
+        for (let i = 0; i < userDangki.length; i++) {
+            console.log(userDangki[i]);
+        }
+        axios.post(url, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
+        alert("Registered Successfully");
+        if (containerDangNhap.classList.contains("off") === true) {
+            containerDangNhap.classList.remove("off")
+        }
+        if (containerDangKi.classList.contains("off") === false) {
+            containerDangKi.classList.add("off")
+        }
     }
 
 })
 
 
 
-var productArray = []
-axios.get(url).then(function(response) {
-    var Datauser = response.data
-    for (let i = 0; i < Datauser.length; i++) {
-        productArray.push(Datauser[i])
-    }
-});
-var newuser = {}
-btnDangnhap.addEventListener("click", function(e) {
-    e.preventDefault();
 
-})
+
 
 
 
 
 linkDangKi.addEventListener("click", function() {
+    console.log(this);
     if (containerDangNhap.classList.contains("off") === false) {
         containerDangNhap.classList.add("off")
     }
@@ -138,5 +136,21 @@ function checkValuePassDangKi() {
         checkPassDangki.style.border = "1px solid #e30000";
         checkPassDangki.style.backgroundColor = "#fff2f4";
 
+    }
+}
+
+function checkValuePassDangKi2() {
+    console.log("hi");
+    console.log(valuePass2.value);
+    if (valuePass2.value != checkPassDangki.value) {
+        msError2.classList.remove("off")
+        valuePass2.style.border = "1px solid #e30000";
+        valuePass2.style.backgroundColor = "#fff2f4";
+        changeMessage2.innerText = "Password dont match,Please retry";
+    }
+    if (valuePass2.value === checkPassDangki.value) {
+        msError2.classList.add("off");
+        valuePass2.style.border = "1px solid #d2d2d7";
+        valuePass2.style.backgroundColor = "#fff";
     }
 }
