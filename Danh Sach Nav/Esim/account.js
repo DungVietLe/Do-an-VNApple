@@ -59,16 +59,27 @@ btnDangnhap.addEventListener("click", function(e) {
         }
     }
     if(check%2==0){
-        console.log('thanh cong');
+        var BoxCommit = document.querySelector('.BoxCommit')
+        var detailsiginPC = document.querySelector('.detail-siginPC')
         if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"){
-            location.href = "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"
+            detailsiginPC.style.display = 'none'
+            BoxCommit.style.display = 'block'
+            setTimeout( function(){
+                location.href = "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"
+            },  600)
         }
         else{
-            location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
-            
+            detailsiginPC.style.display = 'none'
+            BoxCommit.style.display = 'block'
+            setTimeout( function(){
+                location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
+            },  600)
+            // location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
         }
         
     }else{
+        detailsiginPC.style.display = 'block'
+        BoxCommit.style.display = 'none'
         console.log('that bai') 
     }
 })
