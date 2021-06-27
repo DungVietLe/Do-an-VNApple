@@ -104,7 +104,7 @@
 
             <img style="max-width:100%; height: 615px;" src="/images/login/apple_id_desktop_2880x1260.jpg" alt="">
 
-            <div class="detail-siginPC off ">
+            <div class="detail-siginPC">
                 <div class="title-siginPC">
                     <h2>Please Sign in</h2>
                 </div>
@@ -135,35 +135,33 @@
             </div>
         </div>
         <div class="regis-box-PC off">
-            <div class="detail-siginPC">
+            <div class="detail-regisPC">
                 <div class="title-creatPC">
-                    <img style="height: 170px;" src="/images/login/apple_id_recovery_2880x340.jpg" alt="">
+                    <img style="height: 170px; margin-top: 40px;" src="/images/login/apple_id_recovery_2880x340.jpg" alt="">
                     <h2>Create your Apple ID</h2>
                 </div>
-                <div class="container-inputPC">
-                    <input onblur="checkValueDangKi()" type="text" name="todo" id="checkDangKi" placeholder="Apple ID">
+                <div class="container-inputPCregis">
+                    <input onblur="checkValueDangKi()" type="text" name="todo" id="checkDangKi" placeholder="Create Apple ID">
                     <div class="message-errorDangki off">
                         <i class="fas fa-exclamation-circle"></i>
                         <div class="error">Apple ID is missing.</div>
                     </div>
-                    <input onblur="checkValuePassDangKi()" type="password" name="todo" id="checkPassDangki" placeholder="Password">
+                    <input onblur="checkValuePassDangKi()" type="password" name="todo" id="checkPassDangki" placeholder="Enter your create Password">
                     <div class="message-errorPassDangki off">
                         <i class="fas fa-exclamation-circle"></i>
                         <div class="errorPass">Password is missing.</div>
                     </div>
+                    <input onblur="checkValuePassDangKi2()" type="password" name="todo" id="checkPassDangki2" placeholder="Enter your create Password">
+                    <div class="message-errorPassDangki2 off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="errorPass2">Password is missing.</div>
+                    </div>
                 </div>
-                <div class="title-end-siginPC">
-                    Your Apple ID is the email address you use to sign in to iTunes, the App Store, and iCloud.
-                </div>
-                <div class="btn-siginPC">
+
+                <div class="btn-regisPC">
                     <button id="btn-DangKi" class="btn-detail-siginPC">Creat</button>
                 </div>
-                <div class="forgot-idPC">
-                    <a href="">Forgot your Apple ID or password</a>
-                </div>
-                <div class="creat-idPC">
-                    <a href="">Don't have an Aple ID? Create one now.</a>
-                </div>
+
             </div>
         </div>
     </div>
