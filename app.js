@@ -197,32 +197,30 @@ hiddenBag.addEventListener("click", function(e) {
 //         location.href = "/Danh Sach Nav/Esim/esim.html"
 //     }
 // })
+var  productArray = [];
+var url = 'https://sheetdb.io/api/v1/xohx1pvt0n4f9'
+accountCheck.addEventListener('click', function(e){
+    e.preventDefault()
+    axios.get(url).then(function(response) {
+        var Dataproduct = response.data
+        for (let i = 0; i < Dataproduct.length; i++) {
+            productArray.push(Dataproduct[i]) 
+        }
+        console.log(productArray)
+        if(productArray.length === 0){
+            location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html'
+        }
+        else{
+            location.href = '/giohang/giohang.html'
+        }
+    });
+})
 
-// var url = 'https://sheetdb.io/api/v1/ab8r7n5q7kzsx'
-// accountCheck.addEventListener('click', function(e){
-//     e.preventDefault()
-//     var  productArray = [];
-//     axios.get(url).then(function(response) {
-//         var Dataproduct = response.data
-//         for (let i = 0; i < Dataproduct.length; i++) {
-//             productArray.push(Dataproduct[i]) 
-//         }
-//         console.log(productArray)
-//         if(productArray.length === 0){
-//             location.href = "/Danh Sach Nav/Esim/esim.html"
-//         }
-//         else{
-//             location.href = '/giohang/giohang.html'
-//         }
-//     });
-// })
 
-
-let urlSigniN = "https://sheetdb.io/api/v1/ab8r7n5q7kzsx";
+// let urlSigniN = "https://sheetdb.io/api/v1/xohx1pvt0n4f9";
 let getName = document.getElementById("getNamePC");
-
 var listLgUser = [];
-axios.get(urlSigniN).then(function(response) {
+axios.get(url).then(function(response) {
     var dataUserLg = response.data
     for (let i = 0; i < dataUserLg.length; i++) {
         listLgUser.push(dataUserLg[i])
@@ -234,3 +232,5 @@ axios.get(urlSigniN).then(function(response) {
     }
 });
 console.log(listLgUser);
+
+

@@ -18,7 +18,7 @@ let colorSliver = document.querySelector("#color-product-SliverPC");
 let colorGold = document.querySelector("#color-product-GoldPC");
 let colorBlue = document.querySelector("#color-product-BluePC")
 let macpropro = document.querySelector('.macpropro')
-let url = 'https://sheetdb.io/api/v1/8eo9evgklp5lb';
+let urlsanpham = 'https://sheetdb.io/api/v1/8eo9evgklp5lb';
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/khampha/macbook13pro.png";
@@ -171,7 +171,7 @@ customBTN.onclick = function(){
     }
     console.log(productArray)
     for(let i = 0 ; i<productArray.length; i++){
-         axios.post(url, { tensanpham: productArray[i].name , dongia:productArray[i].coin , mau:productArray[i].color }).then((response) => console.log(response));
+         axios.post(urlsanpham, { tensanpham: productArray[i].name , dongia:productArray[i].coin , mau:productArray[i].color }).then((response) => console.log(response));
     }
     confirm("Registered Successfully");
     setTimeout(function(){
