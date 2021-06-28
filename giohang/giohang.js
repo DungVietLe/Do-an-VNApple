@@ -9,29 +9,23 @@ axios.get(urlsanpham).then(function(response) {
     var Dataproduct = response.data
     for (let i = 0; i < Dataproduct.length; i++) {
         productArray.push(Dataproduct[i])
-        setTimeout(function(){
+        // setTimeout(function(){
             Tensanphamgiohang.innerHTML = `Name Product: ${productArray[i].tensanpham}`
             Giasanphamgiohang.innerText= productArray[i].dongia;
-        },300)
+        // },0)
     }
     
 });
-
+var user=[]
 console.log(productArray)
-
-axios.get(url).then(function(response) {
+var urlaa = 'https://sheetdb.io/api/v1/xohx1pvt0n4f9'
+axios.get(urlaa).then(function(response) {
     var Datauser = response.data
     for (let i = 0; i < Datauser.length; i++) {
         user.push(Datauser[i])
-        setTimeout(function(){
-            hellogiohangh3.innerHTML = `Hello: ${user[i].username}`
-        },300) 
-        // UserNameDangnhap.innerText = `Hello: ${user[i].username}`
+        hellogiohangh3.innerHTML = `Hello: ${user[i].username}`
     }
 });
-console.log(user)
-console.log(hellogiohangh3)
-
 
 
 
