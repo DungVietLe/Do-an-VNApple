@@ -1,6 +1,6 @@
 * {
-    /* font-family: 'Noto Sans JP', sans-serif; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: Noto Sans JP, 'sans-serif'; */
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 :root {
@@ -28,7 +28,7 @@ body {
     color: var(--white);
     opacity: 0.8;
     font-size: 14px;
-    padding: 0 30px;
+    padding: 0 34px;
     text-decoration: none;
     font-weight: 300;
 }
@@ -41,18 +41,49 @@ body {
     display: none;
 }
 
+.arow-bag {
+    position: absolute;
+    right: 103px;
+    top: -6px;
+}
+
+.arow-bag::after {
+    content: "";
+    right: 24px;
+    border-top: 1px solid #d2d2d7;
+    border-left: 1px solid #d2d2d7;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3.5px;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate( 45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 0% 0;
+    transform-origin: 0% 0;
+    z-index: 1;
+    background: #fff;
+    border-color: #d2d2d7;
+    border-radius: 2px 0 0 0;
+}
+
+.menu-bag>a {
+    border-top: 1px solid #d2d2d7;
+}
+
 .container-bag {
     position: absolute;
-    top: 44px;
-    left: 814px;
-    width: 200px;
-    height: 200px;
-    border: 1px solid var(--black);
+    top: 39px;
+    left: 803px;
+    width: 274px;
+    height: 204px;
     background-color: white;
     z-index: 9999;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 14px;
     display: none;
+    border: 1px solid #d2d2d7;
 }
 
 .title-bag {
@@ -70,8 +101,8 @@ body {
 
 .menu-bag a {
     color: #06c;
-    margin-bottom: 20px;
     text-decoration: none;
+    line-height: 42px;
 }
 
 
@@ -81,6 +112,30 @@ body {
 
 .icon-home i {
     font-size: 20px;
+}
+
+.bagsss {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    border-top: 1px solid #d2d2d7;
+    margin-right: 12px;
+}
+
+.account-bag {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    border-top: 1px solid #d2d2d7;
+    margin-right: 12px;
+}
+
+.sigin-in-bagsss {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    border-top: 1px solid #d2d2d7;
+    margin-right: 12px;
 }
 
 .shop-title-shipping {
@@ -311,7 +366,8 @@ body {
 
 .author {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .info-co {
@@ -322,6 +378,7 @@ body {
     color: #86868B;
     font-size: 12px;
     line-height: 0;
+    margin-right: 181px;
 }
 
 .khuvuc {
@@ -392,6 +449,10 @@ body {
     position: fixed;
     z-index: 9999;
     top: 0;
+}
+
+#search-nav {
+    line-height: 20px;
 }
 
 .search-box {
@@ -470,6 +531,10 @@ body {
     text-decoration: none;
     color: #1D1D1E;
     font-size: 14px;
+}
+
+#search-bag {
+    line-height: 16px;
 }
 
 .icon-home i {

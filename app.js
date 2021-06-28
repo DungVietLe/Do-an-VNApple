@@ -34,7 +34,7 @@
 //     location.replace("/signin.html");
 
 // })
-var accountCheck =  document.querySelector('#account-check')
+var accountCheck = document.querySelector('#account-check')
 let search = document.getElementById("search-nav");
 let nav = document.querySelector(".nav");
 let elNav = document.querySelectorAll(".nav-product")
@@ -168,14 +168,14 @@ styleIcon.addEventListener("click", function(e) {
 
 
 //Ẩn/hiện shopping bag
-let hiddenBag = document.querySelector(".fa-shopping-bag")
+let hiddenBag = document.querySelector("#search-bag")
 let bag = document.querySelector(".container-bag");
-hiddenBag.addEventListener("click",function(e){
+hiddenBag.addEventListener("click", function(e) {
     e.preventDefault();
-    
-    if(bag.style.display === "block"){
+
+    if (bag.style.display === "block") {
         bag.style.display = "none"
-    }else{
+    } else {
         bag.style.display = "block"
     }
 })
@@ -187,17 +187,16 @@ hiddenBag.addEventListener("click",function(e){
 
 
 // chuyen trang productjs
-btnBuyPc = document.querySelector('.btn-buyPC')
-btnBuyPc.addEventListener('click', function(e){
-    e.preventDefault();
-    var oldURL = document.referrer;
-    if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html"){
-        location.href = '/Danh Sach Nav/product/buy-iphone/iphone-12pro.html'
-    }
-    else{
-        location.href = "/Danh Sach Nav/Esim/esim.html"
-    }
-})
+// btnBuyPc = document.querySelector('.btn-buyPC');
+// btnBuyPc.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     var oldURL = document.referrer;
+//     if (oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html") {
+//         location.href = '/Danh Sach Nav/product/buy-iphone/iphone-12pro.html'
+//     } else {
+//         location.href = "/Danh Sach Nav/Esim/esim.html"
+//     }
+// })
 
 // var url = 'https://sheetdb.io/api/v1/ab8r7n5q7kzsx'
 // accountCheck.addEventListener('click', function(e){
