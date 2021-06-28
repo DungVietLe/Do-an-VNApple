@@ -173,4 +173,6 @@ btnAddtoCard.addEventListener("click", function() {
     }
     listProduct.push(productObj)
     console.log(listProduct);
+    alert("Add to card Succesfully");
+    location.href = "/giohang/giohang.html"
 })
