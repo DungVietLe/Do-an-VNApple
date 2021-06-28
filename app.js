@@ -49,6 +49,8 @@ let iconStyleHead = document.querySelector(".line-bars-head");
 let iconStyleEnd = document.querySelector(".line-bars-end");
 let listNavMobile = document.querySelector(".list-nav-mobile");
 let iconBag = document.querySelector(".icon-bags-mb");
+var url = 'https://sheetdb.io/api/v1/xohx1pvt0n4f9'
+var urlsanpham = 'https://sheetdb.io/api/v1/8eo9evgklp5lb'
 console.log(iconBag);
 
 close.addEventListener("click", function(e) {
@@ -198,7 +200,7 @@ hiddenBag.addEventListener("click", function(e) {
 //     }
 // })
 var  productArray = [];
-var url = 'https://sheetdb.io/api/v1/xohx1pvt0n4f9'
+
 accountCheck.addEventListener('click', function(e){
     e.preventDefault()
     axios.get(url).then(function(response) {
@@ -216,8 +218,6 @@ accountCheck.addEventListener('click', function(e){
     });
 })
 
-
-// let urlSigniN = "https://sheetdb.io/api/v1/xohx1pvt0n4f9";
 let getName = document.getElementById("getNamePC");
 var listLgUser = [];
 axios.get(url).then(function(response) {
@@ -231,6 +231,26 @@ axios.get(url).then(function(response) {
         }
     }
 });
-console.log(listLgUser);
+
+
+// them so 1 cho gio hang
+var spancount = document.querySelector('.count-sanpham')
+var countsanpham = []
+// var Countbag = querySelector('.icon-home')
+axios.get(urlsanpham).then(function(response) {
+    var Datauser = response.data
+    for (let i = 0; i < Datauser.length; i++) {
+        countsanpham.push(Datauser[i])
+    }
+    var checkcount = countsanpham.length;
+    
+    if(checkcount === 0){
+        spancount.style.display = 'none'
+    }
+    else{
+        spancount.style.display = 'block'
+        spancount.innerText = checkcount; 
+    }
+});
 
 

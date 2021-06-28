@@ -40,5 +40,10 @@ getBtnSE.addEventListener("click", function() {
         color: checkSE
     }
     listProductSE.push(productSE);
-    console.log(listProductSE);
+    var lengarray = listProductSE.length
+    axios.post(urlsanpham, { tensanpham: listProductSE[lengarray-1].tenSanPham , dongia:listProductSE[lengarray-1].donGia, mau:listProductSE[lengarray-1].color }).then((response) => console.log(response));
+    confirm("added to cart")
+    setTimeout(function(){
+            location.href = '/giohang/giohang.html'
+    },1200)  
 })

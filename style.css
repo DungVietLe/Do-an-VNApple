@@ -1018,3 +1018,23 @@ body {
     width: 1124px;
     margin: auto;
 }
+
+.icon-home{
+    position: relative;
+}
+.count-sanpham{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.7px;
+    padding-left: 3.5px;
+    border-radius: 50%;
+    left: 50%;
+    top: 70%;
+    display: none;
+}

@@ -173,6 +173,10 @@ btnAddtoCard.addEventListener("click", function() {
     }
     listProduct.push(productObj)
     console.log(listProduct);
-    alert("Add to card Succesfully");
-    location.href = "/giohang/giohang.html"
+    var lengarray = listProduct.length
+    axios.post(urlsanpham, { tensanpham: listProduct[lengarray-1].tenSanPham , dongia:listProduct[lengarray-1].giaSanPham , mau:listProduct[lengarray-1].color }).then((response) => console.log(response));
+    confirm("added to cart")
+    setTimeout(function(){
+            location.href = '/giohang/giohang.html'
+    },1200)  
 })

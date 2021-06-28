@@ -171,14 +171,11 @@ customBTN.onclick = function(){
     }
     console.log(productArray)
     var lengarray = productArray.length;
-        // for(let i = 0 ; i<productArray.length; i++){
-             axios.post(urldaylensanpam, { tensanpham: productArray[lengarray-1].name , dongia:productArray[lengarray-1].coin , mau:productArray[lengarray-1].color }).then((response) => console.log(response));
-        // }
-        // confirm("Registered Successfully");
-
-        // setTimeout(function(){
-        //     location.href = '/giohang/giohang.html'
-        // }, 800)
+    axios.post(urldaylensanpam, { tensanpham: productArray[lengarray-1].name , dongia:productArray[lengarray-1].coin , mau:productArray[lengarray-1].color }).then((response) => console.log(response));
+    confirm("Registered Successfully");
+    setTimeout(function(){
+            location.href = '/giohang/giohang.html'
+    },300)
     
 }
 

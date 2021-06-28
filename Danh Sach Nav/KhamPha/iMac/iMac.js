@@ -18,7 +18,7 @@ let colorSliver = document.querySelector("#color-product-SliverPC");
 let colorGold = document.querySelector("#color-product-GoldPC");
 let colorBlue = document.querySelector("#color-product-BluePC")
 let macpropro = document.querySelector('.macpropro')
-
+var urldaylensanpam = 'https://sheetdb.io/api/v1/8eo9evgklp5lb'
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/khampha/imac2.png" ;
@@ -111,7 +111,6 @@ var productArray = [
 ]
 var newProduct = {
 }
-var Color = true;
 customBTN = document.querySelector('.btn-3')
 
 customBTN.onclick = function(){
@@ -133,7 +132,12 @@ customBTN.onclick = function(){
         macpropro.style.border ="1px solid #d2d2d7"
         productArray.push(newProduct)
     }
-    confirm("Thank you buy Apple")
     console.log(productArray)
+    var lengarray = productArray.length
+    axios.post(urldaylensanpam, { tensanpham: productArray[lengarray-1].name , dongia:productArray[lengarray-1].coin , mau:productArray[lengarray-1].color }).then((response) => console.log(response));
+    confirm("added to cart")
+    setTimeout(function(){
+            location.href = '/giohang/giohang.html'
+    },1200)  
 }
 
