@@ -18,7 +18,7 @@ let colorSliver = document.querySelector("#color-product-SliverPC");
 let colorGold = document.querySelector("#color-product-GoldPC");
 let colorBlue = document.querySelector("#color-product-BluePC")
 let macpropro = document.querySelector('.macpropro')
-let url = 'https://sheetdb.io/api/v1/8eo9evgklp5lb';
+let urldaylensanpam = 'https://sheetdb.io/api/v1/8eo9evgklp5lb';
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/khampha/macbook13pro.png";
@@ -170,13 +170,15 @@ customBTN.onclick = function(){
         productArray.push(newProduct)
     }
     console.log(productArray)
-    for(let i = 0 ; i<productArray.length; i++){
-         axios.post(url, { tensanpham: productArray[i].name , dongia:productArray[i].coin , mau:productArray[i].color }).then((response) => console.log(response));
-    }
-    confirm("Registered Successfully");
-    setTimeout(function(){
-        location.href = '/giohang/giohang.html'
-    }, 300)
+    var lengarray = productArray.length;
+        // for(let i = 0 ; i<productArray.length; i++){
+             axios.post(urldaylensanpam, { tensanpham: productArray[lengarray-1].name , dongia:productArray[lengarray-1].coin , mau:productArray[lengarray-1].color }).then((response) => console.log(response));
+        // }
+        // confirm("Registered Successfully");
+
+        // setTimeout(function(){
+        //     location.href = '/giohang/giohang.html'
+        // }, 800)
     
 }
 

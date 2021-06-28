@@ -16,10 +16,19 @@ hai thành viên: Mai Sơn Trà, Nguyễn Văn Cẩm xin rời nhóm, vì lí do
 
 Các thành viên thực hiện trang web được phân công, hỗ trợ lẫn nhau.
 
+Phân Công Cắt layout, css;
+
+	các trang Duy Khương: sản phẩm(mac, imac), Bos, Store, Security
+
+
+	các trang của Dũng: sản phẩm(iphone), trang chủ, nav, footer; account
+
+
+	các trang Duy Tuấn: Photo, giỏ hàng, 
+
 Hoàn thành khoảng 90% giao diện tĩnh html, css của PC.'
 
 fix một số lỗi và hoàn thiện giao diện trên PC
-
 
 
 **25/06/2021**
@@ -41,6 +50,17 @@ kéo database check thông tin người dùng
 
 tối nay: cho các bạn nghỉ ngơi
 
+
+
+*27/06/2021*
+thêm trạng thái trên thanh nav,click mở giỏ hàng: Duy Tuấn
+
+Thêm trang giỏ hàng, giao diện singin, creat account: Dũng
+
+Chỉnh lại account đăng nhập complete, trạng thái người dùng trên trang web: Duy Khương;
+
+js thêm sản phẩm vào trong giỏ hàng, thêm xóa sản phẩm todolist;Phần này khó cả nhóm ping nhau
+một người sửa, hai người call hỗ trợ.
 
 
 

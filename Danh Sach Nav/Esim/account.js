@@ -12,10 +12,13 @@ let linkDangKi = document.querySelector(".creat-idPC");
 let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
-let url = "https://sheetdb.io/api/v1/ab8r7n5q7kzsx";
+let urlac = "https://sheetdb.io/api/v1/xohx1pvt0n4f9";
 let valuePass2 = document.querySelector("#checkPassDangki2");
 let msError2 = document.querySelector(".message-errorPassDangki2");
 let btnDangnhap = document.querySelector('.btn-detail-siginPC')
+var BoxCommit = document.querySelector('.BoxCommit')
+var detailsiginPC = document.querySelector('.detail-siginPC')
+
 btnDangki.addEventListener("click", function() {
 
     if (checkDangki.value === "" || checkPassDangki.value === "" || valuePass2.value != checkPassDangki.value) {
@@ -31,7 +34,7 @@ btnDangki.addEventListener("click", function() {
         for (let i = 0; i < userDangki.length; i++) {
             console.log(userDangki[i]);
         }
-        axios.post(url, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
+        axios.post(urlac, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
         alert("Registered Successfully");
         if (containerDangNhap.classList.contains("off") === true) {
             containerDangNhap.classList.remove("off")
@@ -40,57 +43,46 @@ btnDangki.addEventListener("click", function() {
             containerDangKi.classList.add("off")
         }
     }
-
+    setTimeout(function(){
+        location.reload()
+    }, 300)
+    
 })
 
-
-
-
-
-var productArray = []
-axios.get(url).then(function(response) {
+var productArrayac = []
+axios.get(urlac).then(function(response) {
     var Datauser = response.data
     for (let i = 0; i < Datauser.length; i++) {
-        productArray.push(Datauser[i])
+        productArrayac.push(Datauser[i])
     }
+    // location.reload()
 });
-console.log(productArray)
+
 var oldURL = document.referrer;
 console.log(oldURL)
+
 btnDangnhap.addEventListener("click", function(e) {
     e.preventDefault();
     var check = 1;
-    for (let i = 0; i < productArray.length; i++) {
-        if (checkValueInput.value == productArray[i].username && checkInputPass.value == productArray[i].password) {
+    for (let i = 0; i < productArrayac.length; i++) {
+        if (checkValueInput.value == productArrayac[i].username && checkInputPass.value == productArrayac[i].password) {
             check = check * 2;
         } else {
             check = check * 1;
         }
     }
     if (check % 2 === 0) {
-
-        var BoxCommit = document.querySelector('.BoxCommit')
-        var detailsiginPC = document.querySelector('.detail-siginPC')
-            // if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"){
+        console.log('thanh cong')
         detailsiginPC.style.display = 'none'
         BoxCommit.style.display = 'block'
         setTimeout(function() {
-                location.href = "http://127.0.0.1:5500/Danh%20Sach%20Nav/KhamPha/khampha.html"
-            }, 600)
-            // }
-            // else{
-            //     detailsiginPC.style.display = 'none'
-            //     BoxCommit.style.display = 'block'
-            //     setTimeout( function(){
-            //         location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
-            //     },  600)
-            //     // location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/product/product.html'
-            // }
-
-    } else {
+                location.href = "http://127.0.0.1:5500/index.html"
+        }, 600)
+    }
+    else {
+        console.log('khong duoc')
         detailsiginPC.style.display = 'block'
         BoxCommit.style.display = 'none'
-        console.log('that bai')
     }
 })
 

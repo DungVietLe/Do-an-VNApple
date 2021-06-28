@@ -6,7 +6,7 @@ var btnmac13Pc = document.querySelector('.btnmac13Pc')
 var oldURL = document.referrer;
 var chuyenmuamac = document.querySelector('.chuyenmuamac')
 console.log(oldURL)
-var url = 'https://sheetdb.io/api/v1/ab8r7n5q7kzsx'
+// var urlmac = 'https://sheetdb.io/api/v1/xohx1pvt0n4f9'
 OnMac.addEventListener("click", function(e) {
     e.preventDefault()
         mac.style.visibility = 'visible'
@@ -45,13 +45,4 @@ btnmac13Pc.addEventListener('click', function(e){
             location.href = '/Danh Sach Nav/KhamPha/Mac/Mac.html'
         }
     });
-    
-    // var oldURL = document.referrer;
-    // console.log(oldURL)
-    // if(oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html"){
-    //     
-    // }
-    // else{
-    //     
-    // }
 })
