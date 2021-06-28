@@ -216,3 +216,21 @@ hiddenBag.addEventListener("click", function(e) {
 //         }
 //     });
 // })
+
+
+let urlSigniN = "https://sheetdb.io/api/v1/ab8r7n5q7kzsx";
+let getName = document.getElementById("getNamePC");
+
+var listLgUser = [];
+axios.get(urlSigniN).then(function(response) {
+    var dataUserLg = response.data
+    for (let i = 0; i < dataUserLg.length; i++) {
+        listLgUser.push(dataUserLg[i])
+        if (listLgUser.length === 0) {
+            getName.innerText = "Sign in"
+        } else {
+            getName.innerHTML = `<a href=''> ${dataUserLg[i].username}</a>`
+        }
+    }
+});
+console.log(listLgUser);
