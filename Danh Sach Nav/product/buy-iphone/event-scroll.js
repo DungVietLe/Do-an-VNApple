@@ -22,17 +22,8 @@ let colorBlue = document.querySelector("#color-product-BluePC")
 let stylePrice = document.querySelector(".content-detail-title-selPC");
 let animatePrice = document.getElementById("#price-animatePC")
 let btnAddtoCard = document.querySelector("#addToCard");
-// let allBody = document.querySelector(".container-body-iphone12ProPC");
 let nameProduct = document.querySelector("#changName");
 let priceProduct = document.querySelector("#changePrice-ipPC")
-
-// stylePrice.addEventListener("click", function() {
-
-//     // stylePrice.classList.add("animate__animated animate__bounce");
-//     console.log(stylePrice)
-//     stylePrice.classList.add("animate__animated");
-//     stylePrice.classList.add("animate__bounce")
-// })
 
 let hiddenBagProduct = document.querySelector("#search-bag");
 let bagProduct = document.querySelector(".container-bag");
@@ -50,6 +41,8 @@ hiddenBagProduct.addEventListener("click", function() {
 })
 var donGia;
 var tenSP;
+var check;
+var checkColor;
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png";
@@ -70,7 +63,7 @@ chooseIphone12pr.addEventListener("click", function(e) {
 
 
 })
-var check;
+
 chooseIphone12.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
@@ -89,7 +82,8 @@ chooseIphone12.addEventListener("click", function(e) {
 
 
 })
-var checkColor;
+
+
 colorGraphite.addEventListener("click", function(e) {
     e.preventDefault()
     if (colorGraphite.style.border != "1px solid royalblue") {
@@ -164,6 +158,8 @@ colorBlue.addEventListener("click", function(e) {
     checkColor = "Blue"
 
 })
+
+
 let listProduct = []
 btnAddtoCard.addEventListener("click", function() {
     let productObj = {
@@ -172,11 +168,41 @@ btnAddtoCard.addEventListener("click", function() {
         color: checkColor
     }
     listProduct.push(productObj)
-    console.log(listProduct);
-    var lengarray = listProduct.length
-    axios.post(urlsanpham, { tensanpham: listProduct[lengarray-1].tenSanPham , dongia:listProduct[lengarray-1].giaSanPham , mau:listProduct[lengarray-1].color }).then((response) => console.log(response));
-    confirm("added to cart")
-    setTimeout(function(){
-            location.href = '/giohang/giohang.html'
-    },1200)  
+    console.log(listProduct)
+    let checklenghtlistproduct = listProduct.length
+    fetch("http://localhost:3000/user")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(users) {
+        console.log(users)
+        for(let i = 0; i<users.length;i++){
+            if(users[i].isActive === 'true'){
+                var newcartuser = {
+                    namecart : listProduct[checklenghtlistproduct-1].tenSanPham,
+                    pricecart : listProduct[checklenghtlistproduct-1].giaSanPham,
+                    urlcart : listProduct[checklenghtlistproduct-1].color
+                }
+                users[i].cart.push(
+                    newcartuser
+                )
+                fetch("http://localhost:3000/user", {
+                    method: "POST", // or PUT
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        
+                    })
+              })      
+            }
+            
+
+        }
+    })
+    // confirm("added to cart")
+    // setTimeout(function(){
+    //         location.href = '/giohang/giohang.html'
+    // },1200)  
 })
+

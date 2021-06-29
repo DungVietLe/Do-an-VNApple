@@ -2,31 +2,29 @@
   "product": [
     {
       "nameproduct": "iPhone 12 Pro",
-      "price": "999",
-      "color": "Graphite",
-      "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
-    },
-    {
-      "nameproduct": "iPhone 12 Pro Max",
-      "price": "1099",
-      "color": "red",
-      "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
-    },
-    {
-      "nameproduct": "iPhone 12 Pro",
-      "price": "999",
-      "color": "Graphite",
-      "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
+      "priceproduct": "999",
+      "colorproduct": "Graphite",
+      "urlproduct": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
     }
   ],
   "user": [
     {
-      "name": null,
-      "password": null
+      "name": "Duy",
+      "password": "123456",
+      "id": 1,
+      "isActive": "true",
+      "cart": [
+        {
+          "namecart": "Mac 13 Pro",
+          "pricecart": "1299",
+          "colorcart": "Graphite",
+          "urlcart": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png",
+          "id": 1
+        }
+      ]
     },
     {
-      "name": "Duy",
-      "password": "123456"
+      "id": 2
     }
   ]
 }
