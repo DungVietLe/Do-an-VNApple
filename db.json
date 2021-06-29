@@ -1,21 +1,28 @@
 {
-    "product": [{
-            "name": "iPhone 12 Pro",
-            "price": 999,
-            "color": "Graphite"
-
-        },
-        {
-            "name": "iPhone 12 Pro Max",
-            "price": 1099,
-            "color": "red"
-
-        },
-        {
-            "name": "iPhone 12 Pro",
-            "price": 999,
-            "color": "Graphite"
-
-        }
-    ]
+  "product": [
+    {
+      "id": 1,
+      "name": "iPhone 12 Pro",
+      "price": 999,
+      "color": "Graphite"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 12 Pro Max",
+      "price": 1099,
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "name": "iPhone 12 Pro",
+      "price": 999,
+      "color": "Graphite"
+    },
+    {
+      "sanpham": "macBook",
+      "gia": "9999",
+      "mausac": "pink",
+      "id": 4
+    }
+  ]
 }
