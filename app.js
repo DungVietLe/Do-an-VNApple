@@ -127,46 +127,46 @@ styleIcon.addEventListener("click", function(e) {
 
 
     })
-    // search.addEventListener("click", function(e) {
-    //     e.preventDefault()
+    search.addEventListener("click", function(e) {
+        e.preventDefault()
 
-//     for (let i = 0; i < elNav.length; i++) {
+    for (let i = 0; i < elNav.length; i++) {
 
-//         elNav[i].classList.add("hidden")
-//         if (elNav[i].classList.contains("animate__animated", "animate__backInLeft")) {
-//             elNav[i].classList.remove("animate__animated", "animate__backInLeft")
-//         }
-//     }
-//     searchBox.classList.remove("off")
-//     searchBox.classList.add("animate__animated", "animate__fadeInRight")
-//     if (messBox.classList.contains("off")) {
-//         messBox.classList.remove("off")
-//         messBox.classList.add("block")
-//         messBox.classList.add("animate__animated", "animate__fadeInBottomRight");
-//     }
-//     containerBody.classList.add("modal")
+        elNav[i].classList.add("hidden")
+        if (elNav[i].classList.contains("animate__animated", "animate__backInLeft")) {
+            elNav[i].classList.remove("animate__animated", "animate__backInLeft")
+        }
+    }
+    searchBox.classList.remove("off")
+    searchBox.classList.add("animate__animated", "animate__fadeInRight")
+    if (messBox.classList.contains("off")) {
+        messBox.classList.remove("off")
+        messBox.classList.add("block")
+        messBox.classList.add("animate__animated", "animate__fadeInBottomRight");
+    }
+    containerBody.classList.add("modal")
 
-// })
+})
 
 
-// close.addEventListener("click", function(e) {
-//     e.preventDefault()
-//     searchBox.classList.add("off")
-//     nav.classList.remove("none")
-//     for (let i = 0; i < elNav.length; i++) {
-//         if (elNav[i].classList.contains("hidden")) {
-//             elNav[i].classList.remove("hidden")
-//             elNav[i].classList.add("animate__animated", "animate__backInLeft")
-//         }
-//     }
-//     if (messBox.classList.contains("block")) {
-//         messBox.classList.remove("block");
-//         messBox.classList.add("off")
-//     }
-//     messBox.classList.remove("animate__animated", "animate__fadeInBottomRight")
-//     containerBody.classList.remove("modal")
+close.addEventListener("click", function(e) {
+    e.preventDefault()
+    searchBox.classList.add("off")
+    nav.classList.remove("none")
+    for (let i = 0; i < elNav.length; i++) {
+        if (elNav[i].classList.contains("hidden")) {
+            elNav[i].classList.remove("hidden")
+            elNav[i].classList.add("animate__animated", "animate__backInLeft")
+        }
+    }
+    if (messBox.classList.contains("block")) {
+        messBox.classList.remove("block");
+        messBox.classList.add("off")
+    }
+    messBox.classList.remove("animate__animated", "animate__fadeInBottomRight")
+    containerBody.classList.remove("modal")
 
-// })
+})
 
 
 //Ẩn/hiện shopping bag
@@ -189,74 +189,110 @@ hiddenBag.addEventListener("click", function(e) {
 
 
 // chuyen trang productjs
-// btnBuyPc = document.querySelector('.btn-buyPC');
-// btnBuyPc.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     var oldURL = document.referrer;
-//     if (oldURL == "http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html") {
-//         location.href = '/Danh Sach Nav/product/buy-iphone/iphone-12pro.html'
-//     } else {
-//         location.href = "/Danh Sach Nav/Esim/esim.html"
-//     }
-// })
-var productArray = [];
-
-accountCheck.addEventListener('click', function(e) {
-    e.preventDefault()
-    axios.get(url).then(function(response) {
-        var Dataproduct = response.data
-        for (let i = 0; i < Dataproduct.length; i++) {
-            productArray.push(Dataproduct[i])
-        }
-        console.log(productArray)
-        if (productArray.length === 0) {
-            location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html'
+btnBuyPc = document.querySelector('.btn-buyPC');
+btnBuyPc.addEventListener('click', function(e) {
+    e.preventDefault();
+    // var oldURL = document.referrer;
+    var userApi = "http://localhost:3000/user";
+    fetch(userApi)
+    .then(function(response) {
+    return response.json();
+    })
+    .then(function(users) {
+        console.log(users.length)
+        if (users.length === 1) {
+            location.href = "/Danh Sach Nav/Esim/esim.html"
         } else {
-            location.href = '/giohang/giohang.html'
+            location.href = '/Danh Sach Nav/product/buy-iphone/iphone-12pro.html'
         }
-    });
+    })
 })
 
-let getName = document.getElementById("getNamePC");
-var listLgUser = [];
-axios.get(url).then(function(response) {
-    var dataUserLg = response.data
-    for (let i = 0; i < dataUserLg.length; i++) {
-        listLgUser.push(dataUserLg[i])
-        if (listLgUser.length === 0) {
-            getName.innerText = "Sign in"
-        } else {
-            getName.innerHTML = `<a href=''> ${dataUserLg[i].username}</a>`
-        }
-    }
-});
 
+// accountCheck.addEventListener('click', function(e) {
+//     e.preventDefault()
+//     axios.get(url).then(function(response) {
+//         var Dataproduct = response.data
+//         for (let i = 0; i < Dataproduct.length; i++) {
+//             productArray.push(Dataproduct[i])
+//         }
+//         console.log(productArray)
+//         if (productArray.length === 0) {
+//             location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html'
+//         } else {
+//             location.href = '/giohang/giohang.html'
+//         }
+//     });
+// })
 
-// them so 1 cho gio hang
 var spancount = document.querySelector('.count-sanpham')
-var countsanpham = []
-    // var Countbag = querySelector('.icon-home')
-axios.get(urlsanpham).then(function(response) {
-    var Datauser = response.data
-    for (let i = 0; i < Datauser.length; i++) {
-        countsanpham.push(Datauser[i])
-    }
-    var checkcount = countsanpham.length;
-
-    if (checkcount === 0) {
-        spancount.style.display = 'none'
-    } else {
-        spancount.style.display = 'block'
-        spancount.innerText = checkcount;
-    }
-});
-
-
 var productApi = "http://localhost:3000/product";
+//Them so o gio hang
 fetch(productApi)
     .then(function(response) {
         return response.json();
     })
     .then(function(products) {
         console.log(products)
+        var checkcount = products.length;
+            if(checkcount === 0) {
+                spancount.style.display = 'none'
+             } else {
+                spancount.style.display = 'block'
+                spancount.innerText = checkcount;
+            }
+})
+// ket thuc them so
+
+//test in ra data
+var userApi = "http://localhost:3000/user";
+fetch(userApi)
+    .then(function(response) {
+        return response.json();
     })
+    .then(function(users) {
+        console.log(users)
+        for(let i = 0; i< users.length;i++){
+            console.log(users[i])
+        }
+ })
+//end test in ra
+
+//Check account dang nhap hay chua, dang nhap thi an vao account ra gio hang, chua thi bat dang nhap
+ accountCheck.addEventListener('click', function(e) {
+        e.preventDefault()
+        var userApi = "http://localhost:3000/user";
+        fetch(userApi)
+        .then(function(response) {
+        return response.json();
+        })
+        .then(function(users) {
+            console.log(users.length)
+            if (users.length === 1) {
+                location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html'
+            } else {
+                location.href = '/giohang/giohang.html'
+            }
+        })
+})
+//end check account
+
+//Them ten vao duoi gio hang thanh nav
+let getName = document.getElementById("getNamePC");
+var listLgUser = [];
+fetch(userApi)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(users) {
+        console.log(users)
+        for(let i = 0; i< users.length;i++){
+            if (users.length === 0) {
+                getName.innerText = "Sign in"
+            } else {
+                getName.innerHTML = `<a href=''> ${users[i].name}</a>`
+            }
+        }
+ })
+//end them ten vao duoi gio hang thanh nav
+

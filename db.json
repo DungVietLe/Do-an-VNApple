@@ -1,28 +1,32 @@
 {
   "product": [
     {
-      "id": 1,
-      "name": "iPhone 12 Pro",
-      "price": 999,
-      "color": "Graphite"
+      "nameproduct": "iPhone 12 Pro",
+      "price": "999",
+      "color": "Graphite",
+      "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
     },
     {
-      "id": 2,
-      "name": "iPhone 12 Pro Max",
-      "price": 1099,
-      "color": "red"
+      "nameproduct": "iPhone 12 Pro Max",
+      "price": "1099",
+      "color": "red",
+      "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
     },
     {
-      "id": 3,
-      "name": "iPhone 12 Pro",
-      "price": 999,
-      "color": "Graphite"
+      "nameproduct": "iPhone 12 Pro",
+      "price": "999",
+      "color": "Graphite",
+      "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
+    }
+  ],
+  "user": [
+    {
+      "name": null,
+      "password": null
     },
     {
-      "sanpham": "macBook",
-      "gia": "9999",
-      "mausac": "pink",
-      "id": 4
+      "name": "Duy",
+      "password": "123456"
     }
   ]
 }

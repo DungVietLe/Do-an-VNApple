@@ -33,36 +33,32 @@ OffMac.addEventListener("click", function(e) {
 
 btnmac13Pc.addEventListener('click', function(e){
     e.preventDefault()
-    var  productArray = [];
-    axios.get(url).then(function(response) {
-        var Dataproduct = response.data
-        for (let i = 0; i < Dataproduct.length; i++) {
-            productArray.push(Dataproduct[i]) 
-        }
-        console.log(productArray)
-        if(productArray.length === 0){
+    fetch(userApi)
+    .then(function(response) {
+    return response.json();
+    })
+    .then(function(users) {
+        console.log(users.length)
+        if (users.length === 1) {
             location.href = "/Danh Sach Nav/Esim/esim.html"
-        }
-        else{
+        } else {
             location.href = '/Danh Sach Nav/KhamPha/Mac/Mac.html'
         }
-    });
+    })
 })
 
 btnimac.addEventListener('click', function(e){
     e.preventDefault()
-    var  productArray = [];
-    axios.get(url).then(function(response) {
-        var Dataproduct = response.data
-        for (let i = 0; i < Dataproduct.length; i++) {
-            productArray.push(Dataproduct[i]) 
-        }
-        console.log(productArray)
-        if(productArray.length === 0){
+    fetch(userApi)
+    .then(function(response) {
+    return response.json();
+    })
+    .then(function(users) {
+        console.log(users.length)
+        if (users.length === 1) {
             location.href = "/Danh Sach Nav/Esim/esim.html"
-        }
-        else{
+        } else {
             location.href = '/Danh Sach Nav/KhamPha/iMac/iMac.html'
         }
-    });
+    })
 })
