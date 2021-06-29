@@ -6,10 +6,10 @@ var Tensanphamgiohang = document.querySelector('.Tensanpham-gio-hang')
 var Giasanphamgiohang = document.querySelector('.Giasanpham-gio-hang-span');
 var gioHangCha = document.querySelector(".Giohang")
 var imgsrcdb = document.querySelector('#imgsrcdb')
-// axios.get(urlsanpham).then(function(response) {
-//     var Dataproduct = response.data
-//     for (let i = 0; i < Dataproduct.length; i++) {
-//         productArray.push(Dataproduct[i])
+    // axios.get(urlsanpham).then(function(response) {
+    //     var Dataproduct = response.data
+    //     for (let i = 0; i < Dataproduct.length; i++) {
+    //         productArray.push(Dataproduct[i])
 
 //         console.log("hihi");
 
@@ -40,12 +40,12 @@ fetch(productApiGioHang)
     })
     .then(function(products) {
         console.log(products)
-        for(let i = 0; i< products.length;i++){
+        for (let i = 0; i < products.length; i++) {
             console.log(products[i].name)
             console.log(products[i].nameproduct)
             console.log(products[i].price)
             Tensanphamgiohang.innerText = `Name Product: ${products[i].nameproduct}`
-            Giasanphamgiohang.innerText= products[i].price;
-            imgsrcdb.src =  products[i].url;
+            Giasanphamgiohang.innerText = products[i].price;
+            imgsrcdb.src = products[i].url;
         }
-})
+    })
