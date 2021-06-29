@@ -43,10 +43,10 @@ btnDangki.addEventListener("click", function() {
             containerDangKi.classList.add("off")
         }
     }
-    setTimeout(function(){
+    setTimeout(function() {
         location.reload()
     }, 300)
-    
+
 })
 
 var productArrayac = []
@@ -76,10 +76,9 @@ btnDangnhap.addEventListener("click", function(e) {
         detailsiginPC.style.display = 'none'
         BoxCommit.style.display = 'block'
         setTimeout(function() {
-                location.href = "http://127.0.0.1:5500/index.html"
+            location.href = "http://127.0.0.1:5500/index.html"
         }, 600)
-    }
-    else {
+    } else {
         console.log('khong duoc')
         detailsiginPC.style.display = 'block'
         BoxCommit.style.display = 'none'

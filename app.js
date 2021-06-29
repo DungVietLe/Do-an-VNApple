@@ -199,20 +199,19 @@ hiddenBag.addEventListener("click", function(e) {
 //         location.href = "/Danh Sach Nav/Esim/esim.html"
 //     }
 // })
-var  productArray = [];
+var productArray = [];
 
-accountCheck.addEventListener('click', function(e){
+accountCheck.addEventListener('click', function(e) {
     e.preventDefault()
     axios.get(url).then(function(response) {
         var Dataproduct = response.data
         for (let i = 0; i < Dataproduct.length; i++) {
-            productArray.push(Dataproduct[i]) 
+            productArray.push(Dataproduct[i])
         }
         console.log(productArray)
-        if(productArray.length === 0){
+        if (productArray.length === 0) {
             location.href = 'http://127.0.0.1:5500/Danh%20Sach%20Nav/Esim/esim.html'
-        }
-        else{
+        } else {
             location.href = '/giohang/giohang.html'
         }
     });
@@ -236,21 +235,28 @@ axios.get(url).then(function(response) {
 // them so 1 cho gio hang
 var spancount = document.querySelector('.count-sanpham')
 var countsanpham = []
-// var Countbag = querySelector('.icon-home')
+    // var Countbag = querySelector('.icon-home')
 axios.get(urlsanpham).then(function(response) {
     var Datauser = response.data
     for (let i = 0; i < Datauser.length; i++) {
         countsanpham.push(Datauser[i])
     }
     var checkcount = countsanpham.length;
-    
-    if(checkcount === 0){
+
+    if (checkcount === 0) {
         spancount.style.display = 'none'
-    }
-    else{
+    } else {
         spancount.style.display = 'block'
-        spancount.innerText = checkcount; 
+        spancount.innerText = checkcount;
     }
 });
 
 
+var productApi = "http://localhost:3000/product";
+fetch(productApi)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(products) {
+        console.log(products)
+    })

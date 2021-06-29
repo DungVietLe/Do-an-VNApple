@@ -1,0 +1,21 @@
+{
+    "product": [{
+            "name": "iPhone 12 Pro",
+            "price": 999,
+            "color": "Graphite"
+
+        },
+        {
+            "name": "iPhone 12 Pro Max",
+            "price": 1099,
+            "color": "red"
+
+        },
+        {
+            "name": "iPhone 12 Pro",
+            "price": 999,
+            "color": "Graphite"
+
+        }
+    ]
+}
