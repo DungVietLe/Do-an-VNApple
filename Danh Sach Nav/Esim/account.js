@@ -12,79 +12,76 @@ let linkDangKi = document.querySelector(".creat-idPC");
 let containerDangNhap = document.querySelector(".signin-box-PC");
 let containerDangKi = document.querySelector(".regis-box-PC");
 let btnDangki = document.querySelector("#btn-DangKi");
-let urlac = "https://sheetdb.io/api/v1/xohx1pvt0n4f9";
+let btnDangNhap = document.querySelector("#btn-Dangnhap");
 let valuePass2 = document.querySelector("#checkPassDangki2");
 let msError2 = document.querySelector(".message-errorPassDangki2");
-let btnDangnhap = document.querySelector('.btn-detail-siginPC')
+
 var BoxCommit = document.querySelector('.BoxCommit')
 var detailsiginPC = document.querySelector('.detail-siginPC')
-var oldURL = document.referrer;
-console.log(oldURL)
-
-
-// btnDangki.addEventListener("click", function() {
-
-//     if (checkDangki.value === "" || checkPassDangki.value === "" || valuePass2.value != checkPassDangki.value) {
-//         alert("Error , Please REGIS retry");
-//     } else {
-//         let userDangki = [];
-//         let myObj = {
-//             name: checkDangKi.value,
-//             password: checkPassDangki.value
-
-//         }
-//         userDangki.push(myObj);
-//         for (let i = 0; i < userDangki.length; i++) {
-//             console.log(userDangki[i]);
-//         }
-//         axios.post(urlac, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
-//         alert("Registered Successfully");
-//         if (containerDangNhap.classList.contains("off") === true) {
-//             containerDangNhap.classList.remove("off")
-//         }
-//         if (containerDangKi.classList.contains("off") === false) {
-//             containerDangKi.classList.add("off")
-//         }
-//     }
-//     setTimeout(function() {
-//         location.reload()
-//     }, 300)
-
-// })
 
 
 
-btnDangnhap.addEventListener("click", function(e) {
-    e.preventDefault();
-    var userApi = "http://localhost:3000/user";
-    fetch(userApi)
-    .then(function(response) {
-        return response.json();
+//Phần đăng kí
+btnDangki.addEventListener("click", function() {
+
+        fetch("http://localhost:3000/user")
+            .then(function(response) {
+                return response.json()
+            })
+            .then(function(data) {
+                for (e of data) {
+                    console.log(e.name)
+                    if (e.name === checkDangki.value) {
+                        alert("The entered name already exists, Pls retry your UserName")
+                    }
+                    if (e.name != checkDangki.value) {
+                        fetch("http://localhost:3000/user", {
+                            method: "POST",
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                name: checkDangki.value,
+                                password: checkPassDangki.value,
+                                isActive: "false"
+
+                            })
+                        })
+                    }
+                }
+            })
+
+
     })
-    .then(function(users) {
-        console.log(users)
-        var check = 1;
-     for (let i = 0; i < users.length; i++) {
-        if (checkValueInput.value == users[i].name && checkInputPass.value == users[i].password) {
-            check = check * 2;
-        } else {
-            check = check * 1;
-        }
-        }
-    if (check % 2 === 0) {
-        console.log('thanh cong')
-        detailsiginPC.style.display = 'none'
-        BoxCommit.style.display = 'block'
-        setTimeout(function() {
-            location.href = "http://127.0.0.1:5500/index.html"
-        }, 600)
-    } else {
-        console.log('khong duoc')
-        detailsiginPC.style.display = 'block'
-        BoxCommit.style.display = 'none'
-    }
-    })
+    //Hết phần đăng kí user
+    //Phần đăng nhập 
+btnDangNhap.addEventListener("click", function() {
+
+    fetch("http://localhost:3000/user")
+        .then(function(response) {
+            return response.json()
+        })
+        .then(function(data) {
+            for (e of data) {
+                if (e.name === checkValueInput.value && e.isActive === "false") {
+                    e.isActive = "true";
+                    console.log(e.isActive);
+                    location.href = "/index.html"
+
+
+                }
+            }
+            if (e.name != checkValueInput.value && e.password != checkInputPass.value) {
+
+                alert("UserName or Password wrong! , pls retry SIGN IN");
+
+            }
+        })
 })
+
+
+//Hết phần đăng nhập
+
 
 
 
