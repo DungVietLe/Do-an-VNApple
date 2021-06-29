@@ -18,59 +18,59 @@ let msError2 = document.querySelector(".message-errorPassDangki2");
 let btnDangnhap = document.querySelector('.btn-detail-siginPC')
 var BoxCommit = document.querySelector('.BoxCommit')
 var detailsiginPC = document.querySelector('.detail-siginPC')
-
-btnDangki.addEventListener("click", function() {
-
-    if (checkDangki.value === "" || checkPassDangki.value === "" || valuePass2.value != checkPassDangki.value) {
-        alert("Error , Please REGIS retry");
-    } else {
-        let userDangki = [];
-        let myObj = {
-            name: checkDangKi.value,
-            password: checkPassDangki.value
-
-        }
-        userDangki.push(myObj);
-        for (let i = 0; i < userDangki.length; i++) {
-            console.log(userDangki[i]);
-        }
-        axios.post(urlac, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
-        alert("Registered Successfully");
-        if (containerDangNhap.classList.contains("off") === true) {
-            containerDangNhap.classList.remove("off")
-        }
-        if (containerDangKi.classList.contains("off") === false) {
-            containerDangKi.classList.add("off")
-        }
-    }
-    setTimeout(function() {
-        location.reload()
-    }, 300)
-
-})
-
-var productArrayac = []
-axios.get(urlac).then(function(response) {
-    var Datauser = response.data
-    for (let i = 0; i < Datauser.length; i++) {
-        productArrayac.push(Datauser[i])
-    }
-    // location.reload()
-});
-
 var oldURL = document.referrer;
 console.log(oldURL)
 
+
+// btnDangki.addEventListener("click", function() {
+
+//     if (checkDangki.value === "" || checkPassDangki.value === "" || valuePass2.value != checkPassDangki.value) {
+//         alert("Error , Please REGIS retry");
+//     } else {
+//         let userDangki = [];
+//         let myObj = {
+//             name: checkDangKi.value,
+//             password: checkPassDangki.value
+
+//         }
+//         userDangki.push(myObj);
+//         for (let i = 0; i < userDangki.length; i++) {
+//             console.log(userDangki[i]);
+//         }
+//         axios.post(urlac, { username: checkDangKi.value, password: checkPassDangki.value }).then((response) => console.log(response));
+//         alert("Registered Successfully");
+//         if (containerDangNhap.classList.contains("off") === true) {
+//             containerDangNhap.classList.remove("off")
+//         }
+//         if (containerDangKi.classList.contains("off") === false) {
+//             containerDangKi.classList.add("off")
+//         }
+//     }
+//     setTimeout(function() {
+//         location.reload()
+//     }, 300)
+
+// })
+
+
+
 btnDangnhap.addEventListener("click", function(e) {
     e.preventDefault();
-    var check = 1;
-    for (let i = 0; i < productArrayac.length; i++) {
-        if (checkValueInput.value == productArrayac[i].username && checkInputPass.value == productArrayac[i].password) {
+    var userApi = "http://localhost:3000/user";
+    fetch(userApi)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(users) {
+        console.log(users)
+        var check = 1;
+     for (let i = 0; i < users.length; i++) {
+        if (checkValueInput.value == users[i].name && checkInputPass.value == users[i].password) {
             check = check * 2;
         } else {
             check = check * 1;
         }
-    }
+        }
     if (check % 2 === 0) {
         console.log('thanh cong')
         detailsiginPC.style.display = 'none'
@@ -83,6 +83,7 @@ btnDangnhap.addEventListener("click", function(e) {
         detailsiginPC.style.display = 'block'
         BoxCommit.style.display = 'none'
     }
+    })
 })
 
 
