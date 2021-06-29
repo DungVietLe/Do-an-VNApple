@@ -1,30 +1,56 @@
 let dot1=document.querySelector("#btn-dot1");
 let dot2=document.querySelector("#btn-dot2");
+let dot3=document.querySelector("#btn-dot3");
 let dot = document.querySelector("#img3")
 let changeDot = document.querySelector("#img1")
+let changeDot2 = document.querySelector("#img4")
+
 dot2.addEventListener("click",function(){
-    if(changeDot.style.display="block"){
-        changeDot.style.display="none";
+    if(dot.style.display="block"){
+        dot.style.display="none";}
+    if(changeDot2.style.display="block"){
+        changeDot2.style.display="none";
+
     }
-    if(dot.style.display="none"){
-        dot.style.display="block";
-        
+    if(changeDot.style.display="none"){
+        changeDot.style.display="block";
     }
     dot2.style.opacity ="1";
     dot1.style.opacity ="0.5";
-    image.removeAttribute("class");
+    dot3.style.opacity ="0.5";
+    // image.removeAttribute("class");
     image.classList.add("img");
 })
-dot1.addEventListener("click",function(){
+dot3.addEventListener("click",function(){
+    if(changeDot.style.display="block"){
+        changeDot.style.display="none";
+    }
     if(dot.style.display="block"){
         dot.style.display="none";
     }
-    if(changeDot.style.display="none"){
-        changeDot.style.display="block"
+    if(changeDot2.style.display="none"){
+        changeDot2.style.display="block";    
+    }
+    dot3.style.opacity ="1";
+    dot1.style.opacity ="0.5";
+    dot2.style.opacity ="0.5";
+    // image.removeAttribute("class");
+    image.classList.add("img");
+})
+dot1.addEventListener("click",function(){
+    if(changeDot.style.display="block"){
+        changeDot.style.display="none";
+    }
+    if(changeDot2.style.display="block"){
+        changeDot2.style.display="none";
+    }
+    if(dot.style.display="none"){
+        dot.style.display="block"
     }
     dot1.style.opacity ="1";
     dot2.style.opacity ="0.5";
-    image.removeAttribute("class");
+    dot3.style.opacity ="0.5";
+    
     image.classList.add("img");
 })
 
