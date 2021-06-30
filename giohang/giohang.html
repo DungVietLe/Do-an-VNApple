@@ -143,12 +143,13 @@
     </div>
 
     <!-- body gio hang -->
-    <div class="GioHangTrong off">
-        <div class="Trangthai-dangnhap">
-            <h3 class="UserNameDangnhap">Hello: </h3>
-        </div>
-        <div class="icon-gio-hang"><i class="fas fa-shopping-cart"></i>
+    <div id="giohangtrong" class="GioHangTrong">
 
+        <div class="icon-gio-hang">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-cart-x" viewBox="0 0 16 16">
+                <path d="M7.354 5.646a.5.5 0 1 0-.708.708L7.793 7.5 6.646 8.646a.5.5 0 1 0 .708.708L8.5 8.207l1.146 1.147a.5.5 0 0 0 .708-.708L9.207 7.5l1.147-1.146a.5.5 0 0 0-.708-.708L8.5 6.793 7.354 5.646z"/>
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>
         </div>
 
         <div class="title-gio-hang">
@@ -160,70 +161,14 @@
             <a class="title-backhome" href="/index.html"> Back to Home</a>
         </div>
     </div>
-    <div class="GioHang">
+    <div id="giohang" class="GioHang off">
         <div class="Hello-giohang">
             <h3 class="helo-3">Hello: </h3>
         </div>
-        <div class="Sanpham-gio-hang">
-            <div class="img-Sanpham-gio-hang">
-                <img id="imgsrcdb" style="width: 200px;" src="/images/khampha/macbook13pro.png" alt="">
-            </div>
-            <div class="Tensanpham-gio-hang">
-                <!-- <p>Name Product:</p> -->
-                <!-- <p>Color:</p> -->
-            </div>
-            <div class="content-Sanpham-gio-hang">
-                <div class="Giasanpham-gio-hang">
-                    Price: <span class="Giasanpham-gio-hang-span"> 1000$ </span>
-                </div>
-                <div class="delete-PR">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                      </svg>
-                </div>
-            </div>
-        </div> 
-         <div class="Sanpham-gio-hang">
-            <div class="img-Sanpham-gio-hang">
-                <img style="width: 200px;" src="/images/khampha/macbook13pro.png" alt="">
-            </div>
-            <div class="Tensanpham-gio-hang">
-                <p>Name Product:</p>
-                <p>Color:</p>
-            </div>
-            <div class="content-Sanpham-gio-hang">
-                <div class="Giasanpham-gio-hang">
-                    Price: <span class="Giasanpham-gio-hang-span"> 1000$ </span>
-                </div>
-                <div class="delete-PR">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                      </svg>
-                </div>
-            </div>
-        </div>
-        <div class="Sanpham-gio-hang">
-            <div class="img-Sanpham-gio-hang">
-                <img style="width: 200px;" src="/images/khampha/macbook13pro.png" alt="">
-            </div>
-            <div class="Tensanpham-gio-hang">
-                <p>Name Product:</p>
-                <p>Color:</p>
-            </div>
-            <div class="content-Sanpham-gio-hang">
-                <div class="Giasanpham-gio-hang">
-                    Price: <span class="Giasanpham-gio-hang-span"> 1000$ </span>
-                </div>
-                <div class="delete-PR">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                      </svg>
-                </div>
-            </div>
-        </div>
+        <ul id="listProduct" class="sanpham-gio-hang">
+
+        </ul>
+
 
         <div class="tomtat-donhang">
             <div class="chitiet-donhang">
@@ -233,21 +178,13 @@
                 <div class="ten-ng-mua">
                     Buyer :
                 </div>
-                <div class="ten-san-phammua">
-                    Name Product :
-                </div>
-                <div class="mau-san-pham">
-                    Color :
-                </div>
-                <div class="so-luong">
+
+
+                <div>
                     Amount :
+                    <span style="color: red;" id="so-luong"></span>
                 </div>
-                <div class="hinh-thuc-mua-hang">
-                    Purchase form :
-                </div>
-                <div class="thanh-tien">
-                    Total Bill :
-                </div>
+
                 <!-- <div class="btn-muahang">
                     <button class="btn-chitiet-muahang">BUY</button>
                 </div> -->
@@ -262,18 +199,7 @@
 
             </div>
         </div>
-    </div>
-    <div class="hinhthuc-thanhtoan">
-        <div class="title-muahangchitiet">
-            <h3>Payment form</h3>
-        </div>
-        <div class="hinhthuc-muahang-chitiet">
-            <label class="radio-button">
-                <input type="radio" class="radio-button__input" id="cash-on-delivery" name="payment" value="pay-all">
-                <span class="radio-button__control"></span>
-                <span class="radio-button__label">Buy Now</span>
-            </label>
-        </div>
+
     </div>
     <!-- end body gio hang -->
     <div class="footer-wrapper">

@@ -62,21 +62,51 @@ btnDangNhap.addEventListener("click", function() {
             return response.json()
         })
         .then(function(data) {
+
             for (e of data) {
-                if (e.name === checkValueInput.value && e.isActive === "false") {
+                if (e.name === checkValueInput.value && e.isActive === "false" && e.password === checkInputPass.value) {
                     e.isActive = "true";
-                    console.log(e.isActive);
-                    location.href = "/index.html"
+
+
+                    alert("succes")
+                    location.href = "/giohang/giohang.html";
+
+                }
+                if (e.name != checkValueInput.value && e.password === checkInputPass.value) {
+
+                    messageError.classList.remove("off");
+                    checkValueInput.style.border = "1px solid #e30000";
+                    checkValueInput.style.backgroundColor = "#fff2f4";
+
+
+                }
+                if (e.name === checkValueInput.value && e.password != checkInputPass.value) {
+
+                    messageErrorPasss.classList.remove("off");
+                    changeMessage.innerText = "Password wrong"
+                    checkInputPass.style.border = "1px solid #e30000";
+                    checkInputPass.style.backgroundColor = "#fff2f4";
+
+
+                }
+                if (e.name != checkValueInput.value && e.password != checkInputPass.value) {
+                    messageError.classList.remove("off");
+                    checkValueInput.style.border = "1px solid #e30000";
+                    checkValueInput.style.backgroundColor = "#fff2f4";
+                    messageErrorPasss.classList.remove("off");
+                    checkInputPass.style.border = "1px solid #e30000";
+                    checkInputPass.style.backgroundColor = "#fff2f4";
+                    alert("Account dont have in SYSTEM")
 
 
                 }
             }
-            if (e.name != checkValueInput.value && e.password != checkInputPass.value) {
 
-                alert("UserName or Password wrong! , pls retry SIGN IN");
 
-            }
+
         })
+
+
 })
 
 

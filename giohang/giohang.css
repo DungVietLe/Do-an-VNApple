@@ -14,6 +14,10 @@ body {
     position: relative;
 }
 
+.GioHangTrong.off {
+    display: none;
+}
+
 .icon-gio-hang {
     color: rgb(51, 51, 51);
     font-size: 70px;
@@ -23,6 +27,25 @@ body {
     top: 0px;
     left: 12%;
     /*  */
+}
+
+.detail-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 26px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.listProductbeforRender {
+    display: flex;
+    width: 400x;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title-backhome {
@@ -110,14 +133,8 @@ body {
     height: 132px;
 }
 
-.Sanpham-gio-hang {
-    width: 600px;
-    border: 1px solid #d2d2d7;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
+.sanpham-gio-hang {
+    width: 585px;
 }
 
 .content-Sanpham-gio-hang {
@@ -643,6 +660,10 @@ a.animated-button.victoria-four:hover:after {
 
 .animated-button3 span {
     position: absolute;
+}
+
+.GioHang.off {
+    display: none;
 }
 
 .animated-button3 span:nth-child(1) {

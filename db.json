@@ -1,34 +1,16 @@
 {
-    "product": [{
-            "nameproduct": "iPhone 12 Pro",
-            "price": "999",
-            "color": "Graphite",
-            "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
-        },
-        {
-            "nameproduct": "iPhone 12 Pro Max",
-            "price": "1099",
-            "color": "red",
-            "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
-        },
-        {
-            "nameproduct": "iPhone 12 Pro",
-            "price": "999",
-            "color": "Graphite",
-            "url": "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png"
-        }
-    ],
-    "user": [{
-            "name": "Duy",
-            "password": "123456",
-            "id": 1,
-            "isActive": "false"
-        },
-        {
-            "name": "dung",
-            "password": "123456",
-            "isActive": "false",
-            "id": 2
-        }
-    ]
+  "product": [],
+  "user": [
+    {
+      "name": "dung",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "leminhtriet",
+      "password": "123456",
+      "isActive": "false",
+      "id": 2
+    }
+  ]
 }

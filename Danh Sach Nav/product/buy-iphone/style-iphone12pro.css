@@ -28,6 +28,27 @@
     margin: auto;
 } */
 
+#parent-count {
+    position: relative;
+}
+
+.count-sanpham.off {
+    display: none;
+}
+
+.count-sanpham {
+    position: absolute;
+    display: block;
+    width: 16px;
+    top: 16px;
+    height: 16px;
+    background-color: red;
+    font-size: 12px;
+    line-height: 17px;
+    /* text-align: center; */
+    color: #fff;
+}
+
 .title-name-productPC {
     display: flex;
     justify-content: center;

@@ -24,7 +24,7 @@ let animatePrice = document.getElementById("#price-animatePC")
 let btnAddtoCard = document.querySelector("#addToCard");
 let nameProduct = document.querySelector("#changName");
 let priceProduct = document.querySelector("#changePrice-ipPC")
-
+let changeNumberCard = document.querySelector(".count-sanpham");
 let hiddenBagProduct = document.querySelector("#search-bag");
 let bagProduct = document.querySelector(".container-bag");
 
@@ -43,6 +43,7 @@ var donGia;
 var tenSP;
 var check;
 var checkColor;
+var checkURL;
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
     images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png";
@@ -74,7 +75,7 @@ chooseIphone12.addEventListener("click", function(e) {
         chooseIphone12pr.style.border = "1px solid #d2d2d7"
     }
     check = 1;
-    console.log(check);
+
     nameProduct.innerText = "Buy iPhone 12 Pro";
     priceProduct.innerText = "999 $";
     tenSP = "iPhone 12 Pro";
@@ -95,9 +96,11 @@ colorGraphite.addEventListener("click", function(e) {
 
     if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-graphite-hero.png";
     }
     if (check === 2) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-max-graphite-hero.png";
     }
     checkColor = "Graphite"
 
@@ -114,9 +117,11 @@ colorSliver.addEventListener("click", function(e) {
     }
     if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone12pro-sliver.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone12pro-sliver.png";
     }
     if (check === 2) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-silver-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-max-silver-hero.png";
     }
     checkColor = "Sliver"
 
@@ -134,11 +139,14 @@ colorGold.addEventListener("click", function(e) {
 
     if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-gold-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-gold-hero.png";
     }
     if (check === 2) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-gold-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-max-gold-hero.png";
     }
-    checkColor = "Gold"
+    checkColor = "Gold";
+
 })
 colorBlue.addEventListener("click", function(e) {
     e.preventDefault()
@@ -151,58 +159,52 @@ colorBlue.addEventListener("click", function(e) {
 
     if (check === 1) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-blue-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-blue-hero.png";
     }
     if (check === 2) {
         images.src = "/images/detail-img-iphone-sell/iphone-12-pro-max-blue-hero.png";
+        checkURL = "/images/detail-img-iphone-sell/iphone-12-pro-max-blue-hero.png";
     }
     checkColor = "Blue"
 
 })
 
 
-let listProduct = []
 btnAddtoCard.addEventListener("click", function() {
-    let productObj = {
+    let listProduct = []
+    let productiPhone12 = {
         tenSanPham: tenSP,
         giaSanPham: donGia,
-        color: checkColor
+        color: checkColor,
+        url: checkURL
+
     }
-    listProduct.push(productObj)
-    console.log(listProduct)
-    let checklenghtlistproduct = listProduct.length
-    fetch("http://localhost:3000/user")
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(users) {
-        console.log(users)
-        for(let i = 0; i<users.length;i++){
-            if(users[i].isActive === 'true'){
-                var newcartuser = {
-                    namecart : listProduct[checklenghtlistproduct-1].tenSanPham,
-                    pricecart : listProduct[checklenghtlistproduct-1].giaSanPham,
-                    urlcart : listProduct[checklenghtlistproduct-1].color
-                }
-                users[i].cart.push(
-                    newcartuser
-                )
-                fetch("http://localhost:3000/user", {
-                    method: "POST", // or PUT
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        
-                    })
-              })      
-            }
-            
-
+    listProduct.push(productiPhone12)
+    for (let i = 0; i < listProduct.length; i++) {
+        if (changeNumberCard.classList.contains("off") === true) {
+            changeNumberCard.classList.remove("off")
         }
+        changeNumberCard.innerText = listProduct.length;
+    }
+    alert("add to card is succes")
+    fetch("http://localhost:3000/product", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            tensanpham: tenSP,
+            giasanpham: donGia,
+            color: checkColor,
+            url: checkURL
+        })
     })
-    // confirm("added to cart")
-    // setTimeout(function(){
-    //         location.href = '/giohang/giohang.html'
-    // },1200)  
-})
 
+})
+fetch("http://localhost:3000/product")
+    .then(function(response) {
+        return response.json()
+    })
+    .then(function(data) {
+        console.log(data);
+    })
