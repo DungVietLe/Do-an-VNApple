@@ -32,7 +32,7 @@
 
 .body-ios15 {
     width: 100%;
-    height: auto;
+    height: 5000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,9 +72,40 @@
     background-color: #ffffff;
     position: relative;
     height: 800px;
+    padding: 38px;
+    border-radius: 48px;
+    margin-top: 40px;
+}
+
+.tt-detal-ft {
+    width: 560px;
+}
+
+.img-ft {
+    height: 577px;
+}
+
+.intro-dt {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    font-weight: 600;
+    color: #f63e54;
+}
+
+.keepft {
+    font-size: 19px;
+    line-height: 1.4211026316;
+    font-weight: 600;
+    letter-spacing: .012em;
 }
 
 .img-ft {
     position: absolute;
     right: 0;
+}
+
+.col1 {
+    width: 300px;
+    height: 500px;
+    border: 1px solid;
 }
