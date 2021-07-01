@@ -1,54 +1,7 @@
 {
     "product": [],
-    "user": [{
-            "name": "dung",
-            "password": "123456",
-            "id": 1
-        },
-        {
-            "name": "leminhtriet",
-            "password": "123456",
-            "isActive": "false",
-            "id": 2
-        },
 
-        {
-            "name": "",
-            "password": "",
-            "isActive": "false",
-            "id": 4
 
-        }
-    ]
-    "product": [{
-            "tensanpham": "Macbook Pro 16",
-            "giasanpham": "2999",
-            "color": "Space Gray",
-            "url": "/images/khampha/macbook13-1.png",
-            "id": 2
-        },
-        {
-            "tensanpham": "iMac Pro",
-            "giasanpham": "5999",
-            "color": "Space Gray",
-            "url": "/images/khampha/imacpro.png",
-            "id": 3
-        },
-        {
-            "tensanpham": "iMac 24 inch",
-            "giasanpham": "1299",
-            "color": "Space Gray",
-            "url": "/images/khampha/imac2.png",
-            "id": 4
-        },
-        {
-            "tensanpham": "iMac Pro",
-            "giasanpham": "5999",
-            "color": "Space Gray",
-            "url": "/images/khampha/imacpro.png",
-            "id": 6
-        }
-    ],
     "user": [{
             "name": "dung",
             "password": "123456",
