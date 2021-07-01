@@ -89,46 +89,6 @@ styleIcon.addEventListener("click", function(e) {
 
 
     })
-    // search.addEventListener("click", function(e) {
-    //     e.preventDefault()
-
-//     for (let i = 0; i < elNav.length; i++) {
-
-//         elNav[i].classList.add("hidden")
-//         if (elNav[i].classList.contains("animate__animated", "animate__backInLeft")) {
-//             elNav[i].classList.remove("animate__animated", "animate__backInLeft")
-//         }
-//     }
-//     searchBox.classList.remove("off")
-//     searchBox.classList.add("animate__animated", "animate__fadeInRight")
-//     if (messBox.classList.contains("off")) {
-//         messBox.classList.remove("off")
-//         messBox.classList.add("block")
-//         messBox.classList.add("animate__animated", "animate__fadeInBottomRight");
-//     }
-//     containerBody.classList.add("modal")
-
-// })
-
-
-// close.addEventListener("click", function(e) {
-//     e.preventDefault()
-//     searchBox.classList.add("off")
-//     nav.classList.remove("none")
-//     for (let i = 0; i < elNav.length; i++) {
-//         if (elNav[i].classList.contains("hidden")) {
-//             elNav[i].classList.remove("hidden")
-//             elNav[i].classList.add("animate__animated", "animate__backInLeft")
-//         }
-//     }
-//     if (messBox.classList.contains("block")) {
-//         messBox.classList.remove("block");
-//         messBox.classList.add("off")
-//     }
-//     messBox.classList.remove("animate__animated", "animate__fadeInBottomRight")
-//     containerBody.classList.remove("modal")
-
-// })
 
 
 //Ẩn/hiện shopping bag
@@ -141,5 +101,75 @@ hiddenBag.addEventListener("click", function(e) {
         bag.style.display = "none"
     } else {
         bag.style.display = "block"
+    }
+})
+
+
+//them so mau do vao vao gio hang thanh nav
+var countsanpham = document.querySelector('.count-sanpham')
+fetch("http://localhost:3000/product")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    if(data.length > 0){
+        countsanpham.innerText= data.length;
+        countsanpham.style.display = 'block'
+    }
+    else{
+        countsanpham.style.display = 'none'
+    }
+})
+//end them so vao duoi
+
+//Thêm tên acount dưới cái giỏ
+let nameacount = document.getElementById('nameacount')
+fetch("http://localhost:3000/user")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    data.map(function(count){
+        if(count.isActive == 'true'){
+            nameacount.innerText = count.name;
+        }
+    })
+})
+
+//End Thêm tên dưới giỏ hàng
+
+//Thêm sự kiện, đăng nhập xong ấn vào account trên thanh nav thì ra giỏ hàng
+let accountcheck =document.getElementById('account-check')
+fetch("http://localhost:3000/user")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    data.map(function(count){
+        if(count.isActive == 'true'){
+            accountCheck.removeAttribute('href')
+            accountcheck.setAttribute('href', '/giohang/giohang.html')
+            accountCheck.innerHTML = `Hi ${count.name}`
+        }
+    })
+})
+
+//  //Nút đăng xuất 
+var Signout = document.getElementById('getNamePC')
+console.log(Signout.innerHTML)
+fetch("http://localhost:3000/user")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    for(e of data){
+        if(e.isActive === 'true'){
+            Signout.innerHTML = 'Log Out'
+            Signout.onclick = function(){
+                Signout.removeAttribute('href')
+                Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
+                e.isActive = 'false'
+            }
+        }
     }
 })

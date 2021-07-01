@@ -11,6 +11,12 @@
       "password": "123456",
       "isActive": "false",
       "id": 2
+    },
+    {
+      "name": "Duy",
+      "password": "123456",
+      "isActive": "false",
+      "id": 3
     }
   ]
 }
