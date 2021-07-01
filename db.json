@@ -1,28 +1,23 @@
 {
-  "product": [],
-  "user": [
-    {
-      "name": "dung",
-      "password": "123456",
-      "id": 1
-    },
-    {
-      "name": "leminhtriet",
-      "password": "123456",
-      "isActive": "false",
-      "id": 2
-    },
-    {
-      "name": "",
-      "password": "",
-      "isActive": "false",
-      "id": 3
-    },
-    {
-      "name": "",
-      "password": "",
-      "isActive": "false",
-      "id": 4
-    }
-  ]
+    "product": [],
+    "user": [{
+            "name": "dung",
+            "password": "123456",
+            "id": 1
+        },
+        {
+            "name": "leminhtriet",
+            "password": "123456",
+            "isActive": "false",
+            "id": 2
+        },
+
+        {
+            "name": "",
+            "password": "",
+            "isActive": "false",
+            "id": 4
+
+        }
+    ]
 }
