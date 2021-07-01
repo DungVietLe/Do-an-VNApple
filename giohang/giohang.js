@@ -57,7 +57,7 @@ fetch("http://localhost:3000/product")
 //set name
 let detail_name_bill = document.querySelector(".ten-san-phammua");
 let amount = document.querySelector("#so-luong");
-let totalBill = document.querySelector("#thanh-tien")
+let totalBill = document.querySelector("#total-bill")
 fetch("http://localhost:3000/user")
     .then((response) => {
         return response.json()
@@ -105,7 +105,7 @@ fetch(productApi)
             console.log(value)
             countcoin = countcoin + value;
         }
-        console.log('Tổng số tiền là '+ countcoin);
+        totalBill.innerHTML = `${countcoin} $`
     })
 
 
@@ -114,7 +114,7 @@ function renderProduct(products) {
     var htmls = products.map(function(product) {
         return `
                 <li class="listProductbeforRender">
-               <img style="width:90px;height:85px;margin:8px" src="${product.url}" alt="">
+               <img style="width:145px;height:163px;margin:8px" src="${product.url}" alt="">
                <div class="detail-products">
                <div>Name Product :<span style="color:red"> ${product.tensanpham}</span></div>
                <div>Price :<span style="color:red" id="total-price"> ${product.giasanpham}</span>$</div>
