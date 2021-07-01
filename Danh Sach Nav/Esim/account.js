@@ -31,9 +31,9 @@ btnDangki.addEventListener("click", function() {
             .then(function(data) {
                 for (e of data) {
 
-                    if (e.name === checkDangki.value) {
-                        alert("The entered name already exists, Pls retry your UserName")
-                    }
+                    // if (e.name === checkDangki.value) {
+                    //     alert("The entered name already exists, Pls retry your UserName")
+                    // }
                     if (e.name != checkDangki.value) {
                         fetch("http://localhost:3000/user", {
                             method: "POST",
@@ -100,26 +100,26 @@ btnDangNhap.addEventListener("click", function() {
 
 
                 }
-                if (e.name === checkValueInput.value && e.password != checkInputPass.value) {
+                // if (e.name === checkValueInput.value && e.password != checkInputPass.value) {
 
-                    messageErrorPasss.classList.remove("off");
-                    changeMessage.innerText = "Password wrong"
-                    checkInputPass.style.border = "1px solid #e30000";
-                    checkInputPass.style.backgroundColor = "#fff2f4";
-
-
-                }
-                if (e.name != checkValueInput.value && e.password != checkInputPass.value) {
-                    messageError.classList.remove("off");
-                    checkValueInput.style.border = "1px solid #e30000";
-                    checkValueInput.style.backgroundColor = "#fff2f4";
-                    messageErrorPasss.classList.remove("off");
-                    checkInputPass.style.border = "1px solid #e30000";
-                    checkInputPass.style.backgroundColor = "#fff2f4";
-                    alert("Account dont have in SYSTEM")
+                //     messageErrorPasss.classList.remove("off");
+                //     changeMessage.innerText = "Password wrong"
+                //     checkInputPass.style.border = "1px solid #e30000";
+                //     checkInputPass.style.backgroundColor = "#fff2f4";
 
 
-                }
+                // }
+                // if (e.name != checkValueInput.value && e.password != checkInputPass.value) {
+                //     messageError.classList.remove("off");
+                //     checkValueInput.style.border = "1px solid #e30000";
+                //     checkValueInput.style.backgroundColor = "#fff2f4";
+                //     messageErrorPasss.classList.remove("off");
+                //     checkInputPass.style.border = "1px solid #e30000";
+                //     checkInputPass.style.backgroundColor = "#fff2f4";
+                //     alert("Account dont have in SYSTEM")
+
+
+                // }
             }
 
 
