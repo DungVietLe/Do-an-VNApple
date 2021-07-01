@@ -282,22 +282,22 @@
     width: 500px;
     margin: auto;
     height: 150px;
-    background-color: rgba(73, 73, 73, 0.801);
+    background-color: rgb(139, 255, 30);
     border-style:outset;
     border: rgb(133, 141, 140) 5px solid;
-    box-shadow: 18px 20px 0px 2px rgb(0 0 0 / 30%);
     font-size: 48px;
     text-align: center;
     border-radius: 30px;
-    line-height: 150px;
+    line-height: 140px;
+    margin-top: 150px;
 }
 .fa-check-circle{
     font-weight: 550;
-    color: rgb(0, 255, 110);
+    color: rgb(255, 0, 0);
 }
 .BoxCommit-p{
     font-weight: 550;
-    color: rgb(10, 247, 2);
+    color: rgb(247, 2, 2);
 }
 .BoxCommit{
     position: absolute;
@@ -306,5 +306,5 @@
     display: none;
 }
 .detail-siginPC{
-    display: block;
+    display:block;
 }

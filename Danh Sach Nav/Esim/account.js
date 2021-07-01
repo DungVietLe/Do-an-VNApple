@@ -65,11 +65,13 @@ btnDangNhap.addEventListener("click", function() {
 
             for (e of data) {
                 if (e.name === checkValueInput.value && e.isActive === "false" && e.password === checkInputPass.value) {
-                    e.isActive = "true";
-
-
+                    e.isActive = true;
+                    BoxCommit.style.display = 'block'
+                    detailsiginPC.style.display = 'none'
                     alert("succes")
-                    location.href = "/giohang/giohang.html";
+                    setTimeout(function(){
+                        location.href = "/giohang/giohang.html";
+                    }, 400)    
 
                 }
                 if (e.name != checkValueInput.value && e.password === checkInputPass.value) {
@@ -111,8 +113,6 @@ btnDangNhap.addEventListener("click", function() {
 
 
 //Hết phần đăng nhập
-
-
 
 
 

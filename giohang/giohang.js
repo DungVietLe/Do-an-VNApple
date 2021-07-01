@@ -98,21 +98,14 @@ fetch(productApi)
         return response.json()
     })
     .then(function(bill) {
+        var countcoin = 0;
         for (let i = 0; i < bill.length; i++) {
-
-
-
             amount.innerHTML = bill.length;
-
-            // totalBill.innerHTML = sum += bill[i].giasanpham;
-            var total = []
-            let value = bill[i].giasanpham
-            total.push(value)
-
-            console.log(total);
+            let value = Number(bill[i].giasanpham)
+            console.log(value)
+            countcoin = countcoin + value;
         }
-        console.log(Number(bill[0].giasanpham + bill[1].giasanpham));
-
+        console.log('Tổng số tiền là '+ countcoin);
     })
 
 
