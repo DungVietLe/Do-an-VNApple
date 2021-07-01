@@ -1,88 +1,80 @@
-.Store{
-    width: 1260px;
-    margin: auto;
+.body-ios15 {
+    width: 100%;
+    background-color: #f5f5f7;
+    height: 500px;
 }
-.header-nav{
-    /* position: fixed; */
-}
-.banderstore{
-    background-image: url(/images/bannerstoree.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    margin-bottom: 85px;
-    height: 553px;
-    width: auto;
-}
-.bodyStore{
+
+.contentiOS15 {
+    height: 700px;
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 15px;
-    margin-left: 155px;
-}
-.container-store{
-    padding-top: 56px;
-    padding-bottom: 98px;
-}
-.BphoneStore{
-    font-size: 52px;
-color: #000
-}
-.BphoneStore2{
-    font-size: 36px;
-    letter-spacing: -1px;
-    color: #000;
-    margin-top: -7px;
-}
-.BphoneStore3{
-    font-size: 20px;
-    padding-top: 15px;
-    max-width: 484px;
-    color: #000;
-    line-height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    background: linear-gradient( 180deg, #f5f5f7, white 90%);
+    position: relative;
+    width: 100%;
 }
 
-.headerinforStore{
-
-font-size: 18px;
-color: #000;
-font-weight: 550;
+.tt-name {
+    text-align: center;
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
-.liststore{
-    /* display: inline-block; */
-    width: 30%;
+
+.des-name {
+    width: 860px;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.body-ios15 {
+    width: 100%;
     height: auto;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.inforStore{
-    margin-top: 86px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    z-index: 9999;
-}
-.contentinforStore a{
-    display: block;
-    margin-bottom: 15px;
-    text-decoration: none;
-}
-.contentinforStore{
-    font-family: 'Roboto', sans-serif;
-    
-}
-.contentinforStore ul{
-    padding: 0px;
-    margin: 19px 0px 0px 19px;
-}
-.contentinforStore p{
-    margin-top: 8px ;
-    margin-bottom: 8px;
-}
-.fa-phone-alt{
-    margin-right: 10px;
-}
-.fa-map-marker-alt{
-    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
+.facetime {
+    width: 1217px;
+    margin-top: 70px;
+}
+
+.ft-ct {
+    color: #f63e54;
+    margin-top: 50px;
+    font-size: 56px;
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+}
+
+.tt-ft-hd {
+    margin-top: 30px;
+    width: 760px;
+    font-size: 24px;
+    line-height: 1.3334133333;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.tt-ft-hd1 {
+    font-size: 72px;
+    line-height: 1.0555555556;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.detail-facetime {
+    background-color: #ffffff;
+    position: relative;
+    height: 800px;
+}
+
+.img-ft {
+    position: absolute;
+    right: 0;
+}
