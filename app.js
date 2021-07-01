@@ -107,19 +107,19 @@ hiddenBag.addEventListener("click", function(e) {
 
 //them so mau do vao vao gio hang thanh nav
 var countsanpham = document.querySelector('.count-sanpham')
-fetch("http://localhost:3000/product")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-        if(data.length > 0){
-        countsanpham.innerText= data.length;
-        countsanpham.style.display = 'block'
-        }
-        else{
-        countsanpham.style.display = 'none'
-        }
-})
+// fetch("http://localhost:3000/product")
+// .then(function(response) {
+//     return response.json()
+// })
+// .then(function(data) {
+//         if(data.length > 0){
+//         countsanpham.innerText= data.length;
+//         countsanpham.style.display = 'block'
+//         }
+//         else{
+//         countsanpham.style.display = 'none'
+//         }
+// })
 //end them so vao duoi
 
 //Thêm tên acount dưới cái giỏ
@@ -132,6 +132,19 @@ fetch("http://localhost:3000/user")
     data.map(function(count){
         if(count.isActive === true){
             nameacount.innerText = count.name;
+            fetch("http://localhost:3000/product")
+            .then(function(response) {
+            return response.json()
+            })
+            .then(function(data) {
+             if(data.length > 0){
+            countsanpham.innerText= data.length;
+            countsanpham.style.display = 'block'
+            }
+            else{
+            countsanpham.style.display = 'none'
+            }
+            })
         }
     })
 })
