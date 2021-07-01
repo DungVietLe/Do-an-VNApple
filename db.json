@@ -1,23 +1,42 @@
 {
-    "product": [],
-
-
-    "user": [{
-            "name": "dung",
-            "password": "123456",
-            "id": 1
-        },
-        {
-            "name": "leminhtriet",
-            "password": "123456",
-            "isActive": false,
-            "id": 2
-        },
-        {
-            "name": "Duy",
-            "password": "123456",
-            "isActive": false,
-            "id": 3
-        }
-    ]
+  "product": [
+    {
+      "tensanpham": "iPhone 12 Pro",
+      "giasanpham": "999",
+      "color": "Blue",
+      "url": "/images/detail-img-iphone-sell/iphone-12-pro-blue-hero.png",
+      "id": 1
+    },
+    {
+      "tensanpham": "Macbook Air",
+      "giasanpham": "999",
+      "color": "Sliver",
+      "url": "/images/khampha/macbook13pro.png",
+      "id": 2
+    }
+  ],
+  "user": [
+    {
+      "isActive": true,
+      "id": 1
+    },
+    {
+      "name": "hello",
+      "password": "123456",
+      "isActive": true,
+      "id": 2
+    },
+    {
+      "name": "nguyenchuong",
+      "password": "123456",
+      "isActive": true,
+      "id": 3
+    },
+    {
+      "name": "nguyenchuong",
+      "password": "123456",
+      "isActive": true,
+      "id": 4
+    }
+  ]
 }

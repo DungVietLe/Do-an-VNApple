@@ -30,7 +30,7 @@ btnDangki.addEventListener("click", function() {
             })
             .then(function(data) {
                 for (e of data) {
-                    console.log(e.name)
+
                     if (e.name === checkDangki.value) {
                         alert("The entered name already exists, Pls retry your UserName")
                     }
@@ -43,7 +43,7 @@ btnDangki.addEventListener("click", function() {
                             body: JSON.stringify({
                                 name: checkDangki.value,
                                 password: checkPassDangki.value,
-                                isActive: "false"
+                                isActive: false
 
                             })
                         })
@@ -56,22 +56,40 @@ btnDangki.addEventListener("click", function() {
     //Hết phần đăng kí user
     //Phần đăng nhập 
 btnDangNhap.addEventListener("click", function() {
-
+    console.log(btnDangNhap);
     fetch("http://localhost:3000/user")
         .then(function(response) {
             return response.json()
         })
         .then(function(data) {
-
+            console.log(data);
             for (e of data) {
-                if (e.name === checkValueInput.value && e.isActive === "false" && e.password === checkInputPass.value) {
-                    e.isActive = true;
+                if (e.name === checkValueInput.value && e.password === checkInputPass.value) {
+
                     BoxCommit.style.display = 'block'
                     detailsiginPC.style.display = 'none'
                     alert("succes")
-                    setTimeout(function(){
+
+                    setTimeout(function() {
                         location.href = "/giohang/giohang.html";
-                    }, 400)    
+                    }, 400)
+                    fetch("http://localhost:3000/user/" + e.id, {
+                            method: "PUT",
+                            headers: {
+                                'Content-type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                "name": e.name,
+                                "password": e.password,
+                                "isActive": true
+                            })
+                        })
+                        .then((response) => {
+                            response.json()
+                        })
+                        .then((fix) => {
+                            console.log(fix);
+                        })
 
                 }
                 if (e.name != checkValueInput.value && e.password === checkInputPass.value) {
