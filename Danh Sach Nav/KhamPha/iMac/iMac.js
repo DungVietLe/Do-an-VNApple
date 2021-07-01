@@ -1,4 +1,3 @@
-let nav = document.querySelector(".header-nav-buyPC");
 let changeName = document.querySelector(".title-name-productPC");
 window.addEventListener("scroll", function() {
     var x = pageYOffset;
@@ -18,10 +17,13 @@ let colorSliver = document.querySelector("#color-product-SliverPC");
 let colorGold = document.querySelector("#color-product-GoldPC");
 let colorBlue = document.querySelector("#color-product-BluePC")
 let macpropro = document.querySelector('.macpropro')
-var urldaylensanpam = 'https://sheetdb.io/api/v1/8eo9evgklp5lb'
+let checkNameiMac;
+let checkPriceiMac;
+let checkColoriMac;
+let checkUrliMac;
 chooseIphone12pr.addEventListener("click", function(e) {
     e.preventDefault()
-    images.src = "/images/khampha/imac2.png" ;
+    images.src = "/images/khampha/imac2.png";
     if (chooseIphone12pr.style.border = "1px solid #d2d2d7") {
 
         chooseIphone12pr.style.border = "1px solid royalblue"
@@ -29,15 +31,19 @@ chooseIphone12pr.addEventListener("click", function(e) {
     if (chooseIphone12.style.border = "1px solid royalblue") {
         chooseIphone12.style.border = "1px solid #d2d2d7"
     }
-    if (macpropro.style.border ="1px solid royalblue") {
+    if (macpropro.style.border = "1px solid royalblue") {
         macpropro.style.border = "1px solid #d2d2d7"
     }
     changePricea.innerText = '1799$ USD';
     newProduct = {
-       name: 'iMac 27"',
-       coin: '1799$ USD',
-       color: 'Graphite'
+        name: 'iMac 27"',
+        coin: '1799$ USD',
+        color: 'Graphite'
     }
+    checkNameiMac = "iMac 24 inch"
+    checkPriceiMac = "1299"
+    checkColoriMac = "Space Gray"
+    checkUrliMac = "/images/khampha/imac2.png"
 })
 chooseIphone12.addEventListener("click", function(e) {
     e.preventDefault()
@@ -49,15 +55,19 @@ chooseIphone12.addEventListener("click", function(e) {
     if (chooseIphone12pr.style.border = "1px solid royalblue") {
         chooseIphone12pr.style.border = "1px solid #d2d2d7"
     }
-    if (macpropro.style.border ="1px solid royalblue") {
+    if (macpropro.style.border = "1px solid royalblue") {
         macpropro.style.border = "1px solid #d2d2d7"
     }
     changePricea.innerText = '1299$ USD'
-        newProduct = {
+    newProduct = {
         name: 'iMac 27"',
         coin: '1299$ USD',
         color: 'Graphite'
-        }
+    }
+    checkNameiMac = "iMac 27 inch"
+    checkPriceiMac = "1799"
+    checkColoriMac = "Space Gray"
+    checkUrliMac = "/images/khampha/imac1.png"
 })
 macpropro.addEventListener("click", function(e) {
     e.preventDefault()
@@ -72,72 +82,39 @@ macpropro.addEventListener("click", function(e) {
         macpropro.style.border = "1px solid royalblue"
     }
     changePricea.innerText = '5999$ USD'
-        newProduct = {
-       name: "iMac Pro",
-       coin: '5999$ USD',
-       color: 'Graphite'
-       }
+    newProduct = {
+        name: "iMac Pro",
+        coin: '5999$ USD',
+        color: 'Graphite'
+    }
+    checkNameiMac = "iMac Pro"
+    checkPriceiMac = "5999"
+    checkColoriMac = "Space Gray"
+    checkUrliMac = "/images/khampha/imacpro.png"
 })
 
-// colorGraphite.addEventListener("click", function(e) {
-//     e.preventDefault()
-//     if (colorGraphite.style.border != "1px solid royalblue") {
-//         colorGraphite.style.border = "1px solid royalblue";
-//         colorSliver.style.border = "1px solid #d2d2d7";
-//     }
-//     if (images.src != "") {
-//         images.src = "/Danh Sach Nav/KhamPha/Mac/imgMac/space-select.jfif";
-//     }
-//     Color = true;
-// })
-// colorSliver.addEventListener("click", function(e) {
-//     e.preventDefault()
-//     if (colorSliver.style.border != "1px solid royalblue") {
-//         colorSliver.style.border = "1px solid royalblue";
-//         colorGraphite.style.border = "1px solid #d2d2d7";
-//     }
-//     if (images.src != "") {
-//         images.src = "/Danh Sach Nav/KhamPha/Mac/imgMac/mac1-sliver.jfif";
-//     }
-//     Color = false;
-// })
+
 
 var changePricea = document.querySelector('#changePrice-ipPC')
 
 
 //theem sanr pham 
 
-var productArray = [
-]
-var newProduct = {
-}
+
 customBTN = document.querySelector('.btn-3')
-
-customBTN.onclick = function(){
-    if(chooseIphone12.style.border = "1px solid royalblue") {
-        chooseIphone12.style.border = "1px solid #d2d2d7"
-        chooseIphone12pr.style.border = "1px solid #d2d2d7"
-        macpropro.style.border ="1px solid #d2d2d7"
-        productArray.push(newProduct)
-    }
-    else if (chooseIphone12pr.style.border = "1px solid royalblue") {
-        chooseIphone12.style.border = "1px solid #d2d2d7"
-        chooseIphone12pr.style.border = "1px solid #d2d2d7"
-        macpropro.style.border = "1px solid #d2d2d7"
-        productArray.push(newProduct)
-    }
-    else{
-        chooseIphone12.style.border = "1px solid #d2d2d7"
-        chooseIphone12pr.style.border = "1px solid #d2d2d7"
-        macpropro.style.border ="1px solid #d2d2d7"
-        productArray.push(newProduct)
-    }
-    console.log(productArray)
-    var lengarray = productArray.length
-    axios.post(urldaylensanpam, { tensanpham: productArray[lengarray-1].name , dongia:productArray[lengarray-1].coin , mau:productArray[lengarray-1].color }).then((response) => console.log(response));
-    confirm("added to cart")
-    setTimeout(function(){
-            location.href = '/giohang/giohang.html'
-    },1200)  
+let productApiiMac = "http://localhost:3000/product"
+customBTN.onclick = function() {
+    fetch(productApiiMac, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            tensanpham: checkNameiMac,
+            giasanpham: checkPriceiMac,
+            color: checkColoriMac,
+            url: checkUrliMac
+        })
+    })
+    alert("add to cart Succes")
 }
-

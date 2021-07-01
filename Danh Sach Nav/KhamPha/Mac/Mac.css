@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.header-nav {
+    position: relative;
+}
+
 .container-body-iphone12ProPC {
     /* margin-top: 44px; */
     width: 100%;
@@ -29,7 +33,6 @@
     height: 50px;
     border-bottom: 1px solid #d6d6d6;
     border-top: 1px solid #d6d6d6;
-    z-index: 9999;
     background-color: hsla(0, 0%, 100%, .72);
     top: 44px;
 }
@@ -79,9 +82,9 @@
     font-weight: 600;
     letter-spacing: 0;
     padding-bottom: 11px;
-    
 }
-.content-detail-title-selPC{
+
+.content-detail-title-selPC {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -89,10 +92,12 @@
     padding-left: 50px;
     padding-right: 85px;
 }
-#changePrice-Price{
+
+#changePrice-Price {
     font-size: 32px;
     color: black;
 }
+
 .content-detail-title-selPC>p {
     font-size: 17px;
     line-height: 48px;
@@ -103,7 +108,6 @@
     margin-bottom: 0px;
     padding-left: 16px;
 }
-
 
 .content-detail-choose-ipPC {
     font-size: 17px;
@@ -239,7 +243,8 @@
 #color-product-GraphitePC {
     border: 1px solid royalblue;
 }
-.macpropro{
+
+.macpropro {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,24 +255,28 @@
     border-radius: 14px;
     margin-bottom: 12px;
 }
-#changeIMG{
+
+#changeIMG {
     margin-top: 100px;
 }
-.Buy-MacBook{
+
+.Buy-MacBook {
     display: flex;
     justify-content: center;
 }
-.DivButton-Buy-MacBook{
+
+.DivButton-Buy-MacBook {
     margin-top: 15px;
 }
-.Button-Buy-MacBook{
+
+.Button-Buy-MacBook {
     font-size: 23px;
     line-height: 1.47059;
     font-weight: 400;
     letter-spacing: -.022em;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-color: #0070c9;
-    background: linear-gradient(#42a1ec,#0070c9);
+    background: linear-gradient(#42a1ec, #0070c9);
     border: 1px solid #07c;
     border-radius: 5px;
     color: #fff;
@@ -377,15 +386,16 @@
 .btn-3 span:hover:after {
     width: 100%;
 }
-.frame{
+
+.frame {
     display: flex;
     justify-content: center;
 }
-.content-detail-title-selPC p{
-font-size: 26px;
-font-weight: 600;
-letter-spacing: 1px;
-font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 
-color: red;
+.content-detail-title-selPC p {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: red;
 }

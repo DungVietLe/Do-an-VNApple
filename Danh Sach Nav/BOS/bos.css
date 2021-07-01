@@ -1,10 +1,11 @@
-
-body{
-    background-color:#212529
+body {
+    background-color: #212529
 }
 
-.bos86{
-    background: url(/images/smart-secure-banner.png);
+
+/* 
+.bos86 {
+    background: url(/images/memoji__8uw79j1iwheu_large.jpg);
     width: 100%;
     background-position: top center;
     background-repeat: no-repeat;
@@ -13,99 +14,147 @@ body{
     height: 429px;
     margin-bottom: 40px;
     margin-top: 44px;
+} */
+
+.bos86 {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
 }
-.inforBos{
+
+.inforBos {
     width: 930px;
     margin: auto;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-bottom: 40px;
+    margin-top: 44px;
 }
-.contentinforBos{
+
+.contentinforBos {
     width: 665px;
     height: auto;
-    
 }
-.contentinforBos h1{
-    font-size: 40px;
-    
-    color: #ffedcf;
 
+.contentinforBos h1 {
+    font-size: 40px;
+    color: #ffedcf;
 }
-.contentinforBos p{
+
+.contentiOS15 {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    background: linear-gradient( 180deg, #f5f5f7, white 90%);
+    position: relative;
+    width: 100%;
+}
+
+.tt-name {
+    text-align: center;
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+.des-name {
+    width: 860px;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.contentinforBos p {
     color: #ecd2a5;
     font-size: 20px;
     margin-top: 25px;
     line-height: 35px;
 }
-.tranf-img-bos{
+
+.tranf-img-bos {
     width: 930px;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.imga{
-    width: 340px ;
+
+.imga {
+    width: 340px;
     height: auto;
 }
-.imga-1{
+
+.imga-1 {
     margin-left: 203px;
 }
-.ios146{
+
+.ios146 {
     width: 970px;
     display: flex;
     margin: auto;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-top: 100px;
 }
-.ios14Imgbanner{
+
+.ios14Imgbanner {
     height: 340px;
     border-radius: 10px;
     margin-right: 15px;
 }
-.ios146Content{
+
+.ios146Content {
     color: white;
 }
 
-.directional{
+.directional {
     width: 980px;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
 }
-.contentDirectional{
+
+.contentDirectional {
     color: white;
     width: 400px;
     margin-top: 100px;
 }
-.Images-directional{
+
+.Images-directional {
     margin-left: 110px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.Images-directional i{
-    transition:step-end;
+
+.Images-directional i {
+    transition: step-end;
     color: black;
     font-size: 80px;
 }
-.fa-angle-left{
+
+.fa-angle-left {
     cursor: pointer;
     position: absolute;
     top: 50%;
 }
-.fa-angle-right{
+
+.fa-angle-right {
     cursor: pointer;
     position: absolute;
     top: 50%;
     right: 0;
 }
-.Images-directional i:hover{
+
+.Images-directional i:hover {
     color: red;
 }
-.BosSecrity{
+
+.BosSecrity {
     margin-top: 100px;
     width: 930px;
     margin: auto;
@@ -113,27 +162,30 @@ body{
     justify-content: flex-start;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    
 }
-.ContentBosSecrity{
+
+.ContentBosSecrity {
     color: white;
     border-left: 5px solid black;
     padding-top: 120px;
     padding-left: 30px;
 }
-.headerContentBosSecrity{
+
+.headerContentBosSecrity {
     font-size: 40px;
     margin-bottom: 24px;
     color: #FFEDCF;
     line-height: 52px;
 }
-.textContentBosSecrity{
+
+.textContentBosSecrity {
     font-size: 20px;
     width: 471px;
     color: #ECD2A5;
     line-height: 35px;
 }
-.BosSecrity2{
+
+.BosSecrity2 {
     margin-top: 100px;
     width: 930px;
     margin: auto;
@@ -141,12 +193,14 @@ body{
     flex-direction: row-reverse;
     border-bottom: 5px solid black;
 }
-#ContentBosSecritynew{
+
+#ContentBosSecritynew {
     margin-right: -15px;
     border-left: none;
     border-right: 5px solid black;
 }
-.inforSec{
+
+.inforSec {
     margin-bottom: 10px;
     margin-top: 56px;
     border: 2px solid #707070;
@@ -157,7 +211,7 @@ body{
     padding: 11px;
 }
 
-.inforSecurity{
+.inforSecurity {
     text-decoration: none;
     font-size: 20px;
     font-family: Open Sans;

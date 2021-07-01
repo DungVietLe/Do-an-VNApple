@@ -124,8 +124,8 @@ function renderProduct(products) {
                <img style="width:90px;height:85px;margin:8px" src="${product.url}" alt="">
                <div class="detail-products">
                <div>Name Product :<span style="color:red"> ${product.tensanpham}</span></div>
-               <div>Price :<span style="color:red"> ${product.giasanpham}</span>$</div>
-                <div>Color :<span style="color:red"> ${product.color}</span></div>
+               <div>Price :<span style="color:red" id="total-price"> ${product.giasanpham}</span>$</div>
+                <div>Color :<span style="color:red" > ${product.color}</span></div>
                 </div>
                 <div style="margin-right:24px;cursor:pointer;" onclick="btnDelete(${product.id})">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">

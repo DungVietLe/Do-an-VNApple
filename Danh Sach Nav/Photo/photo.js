@@ -1,4 +1,3 @@
-let nav = document.querySelector(".header-nav");
 let changeName = document.querySelector(".nav-photo-PC");
 window.addEventListener("scroll", function() {
     let x = pageYOffset;
@@ -10,5 +9,3 @@ window.addEventListener("scroll", function() {
         changeName.style.top = "44px";
     }
 })
-
-
