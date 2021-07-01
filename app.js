@@ -123,53 +123,53 @@ fetch("http://localhost:3000/product")
 //end them so vao duoi
 
 //Thêm tên acount dưới cái giỏ
-let nameacount = document.getElementById('nameacount')
-fetch("http://localhost:3000/user")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-    data.map(function(count){
-        if(count.isActive == 'true'){
-            nameacount.innerText = count.name;
-        }
-    })
-})
+// let nameacount = document.getElementById('nameacount')
+// fetch("http://localhost:3000/user")
+// .then(function(response) {
+//     return response.json()
+// })
+// .then(function(data) {
+//     data.map(function(count){
+//         if(count.isActive == 'true'){
+//             nameacount.innerText = count.name;
+//         }
+//     })
+// })
 
 //End Thêm tên dưới giỏ hàng
 
 //Thêm sự kiện, đăng nhập xong ấn vào account trên thanh nav thì ra giỏ hàng
-let accountcheck =document.getElementById('account-check')
-fetch("http://localhost:3000/user")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-    data.map(function(count){
-        if(count.isActive == 'true'){
-            accountCheck.removeAttribute('href')
-            accountcheck.setAttribute('href', '/giohang/giohang.html')
-            accountCheck.innerHTML = `Hi ${count.name}`
-        }
-    })
-})
+// let accountcheck =document.getElementById('account-check')
+// fetch("http://localhost:3000/user")
+// .then(function(response) {
+//     return response.json()
+// })
+// .then(function(data) {
+//     data.map(function(count){
+//         if(count.isActive == 'true'){
+//             accountCheck.removeAttribute('href')
+//             accountcheck.setAttribute('href', '/giohang/giohang.html')
+//             accountCheck.innerHTML = `Hi ${count.name}`
+//         }
+//     })
+// })
 
 //  //Nút đăng xuất 
-var Signout = document.getElementById('getNamePC')
-console.log(Signout.innerHTML)
-fetch("http://localhost:3000/user")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-    for(e of data){
-        if(e.isActive === 'true'){
-            Signout.innerHTML = 'Log Out'
-            Signout.onclick = function(){
-                Signout.removeAttribute('href')
-                Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
-                e.isActive = 'false'
-            }
-        }
-    }
-})
+// var Signout = document.getElementById('getNamePC')
+// console.log(Signout.innerHTML)
+// fetch("http://localhost:3000/user")
+// .then(function(response) {
+//     return response.json()
+// })
+// .then(function(data) {
+//     for(e of data){
+//         if(e.isActive === 'true'){
+//             Signout.innerHTML = 'Log Out'
+//             Signout.onclick = function(){
+//                 Signout.removeAttribute('href')
+//                 Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
+//                 e.isActive = 'false'
+//             }
+//         }
+//     }
+// })
