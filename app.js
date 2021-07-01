@@ -112,64 +112,83 @@ fetch("http://localhost:3000/product")
     return response.json()
 })
 .then(function(data) {
-    if(data.length > 0){
+        if(data.length > 0){
         countsanpham.innerText= data.length;
         countsanpham.style.display = 'block'
-    }
-    else{
+        }
+        else{
         countsanpham.style.display = 'none'
-    }
+        }
 })
 //end them so vao duoi
 
 //Thêm tên acount dưới cái giỏ
-// let nameacount = document.getElementById('nameacount')
-// fetch("http://localhost:3000/user")
-// .then(function(response) {
-//     return response.json()
-// })
-// .then(function(data) {
-//     data.map(function(count){
-//         if(count.isActive == 'true'){
-//             nameacount.innerText = count.name;
-//         }
-//     })
-// })
+let nameacount = document.getElementById('nameacount')
+fetch("http://localhost:3000/user")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    data.map(function(count){
+        if(count.isActive === true){
+            nameacount.innerText = count.name;
+        }
+    })
+})
 
 //End Thêm tên dưới giỏ hàng
 
 //Thêm sự kiện, đăng nhập xong ấn vào account trên thanh nav thì ra giỏ hàng
-// let accountcheck =document.getElementById('account-check')
-// fetch("http://localhost:3000/user")
-// .then(function(response) {
-//     return response.json()
-// })
-// .then(function(data) {
-//     data.map(function(count){
-//         if(count.isActive == 'true'){
-//             accountCheck.removeAttribute('href')
-//             accountcheck.setAttribute('href', '/giohang/giohang.html')
-//             accountCheck.innerHTML = `Hi ${count.name}`
-//         }
-//     })
-// })
+let accountcheck =document.getElementById('account-check')
+fetch("http://localhost:3000/user")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    data.map(function(count){
+        if(count.isActive === true){
+            accountCheck.removeAttribute('href')
+            accountcheck.setAttribute('href', '/giohang/giohang.html')
+            accountCheck.innerHTML = `Hi ${count.name}`
+        }
+    })
+})
 
 //  //Nút đăng xuất 
-// var Signout = document.getElementById('getNamePC')
-// console.log(Signout.innerHTML)
-// fetch("http://localhost:3000/user")
-// .then(function(response) {
-//     return response.json()
-// })
-// .then(function(data) {
-//     for(e of data){
-//         if(e.isActive === 'true'){
-//             Signout.innerHTML = 'Log Out'
-//             Signout.onclick = function(){
-//                 Signout.removeAttribute('href')
-//                 Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
-//                 e.isActive = 'false'
-//             }
-//         }
-//     }
-// })
+var Signout = document.getElementById('getNamePC')
+console.log(Signout)
+fetch("http://localhost:3000/user")
+.then(function(response) {
+    return response.json()
+})
+.then(function(data) {
+    for(e of data){
+        if(e.isActive === true){
+            Signout.innerHTML = 'Log Out'
+            Signout.onclick = function(){
+                
+                //đây là put logout đổi trạng thái
+                fetch("http://localhost:3000/user/" + e.id, {
+                            method: "PUT",
+                            headers: {
+                                'Content-type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                "name": e.name,
+                                "password": e.password,
+                                "isActive": false
+                            })
+                        })
+                        .then((response) => {
+                            response.json()
+                        })
+                        .then((fix) => {
+                            console.log(fix);
+                        })
+                nameacount.innerText =  "Sign in"
+                Signout.removeAttribute('href')
+                Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
+            }
+         }    
+    }
+})

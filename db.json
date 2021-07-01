@@ -1,24 +1,17 @@
 {
   "product": [
-    {
-      "tensanpham": "Macbook Air",
-      "giasanpham": "999",
-      "color": "Sliver",
-      "url": "/images/khampha/macbook13pro.png",
-      "id": 2
-    }
   ],
   "user": [
     {
-      "name": "hello",
-      "password": "123456",
+      "name": "admin",
+      "password": "admin",
       "isActive": false,
       "id": 1
     },
     {
-      "name": "nguyenchuong",
+      "name": "duy",
       "password": "123456",
-      "isActive": true,
+      "isActive": false,
       "id": 2
     }
   ]

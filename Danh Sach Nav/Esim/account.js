@@ -68,11 +68,7 @@ btnDangNhap.addEventListener("click", function() {
 
                     BoxCommit.style.display = 'block'
                     detailsiginPC.style.display = 'none'
-                    alert("succes")
-
-                    setTimeout(function() {
-                        location.href = "/giohang/giohang.html";
-                    }, 400)
+                    
                     fetch("http://localhost:3000/user/" + e.id, {
                             method: "PUT",
                             headers: {
@@ -90,7 +86,7 @@ btnDangNhap.addEventListener("click", function() {
                         .then((fix) => {
                             console.log(fix);
                         })
-
+                        location.href = "/giohang/giohang.html";
                 }
                 if (e.name != checkValueInput.value && e.password === checkInputPass.value) {
 

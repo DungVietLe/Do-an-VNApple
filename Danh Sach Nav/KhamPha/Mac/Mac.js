@@ -72,25 +72,14 @@ chooseIphone12.addEventListener("click", function(e) {
     }
     changePrice.innerText = '999$ USD'
     if (Color) {
-        newProduct = {
-            tensanpham: "Mac Pro 13 ",
-            giasanpham: '1299$ USD',
-            color: 'Graphite',
-            url: "/images/khampha/macbook13pro.png"
-        }
+      checkColor = 'Graphite'
     } else {
-        newProduct = {
-            tensanpham: "Mac Pro 13",
-            giasanpham: '1299$ USD',
-            color: 'Sliver',
-            url: "/images/khampha/macbook13pro.png"
-
-        }
+        checkColor = "Sliver"
     }
     checkName = "Macbook Air";
     checkPrice = "999";
     checkUrlMac = "/images/khampha/macbook13pro.png";
-
+    
 })
 macpropro.addEventListener("click", function(e) {
     e.preventDefault()
