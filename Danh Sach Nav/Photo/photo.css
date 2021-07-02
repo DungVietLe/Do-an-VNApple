@@ -80,7 +80,7 @@
 }
 
 .img:hover {
-    transform: scale(1.3);
+    transform: scale(1.07);
     transition: 1s;
     z-index: 9999;
 }
