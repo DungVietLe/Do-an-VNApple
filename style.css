@@ -122,6 +122,11 @@ body {
     margin-right: 12px;
 }
 
+#BUY-pc {
+    color: #fff;
+    text-decoration: none;
+}
+
 .account-bag {
     display: flex;
     align-items: center;
@@ -1019,10 +1024,11 @@ body {
     margin: auto;
 }
 
-.icon-home{
+.icon-home {
     position: relative;
 }
-.count-sanpham{
+
+.count-sanpham {
     font-family: Arial, Helvetica, sans-serif;
     height: 16px;
     width: 16px;
@@ -1038,6 +1044,7 @@ body {
     top: 70%;
     display: none;
 }
-#nameacount{
+
+#nameacount {
     margin-bottom: 0px;
 }

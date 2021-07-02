@@ -1,5 +1,13 @@
 {
-  "product": [],
+  "product": [
+    {
+      "tensanpham": "iPhone 12 Pro Max",
+      "giasanpham": "1099",
+      "color": "Blue",
+      "url": "/images/detail-img-iphone-sell/iphone-12-pro-max-blue-hero.png",
+      "id": 1
+    }
+  ],
   "user": [
     {
       "name": "admin",
@@ -12,6 +20,18 @@
       "password": "123456",
       "isActive": false,
       "id": 2
+    },
+    {
+      "name": "toiladung",
+      "password": "123456",
+      "isActive": true,
+      "id": 3
+    },
+    {
+      "name": "toiladung",
+      "password": "123456",
+      "isActive": false,
+      "id": 4
     }
   ]
 }
