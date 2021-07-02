@@ -54,41 +54,41 @@ search.addEventListener("click", function(e) {
     modal_search.classList.add("on")
 })
 styleIcon.addEventListener("click", function(e) {
-        e.preventDefault()
-        if (iconStyleHead.classList.contains("rotate") === false) {
-            iconStyleHead.classList.add("rotate");
-        } else {
-            iconStyleHead.classList.remove("rotate");
-            iconStyleHead.classList.add("off-rotate");
-        }
+    e.preventDefault()
+    if (iconStyleHead.classList.contains("rotate") === false) {
+        iconStyleHead.classList.add("rotate");
+    } else {
+        iconStyleHead.classList.remove("rotate");
+        iconStyleHead.classList.add("off-rotate");
+    }
 
-        if (iconStyleEnd.classList.contains("rotate2") === false) {
-            iconStyleEnd.classList.add("rotate2");
-        } else {
-            iconStyleEnd.classList.remove("rotate2");
-            iconStyleEnd.classList.add("off-rotate2");
-        }
-        if (listNavMobile.classList.contains("off") === true) {
-            listNavMobile.classList.remove("off");
-            listNavMobile.classList.add("animate__animated", "animate__slideInDown")
-        } else if (listNavMobile.classList.contains("animate__slideInDown") === true) {
-            listNavMobile.classList.remove("animate__slideInDown");
-            listNavMobile.classList.add("off");
+    if (iconStyleEnd.classList.contains("rotate2") === false) {
+        iconStyleEnd.classList.add("rotate2");
+    } else {
+        iconStyleEnd.classList.remove("rotate2");
+        iconStyleEnd.classList.add("off-rotate2");
+    }
+    if (listNavMobile.classList.contains("off") === true) {
+        listNavMobile.classList.remove("off");
+        listNavMobile.classList.add("animate__animated", "animate__slideInDown")
+    } else if (listNavMobile.classList.contains("animate__slideInDown") === true) {
+        listNavMobile.classList.remove("animate__slideInDown");
+        listNavMobile.classList.add("off");
 
-        }
-
-
-        if (iconBag.classList.contains("off") === false) {
-            iconBag.classList.add("off");
-        } else {
-            iconBag.classList.remove("off");
-        }
+    }
 
 
+    if (iconBag.classList.contains("off") === false) {
+        iconBag.classList.add("off");
+    } else {
+        iconBag.classList.remove("off");
+    }
 
 
 
-    })
+
+
+})
 
 
 //Ẩn/hiện shopping bag
@@ -107,81 +107,80 @@ hiddenBag.addEventListener("click", function(e) {
 
 //them so mau do vao vao gio hang thanh nav
 var countsanpham = document.querySelector('.count-sanpham')
-// fetch("http://localhost:3000/product")
-// .then(function(response) {
-//     return response.json()
-// })
-// .then(function(data) {
-//         if(data.length > 0){
-//         countsanpham.innerText= data.length;
-//         countsanpham.style.display = 'block'
-//         }
-//         else{
-//         countsanpham.style.display = 'none'
-//         }
-// })
-//end them so vao duoi
+    // fetch("http://localhost:3000/product")
+    // .then(function(response) {
+    //     return response.json()
+    // })
+    // .then(function(data) {
+    //         if(data.length > 0){
+    //         countsanpham.innerText= data.length;
+    //         countsanpham.style.display = 'block'
+    //         }
+    //         else{
+    //         countsanpham.style.display = 'none'
+    //         }
+    // })
+    //end them so vao duoi
 
 //Thêm tên acount dưới cái giỏ
 let nameacount = document.getElementById('nameacount')
 fetch("http://localhost:3000/user")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-    data.map(function(count){
-        if(count.isActive === true){
-            nameacount.innerText = count.name;
-            fetch("http://localhost:3000/product")
-            .then(function(response) {
-            return response.json()
-            })
-            .then(function(data) {
-             if(data.length > 0){
-            countsanpham.innerText= data.length;
-            countsanpham.style.display = 'block'
-            }
-            else{
-            countsanpham.style.display = 'none'
-            }
-            })
-        }
+    .then(function(response) {
+        return response.json()
     })
-})
+    .then(function(data) {
+        data.map(function(count) {
+            if (count.isActive === true) {
+                nameacount.innerText = count.name;
+                fetch("http://localhost:3000/product")
+                    .then(function(response) {
+                        return response.json()
+                    })
+                    .then(function(data) {
+                        if (data.length > 0) {
+                            countsanpham.innerText = data.length;
+                            countsanpham.style.display = 'block'
+                        } else {
+                            countsanpham.style.display = 'none'
+                        }
+                    })
+            }
+        })
+    })
 
 //End Thêm tên dưới giỏ hàng
 
 //Thêm sự kiện, đăng nhập xong ấn vào account trên thanh nav thì ra giỏ hàng
-let accountcheck =document.getElementById('account-check')
+let accountcheck = document.getElementById('account-check')
 fetch("http://localhost:3000/user")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-    data.map(function(count){
-        if(count.isActive === true){
-            accountCheck.removeAttribute('href')
-            accountcheck.setAttribute('href', '/giohang/giohang.html')
-            accountCheck.innerHTML = `Hi ${count.name}`
-        }
+    .then(function(response) {
+        return response.json()
     })
-})
+    .then(function(data) {
+        data.map(function(count) {
+            if (count.isActive === true) {
+                accountCheck.removeAttribute('href')
+                accountcheck.setAttribute('href', '/giohang/giohang.html')
+                accountCheck.innerHTML = `Hi ${count.name}`
+            }
+        })
+    })
 
 //  //Nút đăng xuất 
 var Signout = document.getElementById('getNamePC')
 console.log(Signout)
 fetch("http://localhost:3000/user")
-.then(function(response) {
-    return response.json()
-})
-.then(function(data) {
-    for(e of data){
-        if(e.isActive === true){
-            Signout.innerHTML = 'Log Out'
-            Signout.onclick = function(){
-                
-                //đây là put logout đổi trạng thái
-                fetch("http://localhost:3000/user/" + e.id, {
+    .then(function(response) {
+        return response.json()
+    })
+    .then(function(data) {
+        for (e of data) {
+            if (e.isActive === true) {
+                Signout.innerHTML = 'Log Out'
+                Signout.onclick = function() {
+
+                    //đây là put logout đổi trạng thái
+                    fetch("http://localhost:3000/user/" + e.id, {
                             method: "PUT",
                             headers: {
                                 'Content-type': 'application/json'
@@ -198,10 +197,10 @@ fetch("http://localhost:3000/user")
                         .then((fix) => {
                             console.log(fix);
                         })
-                nameacount.innerText =  "Sign in"
-                Signout.removeAttribute('href')
-                Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
+                    nameacount.innerText = "Sign in"
+                    Signout.removeAttribute('href')
+                    Signout.setAttribute('href', '/Danh Sach Nav/Esim/esim.html')
+                }
             }
-         }    
-    }
-})
+        }
+    })

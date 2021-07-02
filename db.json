@@ -6,6 +6,13 @@
       "color": "Blue",
       "url": "/images/detail-img-iphone-sell/iphone-12-pro-max-blue-hero.png",
       "id": 1
+    },
+    {
+      "tensanpham": "Macbook Air",
+      "giasanpham": "999",
+      "color": "Sliver",
+      "url": "/images/khampha/macbook13pro.png",
+      "id": 2
     }
   ],
   "user": [
