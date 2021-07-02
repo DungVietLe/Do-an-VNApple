@@ -1069,10 +1069,16 @@ body {
         width: 100%;
         margin-top: 30px;
     }
+    .ft-text-mb {
+        width: 100%;
+    }
     .footer-header-mb {
         display: flex;
-        width: 100%;
+        width: 99%;
         justify-content: space-around;
+    }
+    .col-sm-12 {
+        width: 50px;
     }
     .author-mb {
         width: 100%;
