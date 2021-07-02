@@ -1,4 +1,11 @@
+/* @media only screen and ( max-width: 734px){
+    .compare-Table{
+        display: none;
+    }
+} */
+
 .macBody-1{
+   
     display: flex;
     justify-content: center;
     margin-top: 54px;
