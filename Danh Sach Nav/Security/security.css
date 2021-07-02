@@ -1,6 +1,72 @@
 body{
     background-color: rgb(0, 0, 0);
 }
+@media only screen and (max-width: 1200px) {
+    .Securitymobi{
+        display: none;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .Security{
+        display: none;
+    }
+    /* //mobi */
+    .Securitymobi{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    .mobibanerSecurity{
+        margin-top: 44px;
+        margin-bottom: 20px;
+    }
+    .mobiheaderbanerSecurity{
+        font-weight: 550;
+        color:rgb(255, 115, 0);
+        font-size: 28px;
+        letter-spacing: -0.9px;
+    }
+    .mobiContentbanerSecurity{
+        margin: auto;
+        color: #ffa201;
+        font-size: 18px;
+        margin-top: 21px;
+        line-height: 35px;
+        width: 742px;
+    }
+    .mobiaboutSecurity{
+        background-color: rgb(255, 255, 255)
+    }
+    .mobiaboutSecurity{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: solid 3px red;
+    }
+    .fariconmobi{
+        font-size: 90px;
+    }
+    .mobiaboutSecurity-content-header{
+     font-size: 21px;
+    }
+    .mobiaboutSecurity-content-text{
+        font-size: 16px;
+    }
+    .mobiaboutSecurity-content-text span{
+        color:rgb(0, 0, 0);
+        font-weight: 540;
+        background-color: rgb(255, 186, 126);
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
 
 .banerSecurity{
     height: 328px;
