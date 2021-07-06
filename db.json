@@ -14,10 +14,16 @@
       "id": 2
     },
     {
-      "name": "lekieuchinh",
+      "name": "leminhtriet",
       "password": "123456",
       "isActive": true,
       "id": 3
+    },
+    {
+      "name": "leminhtriet",
+      "password": "123456",
+      "isActive": true,
+      "id": 4
     }
   ]
 }
