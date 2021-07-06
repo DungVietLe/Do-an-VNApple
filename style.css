@@ -843,7 +843,7 @@ body {
     height: 24px;
     outline: none;
     border: none;
-    background-color: royalblue;
+    background-color: #0071e3;
     color: #fff;
     font-size: 13px;
 }
@@ -1064,6 +1064,115 @@ body {
         display: none;
     }
 
+    .question-header>h2 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em
+    }
+
+    .resolution-detail-mb>h3 {
+        font-size: 20px;
+    }
+
+    .chip-product-mb {
+        text-align: center;
+    }
+
+    .camera-produc-mb {
+        text-align: center;
+    }
+
+    .function-resolution-mb {
+        font-size: 14px;
+        line-height: 1.42859;
+        font-weight: 400;
+        letter-spacing: -.016em;
+
+    }
+
+    .function-mb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-dt-iphone12prmb {
+        font-size: 12px;
+        color: #bf4800;
+        margin: 17px 0px 6px 0px;
+    }
+
+    .from-iphone12pr-mb {
+        font-size: 14px;
+        line-height: 1.42859;
+        font-weight: 400;
+        color: #8e8e90;
+        margin: 12px;
+    }
+
+    .color-iphone12pr-mb>img {
+        margin: 12px;
+    }
+
+    .ultimate-iphone12pr-mb {
+        font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 600;
+        letter-spacing: .012em;
+        margin: 10px;
+    }
+    .resolution-detail-mb>h3 {
+        font-size: 17px;
+        color: #1D1D1F;
+        margin: 12px;
+    }
+    .function-resolution-mb>span {
+        font-size: 14px;
+        color: #787879;
+    }
+    .function-mb {
+        margin: 20px;
+    }
+    .function-mb>span {
+        color: #787879;
+        margin: 3px;
+    }
+    .chip-product-mb {
+        margin: 20px;
+    }
+    .name-function-mb {
+        color: #787879;
+    }
+   
+    .quick-look>a {
+        margin-top: 23px;
+        margin-bottom: 36px;
+        font-size: 19px;
+        line-height: 1.21053;
+        font-weight: 400;
+        color: royalblue;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .dt-iphone12pr-mb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 8px;
+    }
+
+    .dt-iphone-mb {
+        margin-bottom:60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .wrapper-body-product {
         margin-top: 48px;
         display: block;
@@ -1141,7 +1250,7 @@ body {
     }
 
     .bd-tt-ip12-mb {
-  margin-top: 12px;
+        margin-top: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
