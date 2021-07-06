@@ -1,8 +1,211 @@
-/* @media only screen and ( max-width: 734px){
-    .compare-Table{
+@media only screen and (min-width: 1200px) {
+    .mobiMac{
         display: none;
     }
-} */
+    .mobiVitrual{
+        display: none;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .Mac{
+        display: none;
+    }
+    .Vitrual{
+        display: none;
+    }
+    .mobimacBody-1{
+   
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
+        margin-bottom: 50px;
+    }
+    .mobimacBody-1-content{
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mobimacBody-1-content-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .mobicontent-new{
+        font-weight: 550;
+        background: rgba(0,0,0,0);
+        border-color: #bf4800;
+        color: #f56300;
+    }
+    .mobicontent-imac{
+        font-size: 46px;
+        line-height: 1.07143;
+        font-weight: 600;
+        letter-spacing: -.005em;
+    }
+    .mobicontent-sayhelo{
+        font-size: 24px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: .007em;
+    }
+    .mobibuyphoneplay{
+        background-color: ;
+        margin:auto;
+    }
+    .mobicontent-learnmore{
+        color: #06c;
+    letter-spacing: inherit;
+    }
+    .mobihero-imac-24-image{
+        margin: auto;
+        width: 322px;
+    height: 472px;
+    background-size: 322px 472px;
+    background-repeat: no-repeat;
+    background-image: url(/images/khampha/hero_imac_24.jpg);
+    }
+
+    .mobimacBody-2{
+        display: flex;
+        justify-content: center;
+    }
+    .mobimacBody-2-content{
+        width: 680px;
+         display: flex;
+        justify-content: center;
+    }
+    .mobimacBody-2-content-text{
+        display: flex;
+        flex-direction: column ;
+        text-align: center;
+    }
+    .mobimacBody-2-content-text-h2{
+        font-size: 38px;
+        line-height: 1.08349;
+        font-weight: 600;
+    }
+    .mobimacBody-2-content-text-p{
+        color: #06c;
+        letter-spacing: inherit;
+        margin-top: 20px;
+        margin-bottom: 42px;
+    }
+    /* phan san pham */
+    .mobicompare-Table{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .mobicompare-Table-body{
+        width: 680px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-around;
+        position: relative;
+        /* visibility:none; */
+    }
+    .mobiiMac{
+        /* overflow: hidden; */
+        position: absolute;
+        width: 680px;
+        margin: auto;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* visibility: hidden; */
+    }
+    .mobiresver-compare-Table{
+        width: 250px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .mobiresver-compare-Table p{
+        font-size: 17px;
+        margin-bottom: 100px;
+    }
+    .mobicompare-Table-product{
+        width: 206px;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    .mobiimage-compare-mba{
+        background-image: url(/images/khampha/compare_mba__gdncw5gbxoq6_large.png);
+        background-size: 276px 167px;
+        background-repeat: no-repeat;
+    }
+    .mobicompare-Table-product-header{
+        margin-top: 50px;
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: .009em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+    .mobicompare-Table-product-coin{
+        font-size: 14px;
+        line-height: 1.42859;
+        font-weight: 400;
+        letter-spacing: -.016em;
+        margin-bottom: 0px;
+    }
+    .mobiimgiconcolor{
+        width: 70px;
+    height: 16px;
+    margin-left: 68px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .mobibtnmac13Pc{
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+    .mobibtnmac13Pc a{
+        text-decoration: none;
+        list-style:none;
+        color: white;
+    }
+    .mobiiconvienpin{
+        margin-top: 18px;
+    }
+    .mobitext8tb{
+        padding-top: 20px;
+    }
+    .mobicompare-Table-detail{
+        border-top: 1px solid #d2d2d7;;
+        margin-top: 10px;
+        padding-top: 40px;
+    }
+    .mobicompare-Table-detail-h4{
+        font-size: 21px;
+        line-height: 1.19048;
+        font-weight: 600;
+    }
+    .mobicompare-Table-detail-p{
+        font-size: 14px;
+        line-height: 1.42859;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .mobiompare-Table-detail-iconchip{
+        width: 48px;
+        height: 44px;
+    }
+    
+    .mobicompare-Table-detail-icon3cai{
+        width: 605px;
+        height: 38px;
+        margin-top: 45px;
+    }
+   
+}
 
 .macBody-1{
    
