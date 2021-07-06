@@ -1,11 +1,25 @@
 {
   "product": [
     {
-      "tensanpham": "iPhone 12 Pro",
-      "giasanpham": "999",
-      "color": "Sliver",
-      "url": "/images/detail-img-iphone-sell/iphone12pro-sliver.png",
+      "tensanpham": "iPhone SE",
+      "giasanpham": "400",
+      "color": "red",
+      "url": "/images/detail-img-iphone-sell/iphoneSE/iphone-se-red-select-2020.png",
       "id": 1
+    },
+    {
+      "tensanpham": "iPhone 12 Pro Max",
+      "giasanpham": "1099",
+      "color": "Gold",
+      "url": "/images/detail-img-iphone-sell/iphone-12-pro-max-gold-hero.png",
+      "id": 2
+    },
+    {
+      "tensanpham": "iMac Pro",
+      "giasanpham": "5999",
+      "color": "Space Gray",
+      "url": "/images/khampha/imacpro.png",
+      "id": 3
     }
   ],
   "user": [
@@ -18,8 +32,14 @@
     {
       "name": "ledung",
       "password": "123456",
-      "isActive": true,
+      "isActive": false,
       "id": 2
+    },
+    {
+      "name": "lekieuchinh",
+      "password": "123456",
+      "isActive": true,
+      "id": 3
     }
   ]
 }
