@@ -1,19 +1,6 @@
 {
   "product": [
-    {
-      "tensanpham": "Macbook Air",
-      "giasanpham": "999",
-      "color": "Sliver",
-      "url": "/images/khampha/macbook13pro.png",
-      "id": 2
-    },
-    {
-      "tensanpham": "iMac Pro",
-      "giasanpham": "5999",
-      "color": "Space Gray",
-      "url": "/images/khampha/imacpro.png",
-      "id": 3
-    }
+    
   ],
   "user": [
     {
@@ -21,18 +8,6 @@
       "password": "admin",
       "isActive": false,
       "id": 1
-    },
-    {
-      "name": "ledung",
-      "password": "123456",
-      "isActive": false,
-      "id": 2
-    },
-    {
-      "name": "lekieuchinh",
-      "password": "123456",
-      "isActive": true,
-      "id": 3
     }
   ]
 }
