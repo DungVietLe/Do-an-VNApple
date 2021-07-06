@@ -13,9 +13,9 @@ let iconStyleHead = document.querySelector(".line-bars-head");
 let iconStyleEnd = document.querySelector(".line-bars-end");
 let listNavMobile = document.querySelector(".list-nav-mobile");
 let iconBag = document.querySelector(".icon-bags-mb");
+const port = process.env.PORT || 8000;
 
-
-close.addEventListener("click", function(e) {
+close.addEventListener("click", function (e) {
     e.preventDefault()
     for (let i = 0; i < elNav.length; i++) {
         if (elNav[i].classList.contains("animate__animated", "animate__fadeOutLeft")) {
@@ -38,7 +38,7 @@ close.addEventListener("click", function(e) {
     }
 })
 
-search.addEventListener("click", function(e) {
+search.addEventListener("click", function (e) {
     e.preventDefault()
     for (let i = 0; i < elNav.length; i++) {
         elNav[i].classList.add("animate__animated", "animate__fadeOutLeft");
@@ -53,7 +53,7 @@ search.addEventListener("click", function(e) {
     }
     modal_search.classList.add("on")
 })
-styleIcon.addEventListener("click", function(e) {
+styleIcon.addEventListener("click", function (e) {
     e.preventDefault()
     if (iconStyleHead.classList.contains("rotate") === false) {
         iconStyleHead.classList.add("rotate");
@@ -94,7 +94,7 @@ styleIcon.addEventListener("click", function(e) {
 //Ẩn/hiện shopping bag
 let hiddenBag = document.querySelector("#search-bag")
 let bag = document.querySelector(".container-bag");
-hiddenBag.addEventListener("click", function(e) {
+hiddenBag.addEventListener("click", function (e) {
     e.preventDefault();
 
     if (bag.style.display === "block") {
@@ -107,36 +107,36 @@ hiddenBag.addEventListener("click", function(e) {
 
 //them so mau do vao vao gio hang thanh nav
 var countsanpham = document.querySelector('.count-sanpham')
-    // fetch("http://localhost:3000/product")
-    // .then(function(response) {
-    //     return response.json()
-    // })
-    // .then(function(data) {
-    //         if(data.length > 0){
-    //         countsanpham.innerText= data.length;
-    //         countsanpham.style.display = 'block'
-    //         }
-    //         else{
-    //         countsanpham.style.display = 'none'
-    //         }
-    // })
-    //end them so vao duoi
+// fetch("http://localhost:3000/product")
+// .then(function(response) {
+//     return response.json()
+// })
+// .then(function(data) {
+//         if(data.length > 0){
+//         countsanpham.innerText= data.length;
+//         countsanpham.style.display = 'block'
+//         }
+//         else{
+//         countsanpham.style.display = 'none'
+//         }
+// })
+//end them so vao duoi
 
 //Thêm tên acount dưới cái giỏ
 let nameacount = document.getElementById('nameacount')
 fetch("http://localhost:3000/user")
-    .then(function(response) {
+    .then(function (response) {
         return response.json()
     })
-    .then(function(data) {
-        data.map(function(count) {
+    .then(function (data) {
+        data.map(function (count) {
             if (count.isActive === true) {
                 nameacount.innerText = count.name;
                 fetch("http://localhost:3000/product")
-                    .then(function(response) {
+                    .then(function (response) {
                         return response.json()
                     })
-                    .then(function(data) {
+                    .then(function (data) {
                         if (data.length > 0) {
                             countsanpham.innerText = data.length;
                             countsanpham.style.display = 'block'
@@ -153,11 +153,11 @@ fetch("http://localhost:3000/user")
 //Thêm sự kiện, đăng nhập xong ấn vào account trên thanh nav thì ra giỏ hàng
 let accountcheck = document.getElementById('account-check')
 fetch("http://localhost:3000/user")
-    .then(function(response) {
+    .then(function (response) {
         return response.json()
     })
-    .then(function(data) {
-        data.map(function(count) {
+    .then(function (data) {
+        data.map(function (count) {
             if (count.isActive === true) {
                 accountCheck.removeAttribute('href')
                 accountcheck.setAttribute('href', '/giohang/giohang.html')
@@ -170,14 +170,14 @@ fetch("http://localhost:3000/user")
 var Signout = document.getElementById('getNamePC')
 console.log(Signout)
 fetch("http://localhost:3000/user")
-    .then(function(response) {
+    .then(function (response) {
         return response.json()
     })
-    .then(function(data) {
+    .then(function (data) {
         for (e of data) {
             if (e.isActive === true) {
                 Signout.innerHTML = 'Log Out'
-                Signout.onclick = function() {
+                Signout.onclick = function () {
 
                     //đây là put logout đổi trạng thái
                     fetch("http://localhost:3000/user/" + e.id, {
@@ -204,3 +204,7 @@ fetch("http://localhost:3000/user")
             }
         }
     })
+
+server.listen(port, () => {
+    console.log("App is running on port " + port);
+});
