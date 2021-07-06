@@ -245,14 +245,21 @@
 .sub-body-photo li a {
     text-decoration: none;
     color: #707070;
+    padding: 12px;
 }
 
 .sub-body-photo li:hover a {
-    color: rgba(47, 47, 255, 0.5);
+    color: #333;
+    
+}
+.sub-body-photo li:hover {
+    background-color: #fff;
+    transition: ease-in-out .8s;
 }
 
 .footer-wrapper {
     background-color: #000;
+    margin-top: 0;
 }
 
 .title-footer h3 {
@@ -379,7 +386,7 @@
 }
 
 .sub-body-photo ul li {
-    font-size: 14px;
+    font-size: 18px;
     padding: 0 5px;
 
 }
