@@ -1,13 +1,6 @@
 {
   "product": [
     {
-      "tensanpham": "iPhone 12 Pro Max",
-      "giasanpham": "1099",
-      "color": "Blue",
-      "url": "/images/detail-img-iphone-sell/iphone-12-pro-max-blue-hero.png",
-      "id": 1
-    },
-    {
       "tensanpham": "Macbook Air",
       "giasanpham": "999",
       "color": "Sliver",
@@ -21,24 +14,6 @@
       "password": "admin",
       "isActive": false,
       "id": 1
-    },
-    {
-      "name": "dung123",
-      "password": "123456",
-      "isActive": false,
-      "id": 2
-    },
-    {
-      "name": "toiladung",
-      "password": "123456",
-      "isActive": true,
-      "id": 3
-    },
-    {
-      "name": "toiladung",
-      "password": "123456",
-      "isActive": false,
-      "id": 4
     }
   ]
 }
