@@ -19,9 +19,5 @@
     "homepage": "https://github.com/DungVietLe/Do-an-VNApple#readme",
     "dependencies": {
         "json-server": "^0.16.3"
-    },
-    "engines": {
-        "node": "16.4.2",
-        "npm": "4.6.1"
     }
 }
