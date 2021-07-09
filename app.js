@@ -13,7 +13,7 @@ let iconStyleHead = document.querySelector(".line-bars-head");
 let iconStyleEnd = document.querySelector(".line-bars-end");
 let listNavMobile = document.querySelector(".list-nav-mobile");
 let iconBag = document.querySelector(".icon-bags-mb");
-
+let main = document.querySelector("html");
 
 close.addEventListener("click", function (e) {
     e.preventDefault()
@@ -104,7 +104,13 @@ hiddenBag.addEventListener("click", function (e) {
     }
 })
 
-
+$(document).click(function (event) {
+    $target = $(event.target);
+    if (!$target.closest('.container-bag').length &&
+        $('.container-bag').is(":visible")) {
+        $('.container-bag').hide();
+    }
+});
 //them so mau do vao vao gio hang thanh nav
 var countsanpham = document.querySelector('.count-sanpham')
 // fetch("http://localhost:3000/product")
