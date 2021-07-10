@@ -104,7 +104,13 @@ hiddenBag.addEventListener("click", function (e) {
     }
 })
 
-
+$(document).click(function (event) {
+    $target = $(event.target);
+    if (!$target.closest('.container-bag').length &&
+        $('.container-bag').is(":visible")) {
+        $('.container-bag').hide();
+    }
+});
 //them so mau do vao vao gio hang thanh nav
 var countsanpham = document.querySelector('.count-sanpham')
 // fetch("http://localhost:3000/product")
