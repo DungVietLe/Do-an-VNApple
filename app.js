@@ -13,7 +13,7 @@ let iconStyleHead = document.querySelector(".line-bars-head");
 let iconStyleEnd = document.querySelector(".line-bars-end");
 let listNavMobile = document.querySelector(".list-nav-mobile");
 let iconBag = document.querySelector(".icon-bags-mb");
-let main = document.querySelector("html");
+// const port = process.env.PORT || 8000;
 
 close.addEventListener("click", function (e) {
     e.preventDefault()
@@ -210,3 +210,7 @@ fetch("http://localhost:3000/user")
             }
         }
     })
+
+// server.listen(port, () => {
+//     console.log("App is running on port " + port);
+// });

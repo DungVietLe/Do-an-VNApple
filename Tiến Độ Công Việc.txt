@@ -62,6 +62,12 @@ Chỉnh lại account đăng nhập complete, trạng thái người dùng trên
 js thêm sản phẩm vào trong giỏ hàng, thêm xóa sản phẩm todolist;Phần này khó cả nhóm ping nhau
 một người sửa, hai người call hỗ trợ.
 
+*29/06/2021*
+Hoàn thành js, các chức năng.
+*01/07/2021*
+resposive 60% giao diện
+
+
 
 
 
