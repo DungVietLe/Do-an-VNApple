@@ -1,12 +1,17 @@
 {
-  "product": [
-  ],
+  "product": [],
   "user": [
     {
       "name": "admin",
       "password": "admin",
       "isActive": false,
       "id": 1
+    },
+    {
+      "name": "levietdung123",
+      "password": "123456",
+      "isActive": true,
+      "id": 2
     }
   ]
 }
