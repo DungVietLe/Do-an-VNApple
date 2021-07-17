@@ -1,5 +1,28 @@
 {
   "product": [
+    {
+      "tensanpham": "Macbook Pro 16",
+      "giasanpham": "2999",
+      "url": "/images/khampha/macbook13-1.png",
+      "id": 1,
+      "details": " Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified , memory 256GB SSD storage Retina display with True Tone  ,Backlit Magic Keyboard - US English      "
+    },
+    {
+      "tensanpham": "Macbook Pro 16",
+      "giasanpham": "2999",
+      "color": "Sliver",
+      "url": "/images/khampha/macbook13-1.png",
+      "id": 2,
+      "details": " Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified , memory 256GB SSD storage Retina display with True Tone  ,Backlit Magic Keyboard - US English      "
+    },
+    {
+      "tensanpham": "Macbook Pro 16",
+      "giasanpham": "2999",
+      "color": "Graphite",
+      "url": "/images/khampha/macbook13-1.png",
+      "id": 3,
+      "details": " Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified , memory 256GB SSD storage Retina display with True Tone  ,Backlit Magic Keyboard - US English      "
+    }
   ],
   "user": [
     {
@@ -7,6 +30,35 @@
       "password": "admin",
       "isActive": false,
       "id": 1
+    },
+    {
+      "name": "duy",
+      "password": "123456",
+      "isActive": true,
+      "id": 2
+    }
+  ],
+  "macbook": [
+    {
+      "tensanpham": "Macbook Air",
+      "giasanpham": "999",
+      "url": "/images/khampha/macbook13pro.png",
+      "id": 1,
+      "details": " Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified , memory 256GB SSD storage Retina display with True Tone  ,Backlit Magic Keyboard - US English      "
+    },
+    {
+      "tensanpham": "Macbook Pro 13",
+      "giasanpham": "1299",
+      "url": "/images/khampha/macbook13pro.png",
+      "id": 2,
+      "details": " Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified , memory 256GB SSD storage Retina display with True Tone  ,Backlit Magic Keyboard - US English      "
+    },
+    {
+      "tensanpham": "Macbook Pro 16",
+      "giasanpham": "2999",
+      "url": "/images/khampha/macbook13-1.png",
+      "id": 3,
+      "details": " Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified , memory 256GB SSD storage Retina display with True Tone  ,Backlit Magic Keyboard - US English      "
     }
   ]
 }

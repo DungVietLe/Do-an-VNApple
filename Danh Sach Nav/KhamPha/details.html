@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Danh Sach Nav/KhamPha/details.css">
+    <!-- <link rel="stylesheet" href="/signin.html"> -->
+    <script src="https://kit.fontawesome.com/4f7c47ee4c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header-nav">
+        <!-- nav PC -->
+        <nav class="nav">
+            <div class="nav-product"><a href="/index.html" class="icon-home"><i class="fab fa-apple"></i></a></div>
+            <div class="nav-product"><a href="/Danh Sach Nav/product/product.html">iPhone</a></div>
+            <div class="nav-product"><a href="/Danh Sach Nav/Store/store.html">Store</a></div>
+            <div class="nav-product"><a href="/Danh Sach Nav/KhamPha/khampha.html">iMac</a></div>
+            <div class="nav-product"><a href="/Danh Sach Nav/Photo/photo.html">Photo</a></div>
+            <div class="nav-product"><a href="/Danh Sach Nav/BOS/bos.html">iOS</a></div>
+            <div class="nav-product"><a href="/Danh Sach Nav/Security/security.html">Security</a></div>
+            <div class="nav-product"><a id='account-check' href="/Danh Sach Nav/Esim/esim.html">Account</a></div>
+            <div id="search-nav" class="nav-product"><a href="" class="icon-home"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></a></div>
+            <div id="search-bag" class="nav-product">
+
+                <a href="" class="icon-home"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                    <span class="count-sanpham">
+                    </span>
+                </a>
+
+            </div>
+            <div class="container-bag">
+                <span class="arow-bag"></span>
+                <div class="detail-bagsss">
+                    <div class="title-bag">
+                        Your bag is empty.
+                    </div>
+                    <div class="menu-bag">
+                        <div class="bagsss">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: royalblue; margin-right:12px;"
+                                width="18" height="18" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg>
+                            <a href="/giohang/giohang.html">Bag</a>
+                        </div>
+                        <div class="account-bag">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: royalblue; margin-right:12px;"
+                                width="16" height="16" fill="currentColor" class="bi bi-gear-wide-connected"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
+                            </svg>
+                            <a href="/Danh Sach Nav/Esim/esim.html">
+                                <p id="nameacount">Account</p>
+                            </a>
+                        </div>
+                        <div class="sigin-in-bagsss">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: royalblue; margin-right:12px;"
+                                width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+                                viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            <a id="getNamePC" href="">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+        <!-- nav Mobile -->
+        <nav class="nav-mobile">
+            <div class="icon-bars-mobile">
+                <div class="line-bars-head" style="background-color: #d6d6d6;"></div>
+                <div class="line-bars-end" style="background-color: #d6d6d6;"></div>
+            </div>
+            <div><a href="/index.html" style="color: #d6d6d6; font-size: 24px;"><i class="fab fa-apple"></i></a>
+            </div>
+            <div class="icon-bags-mb">
+                <a href="" class="icon-home"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                    <!-- <span class="count-sanpham"> 1
+                    </span> -->
+                </a></div>
+        </nav>
+        <!-- list menu nav mobile -->
+
+        <!-- end list nav -->
+
+
+        <!-- end nav Mobile -->
+        <!-- input search -->
+        <search class="search-box off">
+            <a href="" class="icon-home"><svg xmlns="http://www.w3.org/2000/svg" style="color: #F5F5F7;" width="18"
+                    height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></a>
+            <input id="search-product" type="text" placeholder="Search product iPhone">
+            <a id="close" href="" class="icon-home"><svg xmlns="http://www.w3.org/2000/svg" style="color: #F5F5F7;"
+                    width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z" />
+                </svg></a>
+        </search>
+        <!-- end input search -->
+        <div class="mess-box off">
+            <ul class="mess-box-title">
+                <h3 style="font-size: 14px; font-weight: 400; color: #6E6E73; margin-left: 40px;">
+                    QUICK LINKS
+                </h3>
+                <li><a href="">Visiting an Apple Store FAQ</a></li>
+                <li><a href="">Shope Apple Store Online</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">AirTag</a></li>
+            </ul>
+        </div>
+        <div class="modal-nav"></div>
+    </div>
+
+    <div class="list-nav-mobile off">
+        <div class="content-list-mb">
+            <div class="search-icons-mobile">
+                <a href="" class="icon-home"><i class="fas fa-search"></i></a>
+            </div>
+            <input class="search-mobile" type="text" placeholder="Search apple.com">
+        </div>
+        <ul class="nav-list-mb">
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/product/">Product</a></li>
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/Store/store.html">Store</a></li>
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/KhamPha/khampha.html">Discover</a></li>
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/Photo/">Photo</a></li>
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/BOS/bos.html">iOS</a></li>
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/Security/security.html">Security</a></li>
+            <hr class="line-mb">
+            <li class="nav-product-mb"><a href="/Danh Sach Nav/Esim/esim.html">eSIM</a></li>
+        </ul>
+    </div>
+
+    <!-- body detals -->
+    <div class="bodydetals">
+        <h3 class="Namemacbook">Macbook</h3>
+        <span id="changePrice-Price">Price:</span>
+        <p id="changePrice-ipPC">999$ USD</p>
+        <p class="content-details"> </p>
+    </div>
+    <!-- end body  -->
+    <div class="footer-wrapper">
+        <div class="ft-text">
+            <div class="detail-ft-text">
+                <ul>
+                    <li class="footnote-1">
+                        1. Price includes a $30 AT&T, T-Mobile, Sprint, or Verizon discount. Requires activation with
+                        carrier. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month
+                        installment loan with Citizens One or Apple Card Monthly Installments
+                        and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon for purchases in an Apple Store.
+                        Taxes and shipping not included. Additional Apple Card Monthly Installments and iPhone Payments
+                        terms apply.
+                    </li>
+                    <li class="footnote-1">
+                        2. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment
+                        loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T,
+                        Sprint, T-Mobile, or Verizon for purchases in an Apple Store. Taxes
+                        and shipping not included. Additional Apple Card Monthly Installments and iPhone Payments terms
+                        apply.
+                    </li>
+                    <li class="footnote-1">
+                        3. Qualified Purchasers receive Promotion Savings when they purchase an eligible Mac or eligible
+                        iPad with eligible AirPods at a Qualifying Location. Only one Promotion Product per eligible Mac
+                        or eligible iPad per Qualified Purchaser. Offer subject to
+                        availability. While supplies last. Qualified Purchasers selecting Apple Card Monthly
+                        Installments (“ACMI”) as payment type at checkout shall receive a discount equal to the value of
+                        the eligible AirPods off the price of the
+                        eligible Mac or iPad. This will result in one ACMI installment plan over 12 months for the
+                        eligible iPad or Mac discounted by the instant credit, and a second ACMI installment plan over 6
+                        months for the full price of the eligible
+                        AirPods. Qualified Purchasers will be charged for all items in their cart, including the
+                        eligible AirPods plus any additional Upgrade Cost. If you choose the pay-in-full or
+                        one-time-payment option for an ACMI eligible purchase
+                        instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the
+                        variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI
+                        transactions and are subject to your standard
+                        purchase APR. ACMI is subject to credit approval and credit limit. Variable APRs for Apple Card
+                        other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of April 1,
+                        2020. See the Apple Card Customer Agreement
+                        for more information. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                        Available for qualifying applicants in the United States. If you reside in the U.S. territories,
+                        please call Goldman Sachs at 877-255-5923
+                        with questions about accessing this offer or applying for Apple Card. This offer cannot be
+                        combined with the Apple Employee Purchase Plan or business loyalty pricing. Availability of
+                        in-store promotion offerings may be limited
+                        by Apple Store location closures as a result of COVID-19. Additional restrictions apply. View
+                        full terms and conditions of offer here.
+                    </li>
+                    <li class="footnote-1">
+                        4. $9.99/month after free trial. No commitment. Plan automatically renews after trial until
+                        cancelled. To access and use all the features of Apple Card, you must add Apple Card to Wallet
+                        on an iPhone or iPad with iOS or iPadOS 13.2 or later. Update to
+                        the latest version of iOS or iPadOS by going to Settings > General > Software Update. Tap
+                        Download and Install. Available for qualifying applicants in the United States. Apple Card is
+                        issued by Goldman Sachs Bank USA, Salt
+                        Lake City Branch. Learn more about how Apple Card applications are evaluated at
+                        support.apple.com/kb/HT209218. Apple TV+ is $4.99/month after free trial. One subscription per
+                        Family Sharing group. Offer good for 3 months after
+                        eligible device activation. Plan automatically renews until cancelled. Restrictions and other
+                        terms apply.
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="hr-color">
+        <div class="footer-header">
+            <!-- <div class="footer-icon">
+                <a href="/index.html"><i class="fab fa-apple"></i></a>
+            </div> -->
+            <div class="footer-support">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>Shop and learn</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">iPad</a></li>
+                            <li><a href="">Mac</a></li>
+                            <li><a href="">Store</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>Product</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">iMac</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>Account</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">Manage Your Apple ID</a></li>
+                            <li><a href="">Apple Store Account</a></li>
+                            <li><a href="">Apple.com</a></li>
+                            <li><a href="">iPhone Store</a></li>
+                            <li><a href="">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>General terms</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="">Privacy Terms</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="hr-color">
+        <div class="author">
+            <div class="copyright">Copyright © 2021 Apple Inc. All rights reserved.</div>
+            <div class="info-co">
+                <div class="privacy">Privacy Policy</div>
+                <div class="privacy">Terms of Use</div>
+                <div class="privacy">Sales and Refund</div>
+                <div class="privacy">Legal</div>
+                <div class="privacy">Site Map</div>
+            </div>
+            <div class="khuvuc">VietName</div>
+        </div>
+    </div>
+    <div class="footer-wrapper-mb">
+        <div class="ft-text">
+            <div class="detail-ft-text-mb">
+                <ul>
+                    <li class="footnote-1">
+                        1. Price includes a $30 AT&T, T-Mobile, Sprint, or Verizon discount. Requires activation
+                        with carrier. Monthly pricing: Available to qualified customers and requires 0% APR,
+                        24-month installment loan with Citizens One or Apple Card Monthly Installments
+                        and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon for purchases in an Apple
+                        Store. Taxes and shipping not included. Additional Apple Card Monthly Installments and
+                        iPhone Payments terms apply.
+                    </li>
+                    <li class="footnote-1">
+                        2. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month
+                        installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation
+                        with AT&T, Sprint, T-Mobile, or Verizon for purchases in an Apple Store. Taxes
+                        and shipping not included. Additional Apple Card Monthly Installments and iPhone Payments
+                        terms apply.
+                    </li>
+                    <li class="footnote-1">
+                        3. Qualified Purchasers receive Promotion Savings when they purchase an eligible Mac or
+                        eligible iPad with eligible AirPods at a Qualifying Location. Only one Promotion Product per
+                        eligible Mac or eligible iPad per Qualified Purchaser. Offer subject to
+                        availability. While supplies last. Qualified Purchasers selecting Apple Card Monthly
+                        Installments (“ACMI”) as payment type at checkout shall receive a discount equal to the
+                        value of the eligible AirPods off the price of the
+                        eligible Mac or iPad. This will result in one ACMI installment plan over 12 months for the
+                        eligible iPad or Mac discounted by the instant credit, and a second ACMI installment plan
+                        over 6 months for the full price of the eligible
+                        AirPods. Qualified Purchasers will be charged for all items in their cart, including the
+                        eligible AirPods plus any additional Upgrade Cost. If you choose the pay-in-full or
+                        one-time-payment option for an ACMI eligible purchase
+                        instead of choosing ACMI as the payment option at checkout, that purchase will be subject to
+                        the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI
+                        transactions and are subject to your standard
+                        purchase APR. ACMI is subject to credit approval and credit limit. Variable APRs for Apple
+                        Card other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of
+                        April 1, 2020. See the Apple Card Customer Agreement
+                        for more information. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                        Available for qualifying applicants in the United States. If you reside in the U.S.
+                        territories, please call Goldman Sachs at 877-255-5923
+                        with questions about accessing this offer or applying for Apple Card. This offer cannot be
+                        combined with the Apple Employee Purchase Plan or business loyalty pricing. Availability of
+                        in-store promotion offerings may be limited
+                        by Apple Store location closures as a result of COVID-19. Additional restrictions apply.
+                        View full terms and conditions of offer here.
+                    </li>
+                    <li class="footnote-1">
+                        4. $9.99/month after free trial. No commitment. Plan automatically renews after trial until
+                        cancelled. To access and use all the features of Apple Card, you must add Apple Card to
+                        Wallet on an iPhone or iPad with iOS or iPadOS 13.2 or later. Update to
+                        the latest version of iOS or iPadOS by going to Settings > General > Software Update. Tap
+                        Download and Install. Available for qualifying applicants in the United States. Apple Card
+                        is issued by Goldman Sachs Bank USA, Salt
+                        Lake City Branch. Learn more about how Apple Card applications are evaluated at
+                        support.apple.com/kb/HT209218. Apple TV+ is $4.99/month after free trial. One subscription
+                        per Family Sharing group. Offer good for 3 months after
+                        eligible device activation. Plan automatically renews until cancelled. Restrictions and
+                        other terms apply.
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="hr-color-mb">
+        <div class="footer-header-mb">
+            <!-- <div class="footer-icon">
+            <a href="/index.html"><i class="fab fa-apple"></i></a>
+        </div> -->
+            <div class="footer-support">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>Shop and learn</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">iPad</a></li>
+                            <li><a href="">Mac</a></li>
+                            <li><a href="">Store</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>Product</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">iMac</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>Account</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">Manage Your Apple ID</a></li>
+                            <li><a href="">Apple Store Account</a></li>
+                            <li><a href="">Apple.com</a></li>
+                            <li><a href="">iPhone Store</a></li>
+                            <li><a href="">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="as-footer-box mt-4">
+                    <div class="title-footer">
+                        <h3>General terms</h3>
+                    </div>
+                    <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 38px;">
+                    <div class="content-support">
+                        <ul class="list-unstyled">
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="">Privacy Terms</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="hr-color-mb">
+        <div class="author-mb">
+            <div class="copyright-mb">Copyright © 2021 Apple Inc. All rights reserved.</div>
+            <div class="info-co-mb">
+                <div class="privacy">Privacy Policy</div>
+                <div class="privacy">Terms of Use</div>
+                <div class="privacy">Sales and Refund</div>
+                <div class="privacy">Legal</div>
+                <div class="privacy">Site Map</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <script src="/app.js"></script>
+    <script src="/Danh Sach Nav/KhamPha/details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+</body>
+</html>
