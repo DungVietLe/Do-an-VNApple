@@ -32,12 +32,14 @@ body{
         letter-spacing: -0.9px;
     }
     .mobiContentbanerSecurity{
+        display: block;
         margin: auto;
         color: #ffa201;
         font-size: 18px;
         margin-top: 21px;
         line-height: 35px;
-        width: 742px;
+        text-align: justify;
+        /* width: 742px; */
     }
     .mobiaboutSecurity{
         background-color: rgb(255, 255, 255)

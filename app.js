@@ -84,10 +84,6 @@ styleIcon.addEventListener("click", function (e) {
         iconBag.classList.remove("off");
     }
 
-
-
-
-
 })
 
 
@@ -142,6 +138,7 @@ fetch("http://localhost:3000/user")
                             countsanpham.style.display = 'block'
                         } else {
                             countsanpham.style.display = 'none'
+                            // countsanpham.innerHTML = 'none'
                         }
                     })
             }
@@ -178,7 +175,6 @@ fetch("http://localhost:3000/user")
             if (e.isActive === true) {
                 Signout.innerHTML = 'Log Out'
                 Signout.onclick = function () {
-
                     //đây là put logout đổi trạng thái
                     fetch("http://localhost:3000/user/" + e.id, {
                             method: "PUT",
@@ -205,9 +201,7 @@ fetch("http://localhost:3000/user")
         }
     })
 
-// server.listen(port, () => {
-//     console.log("App is running on port " + port);
-// });
+
 let toTop = document.querySelector(".toTop");
 toTop.addEventListener("click", function () {
 

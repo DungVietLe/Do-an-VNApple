@@ -6,12 +6,6 @@
       "password": "admin",
       "isActive": false,
       "id": 1
-    },
-    {
-      "name": "duy",
-      "password": "123456",
-      "isActive": true,
-      "id": 2
     }
   ],
   "macbook": [

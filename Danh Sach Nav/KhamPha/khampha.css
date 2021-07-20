@@ -13,6 +13,10 @@
     .Vitrual{
         display: none;
     }
+    .mobiMac{
+        /* width: 680px;
+        margin: auto; */
+    }
     .mobimacBody-1{
    
         display: flex;
